@@ -38,12 +38,14 @@ Traceback errors try to tell you a little about what happened in the program tha
 
 Debugging is a fancy word for fixing problems with a program. Here are some common strategies for debugging a program when first learning Python:
 
-- If the error is a syntax error, look at where the carrot is pointing.
-- If the error is a syntax error, pay attention to grammatical features such as quotes, parentheses, and indentation.
-- If the error is a syntax error, consider reading the program, or the offending line, backward. It's surprising, but this often helps to detect the issue.
-- If the error is a traceback error, first look at the line where the error occured, then consider the general category of error. What could have gone wrong?
-- If the error is a name error (NameError), check your spelling.
-- If the error is a traceback error, try copying the last line of the error and pasting it into Google. You'll often find a quick solution this way.
+- If the error is a syntax error:
+    - look at where the carrot is pointing.
+    - pay attention to grammatical features such as quotes, parentheses, and indentation.
+    - consider reading the program, or the offending line, backward. It's surprising, but this often helps to detect the issue.
+- If the error is a traceback error:
+    - first look at the line where the error occured, then consider the general category of error. What could have gone wrong?
+    - try copying the last line of the error and pasting it into Google. You'll often find a quick solution this way.
+    - if the traceback error is a name error (NameError), check your spelling.
 - If you changed the program and expect a different output, but are getting old output, you may not have saved the file. Go back and make sure the file has been correctly saved.
 
 ## Challenge
