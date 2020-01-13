@@ -43,12 +43,12 @@ Don't worry about trying to actively remember these types. We'll be working with
 
 ## What's the deal with type()?
 
-`type()` is a function. You can think of functions in Python in a few different ways:
+`type()` is a function. You can think of functions in Python in a couple of different ways:
 
-1. A way of doing something in Python.
-2. A way of saving some code for reuse.
-3. A way of taking an input, transforming that input, and returning an output. The input goes in the parentheses `()`.
+1. A way of doing something in Python. A way of taking an input, transforming that input, and returning an output. The input goes in the parentheses `()`.
 
-These are all valid ways of thinking about functions. We'll be learning more about functions in later sections.
+2. A way of saving some code for reuse. After creating a function, you can make it run whenever you need it.
+
+These are valid ways of thinking about functions. We'll be learning more about functions in later sections.
 
 [<<< Previous](repl.md) | [Next >>>](variables.md)
