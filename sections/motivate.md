@@ -2,11 +2,12 @@
 
 # A Little Motivation
 
-Early on, we learned a bit about lists, which look like this:
+Early on, we learned a bit about lists. Remember, lists open with a square bracket `[`, have items seperated with commas, and end with a square bracket `]`, like this:
 
 ```python
 ['rose', 'violet', 'buttercup']
 ```
+
 	
 We're going to create a small application that will print a random motivational saying every time a user presses `Enter`. Our first step will be to create a list of positive sayings:
 
@@ -17,10 +18,6 @@ motivational_phrases = [
         "You write lists like a pro!",
     ]
 ```
-
-Lists open with a square bracket `[`, have items seperated with commas, and end with a square bracket `]`, like this:
-
-    [1, 2, 3, 4, 5]
 	
 Our positivity list above spreads the list out over multiple lines for greater readability, which is allowed in Python. Remember that you can change the strings in the list to whatever phrases you choose.
 
