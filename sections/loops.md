@@ -85,7 +85,7 @@ Write some code to print out the square of each of these numbers. Remember that 
 
 ## Advanced Challenge
 
-First, ignore this challenge because it's too hard. Next, look up a new concept—"string formatting"—on Google and use it to write a loop that gives the following output:
+First, ignore this challenge because it's too hard. Next, look up a new concept—"f-string" (a formatting technique for strings)—on Google and use it to write a loop that gives the following output:
 
 ```
 The square of 2 is 4.
@@ -94,6 +94,7 @@ The square of 5 is 25.
 The square of 7 is 49.
 The square of 11 is 121.
 ```
+Note: the "f-string" is a new string formatting method for Python 3. You can read more about this new string formatting method [here](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python).
 
 ## A Note on Variable Names
 
