@@ -21,7 +21,7 @@ In this below example, the syntax error is a common one—mismatched single and 
 SyntaxError: EOL while scanning string literal
 ```
 
-Note the carrot (`^`) underneath the mismatched quote, helpfully pointing out where the error lies. Similarly, if this error happened when running a script, Python would tell us the filename and the line number for the line on which the error occurs.
+Note the caret (`^`) underneath the mismatched quote, helpfully pointing out where the error lies. Similarly, if this error happened when running a script, Python would tell us the filename and the line number for the line on which the error occurs.
 
 **Traceback errors** - These errors occur during the execution of a Python program when the program finds itself in an untenable state and must stop. Traceback errors are often logical inconsistencies in a program that is valid Python code. A common traceback error is referring to a variable that hasn't been defined, as below.
 
@@ -38,7 +38,7 @@ Traceback errors try to tell you a little about what happened in the program tha
 
 Debugging is a fancy word for fixing problems with a program. Here are some common strategies for debugging a program when first learning Python:
 
-- If the error is a syntax error, look at where the carrot is pointing.
+- If the error is a syntax error, look at where the caret is pointing.
 - If the error is a syntax error, pay attention to grammatical features such as quotes, parentheses, and indentation.
 - If the error is a syntax error, consider reading the program, or the offending line, backward. It's surprising, but this often helps to detect the issue.
 - If the error is a traceback error, first look at the line where the error occured, then consider the general category of error. What could have gone wrong?
