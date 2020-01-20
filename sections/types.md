@@ -23,6 +23,10 @@ Enter these lines as you see them below:
 
 Each of these represents a different type:
 
+**Integer**: `1`
+
+Integers are whole numbers. 
+
 **Float**: `1.0`
 
 Floats are numbers with decimals, and are treated a little differently than integers.
