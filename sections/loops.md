@@ -10,7 +10,7 @@ Remember lists? They look like this:
 flowers = ['rose', 'violet', 'buttercup']
 ```
 	
-For now, let's just create a list and print it out. Our script will look like this:
+For now, let's just create a list and print it out. In a text editor, our script will look like this:
 
 ```python
 flowers = ['rose', 'violet', 'buttercup']
@@ -59,7 +59,7 @@ flowers = ['rose', 'violet', 'buttercup']
 # print(flowers)
 
 for flower in flowers:
-    print("My favorite flower is the" + flower)
+    print("My favorite flower is the " + flower)
 ```
 
 What's happening here? This kind of loop is called a "for" loop, and tells Python: "for each item in the list, do something." Let's break it down:
