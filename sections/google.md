@@ -32,7 +32,7 @@ Let's try the search term <a href="http://lmgtfy.com/?q=make+string+lowercase+Py
 
 ![make string lower case Python Google search](google_search.png)  
 
-Notice that the first result is from a site called Stack Overflow. This is a questions and answers site for programmers that usually has strong answers to questions about Python.
+While Google searches change over time, some of your results likely come from a site called Stack Overflow. This is a questions and answers site for programmers that usually has strong answers to questions about Python.
 
 ![Google search results with stack overflow answer on top](google_result.png)  
 
