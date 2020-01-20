@@ -36,11 +36,7 @@ While Google searches change over time, some of your results likely come from a 
 
 ![Google search results with stack overflow answer on top](google_result.png)  
 
-On the Stack Overflow page, take a quick look at the question to make sure it's relevant to your problem. However, we need to scroll down to the answers to find what we're looking for:
-
-![stack overflow answer for making strings lowercase. the answer says to use string.lower()](stack_overflow.png)  
-
-Also notice the snarky debate below! Another "feature" of Stack Overflow.
+On [this Stack Overflow page](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python), take a quick look at the question to make sure it's relevant to your problem. Then scroll down to the answers to find what we're looking for. You may also notice snarky debates -- another "feature" of Stack Overflow.
 
 ## Implementing our answer
 
