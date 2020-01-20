@@ -81,7 +81,7 @@ Here's a list of numbers:
 prime_numbers = [2, 3, 5, 7, 11]
 ```
 
-Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is [here](loop.py), but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
+Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is [here](loop.md), but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
 
 ## Advanced Challenge
 
