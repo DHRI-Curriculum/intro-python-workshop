@@ -1,6 +1,6 @@
 [<<< Previous](repl.md) | [Next >>>](variables.md)
 
-## Types
+# Types
 
 Types are classifications that let the computer know how a programmer intends to use a piece of data. You can just think of them as, well, types of data.
 
