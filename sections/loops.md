@@ -95,6 +95,8 @@ The square of 7 is 49.
 The square of 11 is 121.
 ```
 
+The solution to this challenge is [here](loop_adv.md). Take a look after you've tried to solve it yourself!
+
 ## A Note on Variable Names
 
 In this section, we've discussed flowers in the context of a list. But would a variable by any other name smell as sweet?
