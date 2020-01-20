@@ -2,7 +2,7 @@
 
 # Types
 
-Types are classifications that let the computer know how a programmer intends to use a piece of data. You can just think of them as, well, types of data.
+**Types are classifications that let the computer know how a programmer intends to use a piece of data**. You can just think of them as, well, types of data.
 
 We've already seen one type in the last section: the integer. In this section, we'll learn four more: the floating point number, the string, the boolean, and the list.
 
@@ -23,19 +23,19 @@ Enter these lines as you see them below:
 
 Each of these represents a different type:
 
-Float: `1.0`
+**Float**: `1.0`
 
 Floats are numbers with decimals, and are treated a little differently than integers.
 
-String: `"Hello there!"`
+**String**: `"Hello there!"`
 
 Strings are arbitrary sets of characters, such as letters and numbers. You can think of them as a way to store text.
 
-Boolean: `True` and `False`
+**Boolean**: `True` and `False`
 
 Boolean is a fancy term for values representing "true" and "false," or "truthiness" and "falsiness."
 
-List: `[1, 2, 3]`
+**List**: `[1, 2, 3]`
 
 A list is an ordered collection of values. You can put any type in a list: `["rose", "daisy", "buttercup"]` is also a valid list.
 
