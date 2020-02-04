@@ -62,3 +62,5 @@ while True:
 
     else:
         print("You wait to long and the monster from room #1 breaks through the door and eats you!")
+
+# this challenge is inspired and adapted from Zed Shaw's "Learn Python the Hard Way," exercise 31: Making Decisions
