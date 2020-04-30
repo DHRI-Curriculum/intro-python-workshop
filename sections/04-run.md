@@ -11,16 +11,20 @@ Open your text editor of choice (such as VS Code) and create a new file with thi
 ```python
 print("Hello world!")
 ```
-	
+
 Save it with the name `hello.py` to a known location, such as your desktop. Open your terminal and move to the desktop directory:
 
-    $ cd Desktop
-	
+```console
+$ cd Desktop
+```
+
 Once you're in the folder with your `hello.py` file, run it with:
 
-	$ python hello.py
-	Hello world!
-	
+```console
+$ python hello.py
+Hello world!
+```
+
 As above, you should see the text `Hello world!` appear as output. We needed the `print()` function here because, unlike in the REPL, things aren't automatically printed out when writing scripts.
 
 Congratulations! You've written your first script. That's kind of a big deal.
@@ -35,6 +39,6 @@ Congratulations! You've written your first script. That's kind of a big deal.
 
 ## A Note on Text
 
-Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files — they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far — the command line, Git, markdown, grep — are all designed to work well together, and the medium through which they all work is plain text.
+Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far—the command line, Git, markdown, grep—are all designed to work well together, and the medium through which they all work is plain text.
 
 [<<< Previous](03-variables.md) | [Next >>>](05-errors.md)

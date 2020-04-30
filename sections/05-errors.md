@@ -13,7 +13,8 @@ In Python, there are two kinds of errors you will encounter frequently. One appe
 **syntax errors** - When you ask Python to run a program or execute a line in the REPL, it will first check to see if the program is valid Python code—that is, that it follows the grammatical or syntactical rules of Python. If it doesn't, before the program even runs, you'll see a syntax error printed out to the screen.
 
 In this below example, the syntax error is a common one—mismatched single and double quotes, which is not allowed in Python. You can replicate the below error by opening the REPL (type `python` in the command line) and entering the line after the `>>>` prompt.
-```
+
+```pycon
 >>> print('This string has mismatched quotes. But Python will help us figure out this bug.")
   File "<stdin>", line 1
     print('This string has mismatched quotes. But Python will help us figure out this bug.")
