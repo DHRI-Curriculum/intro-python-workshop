@@ -9,7 +9,7 @@ Remember lists? They look like this:
 ```python
 flowers = ['rose', 'violet', 'buttercup']
 ```
-	
+
 For now, let's just create a list and print it out. In a text editor, our script will look like this:
 
 ```python
@@ -34,7 +34,7 @@ The `len()` function returns the number of items in a list or the number of char
 
 Notice that, if you run the code above, you won't see the `flowers` list printed out. That's because that line has become a comment. If you put a `#` (hash or pound) at the beginning of a line, that line will be ignored.
 
-# List Indexing 
+# List Indexing
 
 A useful property of a list is the list index. This allows you to pick out an item from within the list by a number starting from zero:
 
@@ -42,6 +42,7 @@ A useful property of a list is the list index. This allows you to pick out an it
 print(flowers[0]) # rose
 print(flowers[1]) # violet
 ```
+
 Note that the first item in the list is item [0]. The second item is item [1]. That's because counting in Python, and in almost all programming languages, starts from 0.
 
 You can print out the last item in a list using negative numbers:
@@ -69,7 +70,7 @@ for <variable name> in <list name>:
 	<do something>
 ```
 
-Indented code like this is known as a "code block." Python will run the <do something> code in the code block once for each item in the list. You can also refer to \<variable name> in the <do something> block.
+Indented code like this is known as a "code block." Python will run the `<do something>` code in the code block once for each item in the list. You can also refer to `<variable name>` in the `<do something>` block.
 
 You can also perform more complicated operations. Let's tackle one in a challenge.
 
@@ -77,17 +78,17 @@ You can also perform more complicated operations. Let's tackle one in a challeng
 
 Here's a list of numbers:
 
-```
+```python
 prime_numbers = [2, 3, 5, 7, 11]
 ```
 
-Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is [here](loop.md), but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
+Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is [here](solutions/loop.md), but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
 
 ## Advanced Challenge
 
 First, ignore this challenge because it's too hard. Next, look up a new concept—"string formatting"—on Google and use it to write a loop that gives the following output:
 
-```
+```console
 The square of 2 is 4.
 The square of 3 is 9.
 The square of 5 is 25.
@@ -95,7 +96,7 @@ The square of 7 is 49.
 The square of 11 is 121.
 ```
 
-The solution to this challenge is [here](loop_adv.md). Take a look after you've tried to solve it yourself!
+The solution to this challenge is [here](solutions/loop_adv.md). Take a look after you've tried to solve it yourself!
 
 ## A Note on Variable Names
 
@@ -109,7 +110,7 @@ While the computer might not care if our list of flowers is called `x`, giving v
 y = ['rose', 'violet', 'buttercup']
 
 for x in y:
-	print(x)
+    print(x)
 ```
 
 Which is easier to read, this for loop or the one used in the example?

@@ -1,14 +1,14 @@
 [<<< Previous](motivate.md) |  [Next >>>>](resources.md)
 
-## Working with external files
+# Working with external files
 
 A common task in Python is to pull in and work with data from an external source, such as a spreadsheet or database. In this section, we'll use Python to open and read a `.csv` (plain text spreadsheet) file.
 
-### Reading the .csv
+## Reading the .csv
 
 Let's write a short script that will open the `.csv` and read in the lines:
 
-```
+```python
 import csv
 
 file = open('nypl_items.csv', 'r')
@@ -19,13 +19,27 @@ The `open` function with `r` reads a text file and pulls in its contents. (It ca
 
 The `csv.DictReader()` function takes a text file in .csv format and parses it. It gives back a list of dictionaries that use the field name (such as "id" and "Title") as the key. The dictionaries look like this:
 
-```
-{'Contributor': 'Emmet, Thomas Addis, 1828-1919 | Cabot, George | Lowell, John', 'Place': 'Boston, Mass.', 'id': '794', 'Description': 'Introduces Mr. [Jonathan?] Dwight, of Springfield.', 'Subject': '', 'Digital': 'http://digitalcollections.nypl.org/items/8ea65050-c52d-012f-b37d-58d385a7bc34', 'Title': 'Letter to George Cabot, Beverly [Mass.]', 'Note': '', 'Publisher': '', 'Date': '1785-07-02', 'Genre': '', 'Language': '', 'Resource': 'text'}
+```json
+{
+  "Contributor": "Emmet, Thomas Addis, 1828-1919 | Cabot, George | Lowell, John", 
+  "Place": "Boston, Mass.",
+  "id": 794,
+  "Description": "Introduces Mr. [Jonathan?] Dwight, of Springfield.",
+  "Subject": "",
+  "Digital": "http://digitalcollections.nypl.org/items/8ea65050-c52d-012f-b37d-58d385a7bc34",
+  "Title": "Letter to George Cabot, Beverly [Mass.]",
+  "Note": "",
+  "Publisher": "",
+  "Date": 1785-07-02,
+  "Genre": "",
+  "Language": "",
+  "Resource": "text"
+}
 ```
 
 Let's try printing out only titles:
 
-```
+```python
 import csv
 
 file = open('nypl_items.csv', 'r')
@@ -39,7 +53,7 @@ Like before, you may need to use `Control-c` to cancel the printout.
 
 OK, let's try something a little more involved. What if I want all the entries that are chromolithographs? (I'm not even sure what chromolithographs are, but they sound awesome...) Let's say that this time we also want both the title of the entry and also its URL on the NYPL website, so we can check them out.
 
-```
+```python
 import csv
 
 file = open('nypl_items.csv', 'r')
@@ -51,7 +65,7 @@ for row in entries:
         print(row['Title'], row['Digital'])
 ```
 
-### Challenges
+## Challenges
 
 1. Can you figure out a way to find out how many chromolithographs are in the NYPL .csv file? Two ways to do this would be to add the items to a list and then use `len()`, or to create a variable that gets bigger as the program loops. You might want to collaborate with your tablemates on this one.
 

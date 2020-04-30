@@ -26,7 +26,7 @@ Note the caret (`^`) underneath the mismatched quote, helpfully pointing out whe
 
 **Traceback errors** - These errors occur during the execution of a Python program when the program finds itself in an untenable state and must stop. Traceback errors are often logical inconsistencies in a program that is valid Python code. A common traceback error is referring to a variable that hasn't been defined, as below.
 
-```
+```pycon
 >>> print(not_a_variable)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>

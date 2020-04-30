@@ -1,3 +1,8 @@
+[<<< Back](../10-motivate.md.md)
+
+# Solution
+
+```python
 import random
 
 while True:
@@ -10,3 +15,4 @@ while True:
     # Because this is input, the user will
     # need to hit enter to see a new phrase
     input(random.choice(motivational_phrases))
+```

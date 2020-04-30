@@ -4,7 +4,7 @@
 
 Our weather app is working pretty well, but you may have noticed that it's case sensitive:
 
-```
+```console
 What is the weather like today? snowy
 Bring your wooly muffler
 What is the weather like today? SNOWY
@@ -14,12 +14,12 @@ I don't know what you should bring! I'm just a little program...
 How could we fix our program to handle cases like this? We could add a bunch of new `elif` statements, like this:
 
 ```python
-[...]
+...
 elif weather == "snowy":
-	print("Bring your wooly muffler")
+    print("Bring your wooly muffler")
 elif weather == "SNOWY":
-	print("Bring your wooly muffler")
-[...]	
+    print("Bring your wooly muffler")
+...
 ```
 
 This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `Snowy`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
@@ -30,11 +30,11 @@ Even if you're a super rad Python programmer, you're not going to remember every
 
 Let's try the search term <a href="http://lmgtfy.com/?q=make+string+lowercase+Python" target="_blank"><code>make string lowercase Python</code></a>:
 
-![make string lower case Python Google search](images/google_search.png)  
+![make string lower case Python Google search](images/google_search.png)
 
 While Google searches change over time, some of your results likely come from a site called Stack Overflow. This is a questions and answers site for programmers that usually has strong answers to questions about Python.
 
-![Google search results with stack overflow answer on top](images/google_result.png)  
+![Google search results with stack overflow answer on top](images/google_result.png)
 
 On [this Stack Overflow page](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python), take a quick look at the question to make sure it's relevant to your problem. Then scroll down to the answers to find what we're looking for. You may also notice snarky debates -- another "feature" of Stack Overflow.
 
@@ -42,7 +42,7 @@ On [this Stack Overflow page](https://stackoverflow.com/questions/6797984/how-do
 
 According to this answer, we can make a string lowercase by adding `.lower()` to the end of it, like this:
 
-```
+```pycon
 >>> "SNOWY".lower()
 'snowy'
 ```
@@ -64,7 +64,7 @@ while True:
         print("Bring your wooly muffler")
     else:
         print("I don't know what you should bring! I'm just a little program...")
-```		
+```
 
 This new script should handle any combination of upper or lowercase characters. The new second line sets the weather variable to a new value, `weather.lower()`, which is a lowercase version of the original input.
 
@@ -76,6 +76,6 @@ There's no shame in googling for answers! Error messages are especially useful t
 
 2. (optional) OK, I told you not to look at the Python documentation. But doesn't that make you really want to go look at the Python documentation? How bad could this "documentation" really be? What terrible secrets might it hold?
 
-Fine. Have a look at the [Python documentation on built-in functions](https://docs.python.org/3/library/functions.html). Don't say I didn't warn you.
+    Fine. Have a look at the [Python documentation on built-in functions](https://docs.python.org/3/library/functions.html). Don't say I didn't warn you.
 
 [<<< Previous](08-input.md) | [Next >>>](10-motivate.md)

@@ -6,7 +6,7 @@ Objects in Python (and other programming languages) are basically containers tha
 
 When we added lower case to our weather program, we briefly saw a method contained inside all string objects in Python—`lower()`, which makes the string lower case.
 
-```
+```pycon
 >>> loud_greeting = "HELLO!"
 >>> loud_greeting.lower()
 'hello!'
@@ -16,20 +16,18 @@ Many, or most, objects in Python have methods that allow you to use them in diff
 
 ## Examining Objects
 
-
 When you encounter an object, how can you learn its methods and atributes so you can use them? There are two main ways. The first, and likely the most practical, is to read the documentation of the library you're using.
 
 However, you can also use the `dir()` function, which will tell you which methods and attributes are available in an object.
 
 Let's use the REPL for a moment—open it by typing `python` at the command line.
 
-```
+```pycon
 >>> s = 'Hello, world!'
 >>> dir(s)
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', 
-[...]
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__',
+...
 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
-
 ```
 
 The above output shows all the methods and attributes available to Python strings that can be accessed using the dot (`.`) syntax. When using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language.
@@ -37,6 +35,7 @@ The above output shows all the methods and attributes available to Python string
 ## Challenge
 
 1. You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the random library again and see what you get when you enter `dir(random)`.
+
 2. Try entering other objects based on Python types we've already learned to the `dir()` function. For example, you might try `dir([1, 2, 3])` to see what methods are available when using lists.
 
 [<<< Previous](10-motivate.md) | [Next >>>](12-resources.md)

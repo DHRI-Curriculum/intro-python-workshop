@@ -6,5 +6,6 @@ You certainly don't have to understand programming concepts deeply to get a lot 
 
 If you find yourself stressed out by working with code you don't understand, break it down into compoenents. Then write short throwaway programs, one to five lines, that explore the concepts or language features that you don't fully understand. When you grok the components, you'll be better prepared to tackle the larger whole.
 
-[Grok on Wikipedia](https://en.wikipedia.org/wiki/Grok)  
-[Grok on the jargon file](http://www.catb.org/jargon/html/G/grok.html)  
+[Grok on Wikipedia](https://en.wikipedia.org/wiki/Grok)
+
+[Grok on the jargon file](http://www.catb.org/jargon/html/G/grok.html)
