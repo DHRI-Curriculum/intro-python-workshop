@@ -1,4 +1,4 @@
-[<<< Previous](introspection.md) | [Back to beginning](../README.md)
+[<<< Previous](11-introspection.md) | [Back to beginning](../README.md)
 
 # Python resources
 
@@ -12,4 +12,4 @@
 
 [Hands-on Python Tutorial](https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/index.html) - A more exhaustive introductory course to Python by Dr. Andrew N. Harrington; includes video demo downloads and lots of practice activities. It's all free to use!
 
-[<<< Previous](introspection.md) | [Back to beginning](../README.md)
+[<<< Previous](11-introspection.md) | [Back to beginning](../README.md)

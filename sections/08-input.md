@@ -1,4 +1,4 @@
-[<<< Previous](conditionals.md) | [Next >>>](google.md)
+[<<< Previous](07-conditionals.md) | [Next >>>](09-google.md)
 
 # Input
 
@@ -82,4 +82,4 @@ Alternatively, mess around with `while`. Try using things other than `True` and 
 
 2\. (optional) Read a little about the weird word [grok](grok.md).
 
-[<<< Previous](conditionals.md) | [Next >>>](google.md)
+[<<< Previous](07-conditionals.md) | [Next >>>](09-google.md)

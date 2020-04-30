@@ -1,4 +1,4 @@
-[<<< Previous](google.md) |  [Next >>>>](introspection.md)
+[<<< Previous](09-google.md) |  [Next >>>>](11-introspection.md)
 
 # A Little Motivation
 
@@ -57,4 +57,4 @@ The best way to find a Python library in a particular area is to do a Google sea
 	
 In your research, you may also want to look at the libraries that come with Python. You can find a list of libraries in these libraries [here](https://docs.python.org/3/py-modindex.html).
 
-[<<< Previous](google.md) |  [Next >>>>](introspection.md)
+[<<< Previous](09-google.md) |  [Next >>>>](11-introspection.md)

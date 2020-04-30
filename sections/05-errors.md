@@ -1,4 +1,4 @@
-[<<< Previous](run.md) | [Next >>>](loops.md)
+[<<< Previous](04-run.md) | [Next >>>](06-loops.md)
 
 # Errors in Python
 
@@ -50,4 +50,4 @@ Debugging is a fancy word for fixing problems with a program. Here are some comm
 
 Try to create as many errors as you can in the next few minutes. After getting your first two syntax errors, try instead to get traceback errors. Some areas to try include mathematical impossibilities and using math operations on types that do not support them.
 
-[<<< Previous](run.md) | [Next >>>](loops.md)
+[<<< Previous](04-run.md) | [Next >>>](06-loops.md)

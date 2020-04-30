@@ -1,4 +1,4 @@
-[<<< Previous](types.md) | [Next >>>](run.md)
+[<<< Previous](02-types.md) | [Next >>>](04-run.md)
 
 # Variables
 
@@ -6,7 +6,7 @@ A variable is **a symbol that refers to an object**, such as a string, integer, 
 
 Try these commands in order:
 
-```
+```pycon
 >>> x = 5
 >>> x
 5
@@ -23,7 +23,7 @@ As you can see above, the `=` sign lets you assign symbols like `x` and `y` to d
 
 Variables can be longer words as well:
 
-```
+```pycon
 >>> breakfast = ['ham', 'eggs', 'toast']
 >>> breakfast
 ['ham', 'eggs', 'toast']
@@ -31,9 +31,9 @@ Variables can be longer words as well:
 <class 'list'>
 ```
 
-Variables can have letters, numbers, and underscores, **but should start with a letter**. 
+Variables can have letters, numbers, and underscores, **but should start with a letter**.
 
-If you are curious about learning more about naming conventions for variables, you can check out the PEP8 style guide's section on [Naming Conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions). PEP8 is the widely accepted guide for Python programmers everywhere. 
+If you are curious about learning more about naming conventions for variables, you can check out the PEP8 style guide's section on [Naming Conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions). PEP8 is the widely accepted guide for Python programmers everywhere.
 
 ## Challenge
 
@@ -41,4 +41,4 @@ So I just told you that variables shouldn't start with a number or an underscore
 
 Only one way to find out. Try giving weird names to variables and see if you can learn a bit about the rules.
 
-[<<< Previous](types.md) | [Next >>>](run.md)
+[<<< Previous](02-types.md) | [Next >>>](04-run.md)

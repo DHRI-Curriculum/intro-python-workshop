@@ -1,4 +1,4 @@
-[<<< Previous](errors.md) | [Next >>>](conditionals.md)
+[<<< Previous](05-errors.md) | [Next >>>](07-conditionals.md)
 
 # Lists and Loops
 
@@ -116,4 +116,4 @@ Which is easier to read, this for loop or the one used in the example?
 
 When variable names accurately reflect what they represent, and are therefore meaningful, we call them "semantic." Always try to create semantic variable names whenever possible.
 
-[<<< Previous](errors.md) | [Next >>>](conditionals.md)
+[<<< Previous](05-errors.md) | [Next >>>](07-conditionals.md)

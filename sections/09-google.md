@@ -1,4 +1,4 @@
-[<<< Previous](input.md) | [Next >>>](motivate.md)
+[<<< Previous](08-input.md) | [Next >>>](10-motivate.md)
 
 # Finding Answers with Google
 
@@ -78,4 +78,4 @@ There's no shame in googling for answers! Error messages are especially useful t
 
 Fine. Have a look at the [Python documentation on built-in functions](https://docs.python.org/3/library/functions.html). Don't say I didn't warn you.
 
-[<<< Previous](input.md) | [Next >>>](motivate.md)
+[<<< Previous](08-input.md) | [Next >>>](10-motivate.md)

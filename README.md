@@ -11,23 +11,23 @@ By the end of this workshop, participants will:
 - Engage with error output and use the internet and documentation to independently research language features.
 - Learn how to find and import code from external sources to solve more complex problems.
 
-[Get Started >>>](sections/repl.md)  
+[Get Started >>>](sections/01-repl.md)  
 [Glossary >>>](https://github.com/DHRI-Curriculum/glossary/blob/master/sections/python.md#python)
 
 -----
 
-[Interacting with Python](sections/repl.md)  
-[Types](sections/types.md)  
-[Variables](sections/variables.md)  
-[Running scripts](sections/run.md)  
-[Errors in Python](sections/errors.md)  
-[Lists and Loops](sections/loops.md)  
-[Conditionals](sections/conditionals.md)  
-[Input](sections/input.md)  
-[Using Google](sections/google.md)  
-[A little motivation](sections/motivate.md)  
-[Objects in Python](sections/introspection.md)  
-[Python resources](sections/resources.md)  
+[Interacting with Python](sections/01-repl.md)  
+[Types](sections/02-types.md)  
+[Variables](sections/03-variables.md)  
+[Running scripts](sections/04-run.md)  
+[Errors in Python](sections/05-errors.md)  
+[Lists and Loops](sections/06-loops.md)  
+[Conditionals](sections/07-conditionals.md)  
+[Input](sections/08-input.md)  
+[Using Google](sections/09-google.md)  
+[A little motivation](sections/10-motivate.md)  
+[Objects in Python](sections/11-introspection.md)  
+[Python resources](sections/12-resources.md)  
 
 -----
 

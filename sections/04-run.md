@@ -1,4 +1,4 @@
-[<<< Previous](variables.md) | [Next >>>](errors.md)
+[<<< Previous](03-variables.md) | [Next >>>](05-errors.md)
 
 # Running scripts
 
@@ -37,4 +37,4 @@ Congratulations! You've written your first script. That's kind of a big deal.
 
 Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files — they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far — the command line, Git, markdown, grep — are all designed to work well together, and the medium through which they all work is plain text.
 
-[<<< Previous](variables.md) | [Next >>>](errors.md)
+[<<< Previous](03-variables.md) | [Next >>>](05-errors.md)

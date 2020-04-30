@@ -1,4 +1,4 @@
-[<<< Previous](repl.md) | [Next >>>](variables.md)
+[<<< Previous](01-repl.md) | [Next >>>](03-variables.md)
 
 # Types
 
@@ -8,7 +8,7 @@ We've already seen one type in the last section: the integer. In this section, w
 
 Enter these lines as you see them below:
 
-```
+```pycon
 >>> type(1)
 <class 'int'>
 >>> type(1.0)
@@ -25,7 +25,7 @@ Each of these represents a different type:
 
 **Integer**: `1`
 
-Integers are whole numbers. 
+Integers are whole numbers.
 
 **Float**: `1.0`
 
@@ -55,4 +55,4 @@ Don't worry about trying to actively remember these types. We'll be working with
 
 These are all valid ways of thinking about functions. We'll be learning more about functions in later sections.
 
-[<<< Previous](repl.md) | [Next >>>](variables.md)
+[<<< Previous](01-repl.md) | [Next >>>](03-variables.md)

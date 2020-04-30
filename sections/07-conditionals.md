@@ -1,4 +1,4 @@
-[<<< Previous](loops.md) | [Next >>>](input.md)
+[<<< Previous](06-loops.md) | [Next >>>](08-input.md)
 
 # Conditionals
 
@@ -38,4 +38,4 @@ You can add as many `elif` statements as you need, meaning that conditionals in 
 
 Add two more elif statements to this program to make it better able to handle different kinds of weather.
 
-[<<< Previous](loops.md) | [Next >>>](input.md)
+[<<< Previous](06-loops.md) | [Next >>>](08-input.md)
