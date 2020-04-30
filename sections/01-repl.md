@@ -10,7 +10,7 @@ $ python
 
 at the prompt. You should see something like this
 
-```python
+```pycon
 Python 3.6.3 |Anaconda, Inc.| (default, Oct 13 2017, 12:02:49)
 [GCC 7.2.0] on Linux
 Type "help", "copyright", "credits" or "license" for more information.
@@ -19,7 +19,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Unlike the normal `$` terminal prompt, the Python prompt looks like this:
 
-```python
+```pycon
 >>>
 ```
 
@@ -29,7 +29,7 @@ Keep an eye on this, as a common early source of confusion is entering terminal 
 
 Let's try a little math at the Python prompt. In the example below, type the text that appears after the Python prompt (the `>>>`). The line below is the output that is returned. This will be a standard convention when giving examples using the Python prompt.
 
-```python
+```pycon
 >>> 2 + 3
 5
 >>> 14 - 10
