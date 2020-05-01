@@ -1,4 +1,4 @@
-[<<< Back](../10-motivate.md.md)
+[<<< Back](../10-motivate.md)
 
 # Solution
 

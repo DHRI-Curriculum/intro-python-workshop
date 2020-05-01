@@ -46,7 +46,7 @@ The `random.choice` function chooses a random item from a list and returns it. T
 
 1. The real point of this section is to learn `import`, which is where Python really starts to get interesting. Python comes with many libraries (importable collections of code), and you can install many more. Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "\<thing you're interested in> python library". You're almost certain to find some useful results.
 
-2. (optional) As with our weather app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. You can see a solution [here](solution/motivation.md).
+2. (optional) As with our weather app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. You can see a solution [here](solutions/motivation.md).
 
 # Challenge: library research
 
