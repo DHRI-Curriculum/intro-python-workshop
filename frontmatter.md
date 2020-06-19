@@ -35,7 +35,7 @@ In this workshop, you will learn the following skills:
 
 - Built by former Digital Fellow Patrick Smyth, [The NEH Impact Index](http://www.nehimpact.org/about) makes visible the distribution of funds by National Endowment for the Humanities across the United States. The website uses python to map projects, communities, and cultural institutions who have received NEH support. You can check out [the code on Github](https://github.com/smythp/NEH-impact). 
 
-- Python programmers build and maintain various "libraries," or collections of python code, that can be re-purposed toward custom projects. You might check out the [Scrapy](https://scrapy.org/) library for web scraping, the [NumPy](https://numpy.org/) library for numerical computing, or the [pandas](https://pandas.pydata.org/) library for data analysis and manipulation. 
+- Python programmers build and maintain various "libraries," or collections of python code, that can be re-purposed toward custom projects. You might check out the [Scrapy](https://scrapy.org/) library for web scraping, the [NumPy](https://numpy.org/) library for numerical computing, or the [pandas](https://pandas.pydata.org/) library for data analysis and manipulation. Check out the individual websites to help you think about the data that you want to work with. 
 
 ### Ethical Considerations
 
