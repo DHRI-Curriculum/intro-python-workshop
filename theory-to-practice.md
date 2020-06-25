@@ -20,4 +20,6 @@
 
 ## Discussion Questions
 
-- Content TBD
+- What kind of data do you use in your research, and how do you acquire that data?
+- What questions do you have about your data? What kind of manipulations would you want to perform on that data?
+- What are the limitations of your data? Does your data suffice to show the full picture of your topic? What does it fail to capture?

@@ -1,3 +1,12 @@
+<!-- 
+
+revision notes from filipa: 
+- replace the last challenge with an exercise of easy web scraping. 
+- they will download a ready script, and choose on of a few URLs to scrape (nytimes, reddit, etc)
+- we talk through the role of libraries, and we identify the functions/methods in the short script
+- this will give them hands-on practice achieving something tangible. 
+
+-->
 [<<< Previous](10-motivate.md) | [Next >>>](12-resources.md)
 
 # Objects in Python
