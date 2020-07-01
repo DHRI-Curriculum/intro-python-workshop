@@ -1,5 +1,3 @@
-[<<< Previous](05-errors.md) | [Next >>>](07-conditionals.md)
-
 # Lists and Loops
 
 ## Lists
@@ -34,7 +32,7 @@ The `len()` function returns the number of items in a list or the number of char
 
 Notice that, if you run the code above, you won't see the `flowers` list printed out. That's because that line has become a comment. If you put a `#` (hash or pound) at the beginning of a line, that line will be ignored.
 
-# List Indexing
+## List Indexing
 
 A useful property of a list is the list index. This allows you to pick out an item from within the list by a number starting from zero:
 
@@ -116,5 +114,3 @@ for x in y:
 Which is easier to read, this for loop or the one used in the example?
 
 When variable names accurately reflect what they represent, and are therefore meaningful, we call them "semantic." Always try to create semantic variable names whenever possible.
-
-[<<< Previous](05-errors.md) | [Next >>>](07-conditionals.md)

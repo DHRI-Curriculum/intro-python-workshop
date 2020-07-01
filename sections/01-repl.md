@@ -1,13 +1,3 @@
-<!-- 
-
-revision notes from rafa: 
-- be more clear about the space we are in: the REPL is a play pen, not where you will be coding things. 
-- emphasize that there are two ways of working with python. The first is a playground, the second is saving.  
-
--->
-
-[<<< Previous](../README.md) | [Next >>>](02-types.md)
-
 # Interacting with Python
 
 Let's begin by starting an "interactive session" session with Python. This means we will be using Python in the terminal, which is a special space that allows us to run little bits of Python, experimenting and exploring what it can do, without having to save it. Think of this interactive space as a playground. Later on, we will be working with Python in a more robust way, doing what we call saving and executing Python scripts.
@@ -71,5 +61,3 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 1. For a few minutes, practice moving in and out of Python's interactive mode (also known as the REPL). You can get out of Python by hitting `Control-d` (or `Control-z` if you're using Git Bash) or by typing `exit()`, and you can get back in by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash when you see the `$`.
 
 2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..."  If you were Guido van Rossum, the creator of Python, how would you define this operator? Look up the exponent operator in Python on Google and see how close you were.
-
-[<<< Previous](../README.md) | [Next >>>](02-types.md)

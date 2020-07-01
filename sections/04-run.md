@@ -1,12 +1,3 @@
-<!--
-
-revision notes from rafa: 
-More emphasis on the major shift from REPL to text editor, to reinforce the different spaces. 
-
--->
-
-[<<< Previous](03-variables.md) | [Next >>>](05-errors.md)
-
 # Running scripts
 
 So far, you've interacted with Python one line at a time in the REPL. This is what we call the Interactive Mode, which is like a playground for experimenting and exploring different Python expressions,  like `2 + 2` or `type("some stuff")`. The code that we write in the REPL is not saved after you exit, which means that this space is for running Python expressions and *not* for writing longer programs. 
@@ -55,5 +46,3 @@ Congratulations! You've written your first script. That's kind of a big deal.
 ## A Note on Text
 
 Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far—the command line, Git, markdown, grep—are all designed to work well together, and the medium through which they all work is plain text.
-
-[<<< Previous](03-variables.md) | [Next >>>](05-errors.md)

@@ -3,7 +3,7 @@ import urllib.request
 
 # source = urllib.request.urlopen('https://www.nytimes.com/2020/06/23/world/europe/coronavirus-EU-American-travel-ban.html?action=click&module=Top%20Stories&pgtype=Homepage').read()
 
-source = urllib.request.urlopen('https://www.nytimes.com').read()
+source = urllib.request.urlopen('http://opensquare.nyupress.org/books/9781479820375/read/').read()
 
 soup = bs.BeautifulSoup(source,'lxml')
 
@@ -18,6 +18,10 @@ soup = bs.BeautifulSoup(source,'lxml')
 # searching for nytimes headlines
 for heading in soup.find_all('h2'):
     print(heading.text)
+
+# searching for paragraphs
+for paragraph in soup.find_all('p'):
+    print(paragraph.text)
 
 # allow people to look at this, and to input their own links. 
 

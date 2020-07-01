@@ -1,5 +1,3 @@
-[<<< Previous](08-input.md) | [Next >>>](10-motivate.md)
-
 # Finding Answers with Google
 
 Our weather app is working pretty well, but you may have noticed that it's case sensitive:
@@ -77,5 +75,3 @@ There's no shame in googling for answers! Error messages are especially useful t
 2. (optional) OK, I told you not to look at the Python documentation. But doesn't that make you really want to go look at the Python documentation? How bad could this "documentation" really be? What terrible secrets might it hold?
 
     Fine. Have a look at the [Python documentation on built-in functions](https://docs.python.org/3/library/functions.html). Don't say I didn't warn you.
-
-[<<< Previous](08-input.md) | [Next >>>](10-motivate.md)

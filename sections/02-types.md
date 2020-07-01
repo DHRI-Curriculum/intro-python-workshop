@@ -1,5 +1,3 @@
-[<<< Previous](01-repl.md) | [Next >>>](03-variables.md)
-
 # Types
 
 **Types are classifications that let the computer know how a programmer intends to use a piece of data**. You can just think of them as, well, types of data.
@@ -54,5 +52,3 @@ Don't worry about trying to actively remember these types. We'll be working with
 3. A way of taking an input, transforming that input, and returning an output. The input goes in the parentheses `()`.
 
 These are all valid ways of thinking about functions. We'll be learning more about functions in later sections.
-
-[<<< Previous](01-repl.md) | [Next >>>](03-variables.md)
