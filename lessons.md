@@ -31,12 +31,7 @@ These carrots are how you know that you have entered an interactive session with
 
 Let's try a little math at the Python prompt. In the example below, type the text that appears after the Python prompt (the `>>>`). The line below is the output that is returned. This will be a standard convention when giving examples using the Python prompt.
 
-<!--
 
-Rafa: add print to the expressions; can point out that it's not necessary in the REPL, but it is with scripts.
-Filipa: isn't this too much information, though? We don't want to confuse them at this point by introductin functions. 
-
--->
 ```pycon
 >>> 2 + 3
 5
@@ -52,19 +47,23 @@ Filipa: isn't this too much information, though? We don't want to confuse them a
 
 The first four operations above are addition, subtraction, multiplication, and division, respectively. The last operation is modulo, or mod, which returns the remainder after division.
 
-Note the way you interact with Python at the prompt. After entering an expression such as `2 + 3`, Python "evaluates" it to a simpler form, `5`, and then prints out the answer for you. **This process is called the Read Eval Print Loop, or REPL**. Reading takes commands from you, the input is evaluated or run, the result is printed out, and the prompt is shown again to wait for more input. The normal terminal (the one with the `$`) is another example of a REPL. The REPL is the same thing as the Interactive mode, what we described earlier as the playground for running Python. REPL and Interactive mode describe this specific context for using Python, by running it within the terminal.
+Note the way you interact with Python at the prompt. After entering an expression such as `2 + 3`, Python "evaluates" it to a simpler form, `5`, and then prints out the answer for you. **This process is called the Read Eval Print Loop, or REPL**. Reading takes commands from you, the input is evaluated or run, the result is printed out, and the prompt is shown again to wait for more input. The normal terminal (the one with the `$`) is another example of a REPL. 
 
-The REPL is useful for quick tests and, later, can be used for exploring and debugging your programs interactively.
+The REPL is useful for quick tests and, later, can be used for exploring and debugging your programs interactively. You might consider it a kind of playground for testing and experimenting with python expressions. 
 
-## Challenges
+## Challenge
 
 1. For a few minutes, practice moving in and out of Python's interactive mode (also known as the REPL). You can get out of Python by hitting `Control-d` (or `Control-z` if you're using Git Bash) or by typing `exit()`, and you can get back in by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash when you see the `$`.
 
-2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..."  If you were Guido van Rossum, the creator of Python, how would you define this operator? Look up the exponent operator in Python on Google and see how close you were.
+2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..."  If you were Guido van Rossum, the creator of Python, how would you define this operator?
+
+## Solution
+
+2. The exponent operator is two asteriks, or `**`. For example, the number `3` to the power of `2` would be expressed as `3**2`. 
 
 # Types
 
-**Types are classifications that let the computer know how a programmer intends to use a piece of data**. You can just think of them as, well, types of data.
+Types are classifications that let the computer know how a programmer intends to use a piece of data. You can just think of them as, well, types of data.
 
 We've already seen one type in the last section: the integer. In this section, we'll learn four more: the floating point number, the string, the boolean, and the list.
 
@@ -103,7 +102,7 @@ Boolean is a fancy term for values representing "true" and "false," or "truthine
 
 **List**: `[1, 2, 3]`
 
-A list is an ordered collection of values. You can put any type in a list: `["rose", "daisy", "buttercup"]` is also a valid list.
+A list is an ordered collection of values. You can put any type in a list: `["hello", "goodbye", "see ya later"]` is also a valid list.
 
 Don't worry about trying to actively remember these types. We'll be working with each in turn in the following sections.
 
@@ -118,6 +117,8 @@ Don't worry about trying to actively remember these types. We'll be working with
 These are all valid ways of thinking about functions. We'll be learning more about functions in later sections.
 
 # Variables
+
+<!-- changed the content of the list example to "books" --->
 
 A variable is **a symbol that refers to an object**, such as a string, integer, or list. If you're not already at the Python prompt, open your terminal and type `python` at the `$`. You're in the right place when you see `>>>`.
 
@@ -141,10 +142,12 @@ As you can see above, the `=` sign lets you assign symbols like `x` and `y` to d
 Variables can be longer words as well:
 
 ```pycon
->>> breakfast = ['ham', 'eggs', 'toast']
->>> breakfast
-['ham', 'eggs', 'toast']
->>> type(breakfast)
+>>> books = ['Gender Trouble', 'Cruising Utopia','Living a
+>Feminist Life']
+>>> books
+['Gender Trouble', 'Cruising Utopia', 'Living a Feminist
+>Life']
+>>> type(books)
 <class 'list'>
 ```
 
@@ -154,9 +157,19 @@ If you are curious about learning more about naming conventions for variables, y
 
 ## Challenge
 
-So I just told you that variables shouldn't start with a number or an underscore. What does that even mean? Will your computer explode if you write `3_flower = "buttercup"`?
+So I just told you that variables shouldn't start with a number or an underscore. What does that even mean? Will your computer explode if you write `1_book = "Gender Trouble"`?
 
 Only one way to find out. Try giving weird names to variables and see if you can learn a bit about the rules.
+
+## Solution
+
+There are a few rules regarding the way that you write the variable statement. This is because Python reads everything left to right, and needs things to be in a certain order. 
+
+First, you cannot use any numbers or special characters to start a variable name. So `1_book`, `1book`, or any variable that contains special characters `@`, `#`, `$`, `$`, etc, wouldn't be acceptable in Python. You must start the variable with a letter and avoid using special characters.
+
+You can incorporate numbers after you've started with a letter. So `book_1` or `b1` is acceptable, though you cannot use special characters at any point in the variable name. 
+
+Second, you might also notice that variable syntax requires you to write the variable name first, followed by an equal sign `=`, and then the value, which can be any data type. You cannot start the variable statement with the data value, because python always recognizes the first thing written as the thing to be assigned. The thing that comes after the `=` is the data that becomes attached to the preceding variable. 
 
 # Running scripts
 
@@ -191,11 +204,15 @@ Hello world!
 
 You should see the text `Hello world!` appear as output in the terminal window. 
 
-There are a couple of important things to note here. First, it bears repeating that you are moving between two different spaces, the text editor and the terminal. You wrote your Python script in the text editor, and used the terminal to run the script. Second, within in the text editor, you included the `print()` function  because, unlike in the REPL, things aren't automatically printed out when writing scripts. When you're in the text editor, you always need to include the `print()` function so that your output will appear in the terminal. 
-
 Congratulations! You've written your first script. That's kind of a big deal.
 
-## Challenges
+There are a couple of important things to note here. First, it bears repeating that you are moving between two different spaces, the text editor and the terminal. You wrote your Python script in the text editor, and used the terminal to run the script. Second, within in the text editor, you included the `print()` function  because, unlike in the REPL, things aren't automatically printed out when writing scripts. When you're in the text editor, you always need to include the `print()` function so that your output will appear in the terminal. 
+
+## A Note on Text
+
+Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far—the command line, Git, markdown, grep—are all designed to work well together, and the medium through which they all work is plain text.
+
+## Challenge
 
 1. Rewrite your program so that you assign the message to a variable, then print the variable. This will make your program two lines instead of one. There's a fancy programmer word for rewriting your code without changing it's behavior—"refactoring."
 
@@ -203,9 +220,21 @@ Congratulations! You've written your first script. That's kind of a big deal.
 
 3. (even more optional) If you're on Windows and have a minute, try pressing the Windows button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than git bash.
 
-## A Note on Text
+## Solution
 
-Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far—the command line, Git, markdown, grep—are all designed to work well together, and the medium through which they all work is plain text.
+1. You should type the following into `hello.py`:
+
+```python
+greeting = "Hello World!"
+print(greeting)
+```
+
+Then, making sure you're in the right directory, run `python hello.py` in the terminal `$`. You should see the following output:
+
+```console
+$ python hello.py
+Hello world!
+```
 
 # Errors in Python
 
@@ -258,21 +287,72 @@ Debugging is a fancy word for fixing problems with a program. Here are some comm
 
 Try to create as many errors as you can in the next few minutes. After getting your first two syntax errors, try instead to get traceback errors. Some areas to try include mathematical impossibilities and using math operations on types that do not support them.
 
+## Solution
+
+Some examples of **syntax errors** include... 
+
+Starting the variable name with a special character.
+```pycon
+>>> %greeting = "Hello World"
+  File "<stdin>", line 1
+    %greeting = "Hello World"
+    ^
+SyntaxError: invalid syntax
+```
+
+Starting a variable by writing the data values before the variable.
+```pycon
+>>> "hey there!" = greeting
+  File "<stdin>", line 1
+SyntaxError: can't assign to literal
+```
+
+Including spaces in a variable. 
+```pycon
+>>> pleasant greeting = "Hello!"
+  File "<stdin>", line 1
+    pleasant greeting = "Hello!"
+                    ^
+SyntaxError: invalid syntax
+```
+
+Some examples of **traceback errors** include... 
+
+Concatenating data types, like strings and integers. 
+```pycon
+>>> greeting = "hello" + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+```
+
+Using Booleans (`True` or `False`) without capitalizing them.
+```pycon
+>>> greeting = false
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'false' is not defined
+>>> greeting = False
+>>> greeting
+False
+```
+
 # Lists and Loops
 
 ## Lists
+<!--- changing variables and strings to be relevant to participant research --->
 
 Remember lists? They look like this:
 
 ```python
-flowers = ['rose', 'violet', 'buttercup']
+books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
 ```
 
 For now, let's just create a list and print it out. In a text editor, our script will look like this:
 
 ```python
-flowers = ['rose', 'violet', 'buttercup']
-print(flowers)
+books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
+print(books)
 ```
 
 Save this to a new file called `loop.py` and run it with `python loop.py`. You should see the list printed out in the terminal.
@@ -280,25 +360,25 @@ Save this to a new file called `loop.py` and run it with `python loop.py`. You s
 So far, we've only learned one function: `type()`. Let's try out another:
 
 ```python
-flowers = ['rose', 'violet', 'buttercup']
-# print(flowers)
+books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
+# print(books)
 
-list_length = len(flowers)
+list_length = len(book)
 
 print(list_length)
 ```
 
 The `len()` function returns the number of items in a list or the number of characters in a string.
 
-Notice that, if you run the code above, you won't see the `flowers` list printed out. That's because that line has become a comment. If you put a `#` (hash or pound) at the beginning of a line, that line will be ignored.
+Notice that, if you run the code above, you won't see the `books` list printed out. That's because that line has become a comment. If you put a `#` (hash or pound) at the beginning of a line, that line will be ignored.
 
 ## List Indexing
 
 A useful property of a list is the list index. This allows you to pick out an item from within the list by a number starting from zero:
 
 ```python
-print(flowers[0]) # rose
-print(flowers[1]) # violet
+print(books[0]) # Gender Trouble
+print(books[1]) # Cruising Utopia
 ```
 
 Note that the first item in the list is item [0]. The second item is item [1]. That's because counting in Python, and in almost all programming languages, starts from 0.
@@ -306,19 +386,48 @@ Note that the first item in the list is item [0]. The second item is item [1]. T
 You can print out the last item in a list using negative numbers:
 
 ```python
-print(flowers[-1]) # buttercup
+print(books[-1]) # Living a Feminist Life
 ```
+
+<!-- Adding some practice with slicing -->
+
+### Slicing Lists
+
+There are many things you can do with list indexing. Let's play around with slicing. Slicing consists of taking a section of a list, using the list index to pick out a range of list items. For example, you could take out the first *two* items of a list with a slice that begins with `0` and ends with `2`. 
+
+The slice syntax consists of square brakets, start point and end point, and a colon to indicate the gap in between. This should print out the first two items of your list. 
+
+```python
+print(books[0:2])
+```
+
+Note a couple of things. First, the start point is *inclusive*, meaning that Python will include the `[0]` item in your range, and the end point is *exclusive*, so Python won't print the `[2]` item. Instead, it will print everything up until that `[2]` item. 
+
+For ultimate brevity, you can also write this expression as:
+
+```python
+print(books[:2])
+```
+
+The empty value before the colon allows Python to assume the range starts at the first list item, at `[0]`. You can also end the slice with `:`, if you want the list range to include all subseuquent items until the end of the list. The example below will print everything from the second item to the end of the list. 
+
+```python
+print(books[1:])
+```
+
+With a list that contains three items total, list slicing might not seem very impressive right now. However, this will become a powerful tool once we get to Text Analysis and start to encounter lists that contain hundreds (or thousands!) of items.
+
 
 ## Loops
 
 What if we want to print out each item in the list separately? For that, we'll need something called a loop:
 
 ```python
-flowers = ['rose', 'violet', 'buttercup']
-# print(flowers)
+books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
+# print(books)
 
-for flower in flowers:
-    print("My favorite flower is the " + flower)
+for book in books:
+    print("My favorite book is " + book)
 ```
 
 What's happening here? This kind of loop is called a "for" loop, and tells Python: "for each item in the list, do something." Let's break it down:
@@ -330,42 +439,16 @@ for <variable name> in <list name>:
 
 Indented code like this is known as a "code block." Python will run the `<do something>` code in the code block once for each item in the list. You can also refer to `<variable name>` in the `<do something>` block.
 
-You can also perform more complicated operations. Let's tackle one in a challenge.
-
-## Challenge
-
-Here's a list of numbers:
-
-```python
-prime_numbers = [2, 3, 5, 7, 11]
-```
-
-Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is [here](solutions/loop.md), but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
-
-## Advanced Challenge
-
-First, ignore this challenge because it's too hard. Next, look up a new concept—"string formatting"—on Google and use it to write a loop that gives the following output:
-
-```console
-The square of 2 is 4.
-The square of 3 is 9.
-The square of 5 is 25.
-The square of 7 is 49.
-The square of 11 is 121.
-```
-
-The solution to this challenge is [here](solutions/loop_adv.md). Take a look after you've tried to solve it yourself!
+You can also perform more complicated operations. Let's tackle one in a challenge. But first, a note on naming variables.
 
 ## A Note on Variable Names
 
-In this section, we've discussed flowers in the context of a list. But would a variable by any other name smell as sweet?
+In this section, we've discussed books in the context of a list. Why do we use the variable name `books` in this section for our list of book names? Why not just use the variable name `x`, or perhaps `f`?
 
-Why do we use the variable name `flowers` in this section for our list of flower names? Why not just use the variable name `x`, or perhaps `f`?
-
-While the computer might not care if our list of flowers is called `x`, giving variables meaningful names makes a program considerably easier to read than it would be otherwise. Consider this for loop:
+While the computer might not care if our list of books is called `x`, giving variables meaningful names makes a program considerably easier to read than it would be otherwise. Consider this for loop:
 
 ```python
-y = ['rose', 'violet', 'buttercup']
+y = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
 
 for x in y:
     print(x)
@@ -375,149 +458,250 @@ Which is easier to read, this for loop or the one used in the example?
 
 When variable names accurately reflect what they represent, and are therefore meaningful, we call them "semantic." Always try to create semantic variable names whenever possible.
 
-# Conditionals
+## Challenge
 
-Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs based on the weather:
+1. Here's a list of numbers:
 
 ```python
-weather = "sunny"
-
-if weather == "sunny":
-    print("Bring your shades")
-else:
-    print("I don't know what you should bring! I'm just a little program...")
+prime_numbers = [2, 3, 5, 7, 11]
 ```
 
-In our first line, we set a variable `weather`  to the string "sunny," representing what the weather is like outside. The `if` statement checks whether the variable weather is set to "sunny." If it is, the code in the block beneath is executed, so the text "Bring your shades" will be printed.
+Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is below, but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
 
-The `else` statement handles any inputs that aren't "sunny"—the program merely prints out that it doesn't know what you should bring. Try this script out both with the variable set to "sunny" and the variable set to some other value. 
+2. First, ignore this challenge because it's too hard. Next, look up a new concept—"f-string" (a formatting technique for strings)—on Google and use it to write a loop that gives the following output:
 
-What if we want our program to handle other kinds of weather, giving different messages for each one? Other cases after the first `if` statement are handled with `elif`:
+```console
+The square of 2 is 4.
+The square of 3 is 9.
+The square of 5 is 25.
+The square of 7 is 49.
+The square of 11 is 121.
+```
+Note: the "f-string" is a new string formatting method for Python 3. You can [read more about this new string formatting method](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python).
+
+## Solution
+
+1. 
+```python
+prime_numbers = [2, 3, 5, 7, 11]
+
+for num in prime_numbers:
+    print(num * num)
+```
+
+2. 
+```python
+prime_numbers= [2,3,5,7,11]
+for num in prime_numbers:
+    print(f"The square of {num} is {num * num}")
+```
+
+# Conditionals
+
+Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs based on the book titles:
 
 ```python
-weather = "sunny"
+random_book = "The Undercommons"
 
-if weather == "sunny":
-    print("Bring your shades")
-elif weather == "rainy":
-    print("Bring your umbrella")
-elif weather == "snowy":
-    print("Bring your wooly muffler")
+if random_book == "The Undercommons":
+    print("This is the correct book")
 else:
-    print("I don't know what you should bring! I'm just a little program...")
+    print("I don't know which book it is! I'm just a little program...")
+```
+
+In our first line, we set a variable `random_book` to the string "The Undercommons," representing a random book on our bookshelf. The `if` statement checks whether the random book is set to the title "The Undercommons." If it is, the code in the block beneath is executed, so the text "This is the corrent book will be printed.
+
+The `else` statement handles any inputs that aren't "The Undercommons"—the program merely prints out that it doesn't know what you should bring. Try this script out both with the variable set to "The Undercommons" and the variable set to some other value. 
+
+What if we want our program to handle other books, giving different messages for each one? Other cases after the first `if` statement are handled with `elif`:
+
+```python
+random_book = "The Undercommons"
+
+if random_book == "The Undercommons":
+    print("This is the correct book, well done!")
+elif random_book == "Gramophone, Film, Typewriter":
+    print("This is not the correct book. Please attempt with another title.")
+elif random_book == "Radiant Textuality":
+    print("Welp. Try again.")
+else:
+    print("I don't know which book you're talking about! I'm just a little program...")
 ```
 
 You can add as many `elif` statements as you need, meaning that conditionals in Python have one `if` statement, any number of `elif` statements, and one `else` statement that catches any input not covered by `if` or `elif`. Over the next sections, we'll work on improving this little application, making it able to handle user input directly.
 
 ## Challenge
 
-Add two more `elif` statements to this program to make it better able to handle different kinds of weather.
+Add two more `elif` statements to this program to make it better able to handle different potential books.
 
-[<<< Previous](06-loops.md) | [Next >>>](08-input.md)
+## Solution
+
+```python
+random_book = "The Undercommons"
+
+if random_book == "The Undercommons":
+    print("This is the correct book, well done!")
+elif random_book == "Gramophone, Film, Typewriter":
+    print("This is not the correct book. Please attempt with another title.")
+elif random_book == "Radiant Textuality":
+    print("Welp. Try again.")
+elif random_book == "The New Jim Code":
+    print("Bzzzzzt! Wrong Answer!)
+elif random_book == "Algorithmic Criticism":
+    print("That's just wrong.")
+else:
+    print("I don't know which book you're talking about! I'm just a little program...")
+```
 
 # Input
+<!-- 
+
+changing the input to "what do you want to do with your books today?" 
+
+Getting rid of # ask repeatedly (while and break) and adding new functions to work with lists: sort(), count(), append(), pop()
+
+-->
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
 
-Python allows you to take input directly from the user using the `input` function. Let's use it to improve our weather application by asking for the weather before displaying the output.
+Python allows you to take input directly from the user using the `input` function. Let's use it to improve our book application by asking for the book before displaying the output.
 
 ```python
-weather = input("What is the weather like today? ")
+random_book = input("Which book do you want to read today? ")
 
-if weather == "sunny":
-    print("Bring your shades")
-elif weather == "rainy":
-    print("Bring your umbrella")
-elif weather == "snowy":
-    print("Bring your wooly muffler")
+if random_book == "The Undercommons":
+    print("This is the correct book, well done!")
+elif random_book == "Gramophone, Film, Typewriter":
+    print("This is not the correct book. Please attempt with another name.")
+elif random_book == "Radiant Textuality":
+    print("Welp. Wrong book. Try again.")
 else:
-    print("I don't know what you should bring! I'm just a little program...")
+    print("I don't know which book you're talking about! I'm just a little program...")
 ```
 
-When you run this program, Python should ask you for some input with the prompt `What is the weather like today?` (The space before the second `"` makes the prompt look more tidy in the console.) It will then return some advice based on the input. Try running it now.
+When you run this program, Python should ask you for some input with the prompt `"Which book do you want to read today? "` (The space before the second `"` makes the prompt look more tidy in the console.) It will then return some advice based on the input. Try running it now.
 
-## Asking repeatedly
+## Doing Things to Lists
 
-What if we want Python to keep asking for input instead of exiting after the first question is answered? For that, we can use something called a while loop.
+Okay. Let's make our little book application a little more robust. We are going to create a list of books (remember lists?) that we can then manipulate in all sorts of ways.
 
-Remember our for loop? Instead of iterating through a list like the for loop, our while loop will continue to execute as long as a certain condition is true. Here's a very simple while loop that will run forever until you quit it manually.
+First, create a list with at least three books that are important to your research right now. Shorten the titles if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brakets with quotations and commas separating the list items.
 
-```python
-while True:
-    print("Oh no! I'm stuck...")
+```pycon
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 ```
 
-In the terminal, you can escape from this endless loop by pressing `Control-c` on your keyboard.
+Next, let's sort our `library` in alphabetical order. There's a handy method called `sort()` for doing just this kind of thing. What's a *method*, you might ask? Well, *methods* are very similar to *functions*, and you'll remember that functions are ways of doing things, like `print()` and `type()`. Methods are also ways of doing things, but these things are attached to what we call *objects* in Python. Objects are part of object-oriented programming, and that's definitely not necessary to learn right now. Suffice it to say that methods are just like functions, that is, they are ways of doing things to your data.
 
-Let's apply the while loop to our weather app:
+To sort the list, use the `sort()` method on your list. It should look like this:
 
-```python
-while True:
-    weather = input("What is the weather like today? ")
+```pycon
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+library.sort()
+print(library)
+```
+What happened here? Let's take it line by line. First, we created a list `library` with three items attached to it. Then, we applied the `sort()` method to the library list. Finally, we printed the `library`, which is now sorted in alphabetical order.
 
-    if weather == "sunny":
-        print("Bring your shades")
-    elif weather == "rainy":
-        print("Bring your umbrella")
-    elif weather == "snowy":
-        print("Bring your wooly muffler")
-    else:
-        print("I don't know what you should bring! I'm just a little program...")
+You'll see that we have a couple of new things happening with symbols. First, the period (`.`) which we call an *operator* in Python. The period operator is another part of object-oriented programming, and it basically means that we are applying a task to whatever precedes the period. In this case, we are applying the `sort()` method to our `library` list. It's kind of like attaching a function to our `library`. Second, we have the parenthesis `()` after `sort`. When you get more comfortable with programming, you'll see that you can use the parentheses to add what we call *arguments* that allows us to do more complex things to data. Let's see how an argument works with the `append()` method.
+
+What if we want to add items to the list? We can use the `append()` method for that. Try:
+
+```pycon
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+library.append("La Frontera")
+print(library)
 ```
 
-Notice that we had to shift everything over one tab to fit it in the `while` block. Now our program will ask us for input again and again, and give us different answers each time.
+Here, we added `"La Frontera"` as an argument to the `append()` method, but putting it between the parenthesis. It basically means that we will be appending this specific title to the library list. 
 
-Let's add one more feature: an `elif` statement that will break us out of the loop and end the program:
+When you print `library`, you should see your new book appear at the end of the list. Pretty cool, right? Go ahead and add a couple more books to your list.
 
-```python
-while True:
-    weather = input("What is the weather like today? ")
+What if you wanted to take out some of the books? We can use `pop()` to remove the last item, or "pop" it off, from our list. 
 
-    if weather == "sunny":
-        print("Bring your shades")
-    elif weather == "quit":
-        break
-    elif weather == "rainy":
-        print("Bring your umbrella")
-    elif weather == "snowy":
-        print("Bring your wooly muffler")
-    else:
-        print("I don't know what you should bring! I'm just a little program...")
+```pycon
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls", "La Frontera", "Dawn"]
+library.pop()
+print(library)
 ```
 
-The `break` command ends the current loop early, ending the program when "quit" is given as input.
+The last item that you added to your list should be missing from the `library` when you print the list.
 
 ## Challenge
 
-How much of the code above do you understand? Even if you do kind of understand it, do you *really* understand it?
+Remember the `input()` function from the beginning of this lesson? This challenge uses that function to create a little library app. You will play around with the input button, asking the user what kinds of things they want to do with their library, and writing some code that does those things and prints out the results.
 
-Open up your REPL (type `python` at the `$` prompt). Play around with `input()` a bit until you understand it's behavior really well. Write a two-line program in the REPL or in a script that takes some input and echoes it back to the user.
+First, create a new file called `library.py`. Save it to your current working folder.
 
-Alternatively, mess around with `while`. Try using things other than `True` and see if the code in the loop runs. If you can, write a while loop that prints out the numbers from 1 to 10 and stops.
+Second, create a list of `library` books, with at least three books (you can use the same ones as before). 
+
+```python
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+```
+
+Then, add an input statement that will save the user's response to a variable, like `response`.
+
+```python
+response = input("What do you want to do with your books today? ")
+```
+
+Now, create a conditional statement that matches the user's response to series of options for doing things to the `library` list. You can include `sort()`, `append()`, and `pop()`. I'll do the first one, `sort()`, for you:
+
+```python
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+response = input("What do you want to do with your books today? ")
+if response == "sort":
+    library.sort()
+    print(library)
+else: 
+    print("I don't know what you want me to do!")
+```
+
+See how the order of statements build on each other toward the final product? First, we create a library of books. Then, we set the user's response about what to do with those books. Then, we create a conditional statement that matches the response to specific tasks. The first condition checks to see if the user wants to "sort" the books, then sorts them, then prints the final result.
+
+After adding a few more conditions, test out your code! You should have a little library app that sorts, adds, and removes books from your list.
+
+## Solution
+
+```python
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+response = input("What do you want to do with your books today? ")
+if response == "sort books":
+    library.sort()
+    print(library)
+elif response == "add a book":
+    library.append("La Frontera")
+    print(library)
+elif response == "remove a book":
+    library.pop()
+    print(library)
+else: 
+    print("I don't know what you want me to do!")
+```
 
 # Finding Answers with Google
 
-Our weather app is working pretty well, but you may have noticed that it's case sensitive:
+Our library app is working pretty well, but you may have noticed that it's case sensitive:
 
 ```console
-What is the weather like today? snowy
-Bring your wooly muffler
-What is the weather like today? SNOWY
-I don't know what you should bring! I'm just a little program...
+What do you want to do with your books today? 
+Sort
+I don't know what you want me to do!
 ```
 
 How could we fix our program to handle cases like this? We could add a bunch of new `elif` statements, like this:
 
 ```python
 ...
-elif weather == "snowy":
-    print("Bring your wooly muffler")
-elif weather == "SNOWY":
-    print("Bring your wooly muffler")
+elif response == "Sort books":
+    library.sort()
+    print(library)
+elif response == "SORT BOOKS":
+    library.sort()
+    print(library)
 ...
 ```
 
-This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `Snowy`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
+This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `Sort Books`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
 
 ## Googling for answers
 
@@ -538,40 +722,78 @@ On [this Stack Overflow page](https://stackoverflow.com/questions/6797984/how-do
 According to this answer, we can make a string lowercase by adding `.lower()` to the end of it, like this:
 
 ```pycon
->>> "SNOWY".lower()
-'snowy'
+>>> "SORT BOOKS".lower()
+'sort books'
 ```
 
 OK, that seems to work, even if we don't really know what's going on with that dot. Let's incorporate this transformation into our weather app:
 
 ```python
-while True:
-    weather = input("What is the weather like today? ")
-    weather = weather.lower()
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+response = input("What do you want to do with your books today? ")
+response = response.lower()
 
-    if weather == "sunny":
-        print("Bring your shades")
-    elif weather == "quit":
-        break
-    elif weather == "rainy":
-        print("Bring your umbrella")
-    elif weather == "snowy":
-        print("Bring your wooly muffler")
-    else:
-        print("I don't know what you should bring! I'm just a little program...")
+if response == "sort books":
+    library.sort()
+    print(library)
+elif response == "add a book":
+    library.append("La Frontera")
+    print(library)
+elif response == "remove a book":
+    library.pop()
+    print(library)
+else: 
+    print("I don't know what you want me to do!")
+
 ```
 
-This new script should handle any combination of upper or lowercase characters. The new second line sets the weather variable to a new value, `weather.lower()`, which is a lowercase version of the original input.
+This new script should handle any combination of upper or lowercase characters. The new second line sets the response variable to a new value, `response.lower()`, which is a lowercase version of the original input.
 
 There's no shame in googling for answers! Error messages are especially useful to google when you run into them. Keep an eye out for Stack Overflow answers, as they tend to have useful examples. The [official Python documentation](https://docs.python.org/3/) will also frequently come up, but I would recommend avoiding it as a resource until you have more programming experience. It's a great resource, but the way information is presented can be confusing until you get the hang of reading documentation.
 
 ## Challenge
 
-1. Is there something you would like to do with Python that we haven't covered yet? Do you find some language feature confusing? Take a minute now to use Google to ask a question about Python. If you can't think of something to google, look up how to append items to lists.
+1. We are going to use `while` loops to get Python to repeat loops over and over again. This involves adding a `while` statement to your libary app. The code should look like this, and it goes right after the `library` list and before your `input` statement.
+
+```python
+while True:
+```
+
+Make sure that everything under `while True:` is indented (this is called a code block).
+
+Once you get it to work, you can add more `elif` statements to include more and more books on the list. Then, run the program, adding books, sorting them and removing them. 
 
 2. (optional) OK, I told you not to look at the Python documentation. But doesn't that make you really want to go look at the Python documentation? How bad could this "documentation" really be? What terrible secrets might it hold?
 
     Fine. Have a look at the [Python documentation on built-in functions](https://docs.python.org/3/library/functions.html). Don't say I didn't warn you.
+
+## Solution
+
+```python
+library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+while True:
+    response = input("What do you want to do with your books today? ")
+    if response == "sort books":
+        library.sort()
+        print(library)
+    elif response == "add a book":
+        library.append("La Frontera")
+        print(library)
+    elif response == "add another":
+        library.append("Dawn")
+        print(library)
+    elif response == "more books":
+        library.append("Frankenstein")
+        print(library)
+    elif response == "again":
+        library.append("Nightwood")
+        print(library)
+    elif response == "remove a book":
+        library.pop()
+        print(library)
+    else: 
+        print("I don't know what you want me to do!")
+```
 
 # A Little Motivation
 
