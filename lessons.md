@@ -432,7 +432,7 @@ for book in books:
 
 What's happening here? This kind of loop is called a "for" loop, and tells Python: "for each item in the list, do something." Let's break it down:
 
-```
+```console
 for <variable name> in <list name>:
 	<do something>
 ```
@@ -558,7 +558,7 @@ else:
 
 changing the input to "what do you want to do with your books today?" 
 
-Getting rid of # ask repeatedly (while and break) and adding new functions to work with lists: sort(), count(), append(), pop()
+Moving ask repeatedly (while and break) to challenge and adding methods to work with lists: sort(), count(), append(), pop()
 
 -->
 
@@ -759,9 +759,9 @@ There's no shame in googling for answers! Error messages are especially useful t
 while True:
 ```
 
-Make sure that everything under `while True:` is indented (this is called a code block).
+Make sure that everything under `while True:` is indented (this creates a "code block," or a group of lines that will be executed together).
 
-Once you get it to work, you can add more `elif` statements to include more and more books on the list. Then, run the program, adding books, sorting them and removing them. 
+Once you get it to work, you can add more `elif` statements to include more books on the list. Then, run the program, adding books, sorting them and removing them. 
 
 2. (optional) OK, I told you not to look at the Python documentation. But doesn't that make you really want to go look at the Python documentation? How bad could this "documentation" really be? What terrible secrets might it hold?
 
@@ -769,10 +769,13 @@ Once you get it to work, you can add more `elif` statements to include more and 
 
 ## Solution
 
+1. 
+
 ```python
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 while True:
     response = input("What do you want to do with your books today? ")
+    response = response.lower()
     if response == "sort books":
         library.sort()
         print(library)
@@ -800,7 +803,7 @@ while True:
 Early on, we learned a bit about lists, which look like this:
 
 ```python
-['rose', 'violet', 'buttercup']
+["Gender Trouble", "Cruising Utopia", "Living a Feminist Life"]
 ```
 
 We're going to create a small application that will print a random motivational saying every time a user presses `Enter`. Our first step will be to create a list of positive sayings:
@@ -839,15 +842,26 @@ print(random.choice(motivational_phrases))
 
 The `random.choice` function chooses a random item from a list and returns it. The `.` syntax indicates that the function is coming from the `random` library.
 
-1. The real point of this section is to learn `import`, which is where Python really starts to get interesting. Python comes with many libraries (importable collections of code), and you can install many more. Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "\<thing you're interested in> python library". You're almost certain to find some useful results.
 
-2. (optional) As with our weather app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. You can see a solution [here](solutions/motivation.md).
+<!-- 
 
-## Challenge: library research
+revision notes from filipa: 
+- move these challenges to be part of the lesson proper.
+- replace them with an exercise of easy web scraping. 
+- they will download a ready script, and choose on of a few URLs to scrape (nytimes, reddit, etc)
+- we talk through the role of libraries, and we identify the functions/methods in the short script
+- this will give them hands-on practice achieving something tangible. 
 
-As we've learned, libraries are Python code written by others that can be pulled into your program, allowing you to use that functionality. In this challenge, do a little research on Python libraries that might solve a problem for you or address a domain that you're interested in.
+-->
 
-The best way to find a Python library in a particular area is to do a Google search. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
+
+## Challenge
+
+1. As with our library app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. 
+
+2. The real point of this section is to learn `import`, which is where Python really starts to get interesting. Python comes with many libraries (importable collections of code), written by others that can be pulled into your program, allowing you to use that functionality. In this challenge, do a little research on Python libraries that might solve a problem for you or address a domain that you're interested in.
+
+Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "\<thing you're interested in> python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
 
 > working with html python library
   
@@ -855,21 +869,30 @@ The best way to find a Python library in a particular area is to do a Google sea
 
 In your research, you may also want to look at the libraries that come with Python. You can find a list of libraries in these libraries [here](https://docs.python.org/3/py-modindex.html).
 
-<!-- 
+## Solution
 
-revision notes from filipa: 
-- replace the last challenge with an exercise of easy web scraping. 
-- they will download a ready script, and choose on of a few URLs to scrape (nytimes, reddit, etc)
-- we talk through the role of libraries, and we identify the functions/methods in the short script
-- this will give them hands-on practice achieving something tangible. 
+1. 
 
--->
+```python
+import random
+
+while True:
+    motivational_phrases = [
+        "Importing modules is easy!",
+        "Programming! Yay!",
+        "You write lists like a pro!",
+        ]
+
+    # Because this is input, the user will
+    # need to hit enter to see a new phrase
+    input(random.choice(motivational_phrases))
+```
 
 # Objects in Python
 
 Objects in Python (and other programming languages) are basically containers that can hold data and/or functions inside them. When a function is inside an object, we usually call the function a "method." When data is inside an object, we usually call it an "attribute." The terminology isn't that important, though. What we do need to know is that you can access these "methods" and "attributes" with a `.` (a dot or period).
 
-When we added lower case to our weather program, we briefly saw a method contained inside all string objects in Python—`lower()`, which makes the string lower case.
+When we added `sort()`, `append()`, `pop()`, and `lower()` to our library app, we briefly saw how some methods contained inside certain objects in Python, like Lists (for sort, append, and pop), and String objects, like lower.
 
 ```pycon
 >>> loud_greeting = "HELLO!"
@@ -877,7 +900,7 @@ When we added lower case to our weather program, we briefly saw a method contain
 'hello!'
 ```
 
-Many, or most, objects in Python have methods that allow you to use them in different ways. As you move into using more advanced libraries, you'll find that understanding what methods are available becomes more important.
+Many, or most, objects in Python have methods that allow you to use them in different ways. As you move into using more advanced Python, you'll find that understanding what methods are available becomes more important.
 
 ## Examining Objects
 
