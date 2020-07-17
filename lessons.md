@@ -340,7 +340,6 @@ False
 # Lists and Loops
 
 ## Lists
-<!--- changing variables and strings to be relevant to participant research --->
 
 Remember lists? They look like this:
 
@@ -388,8 +387,6 @@ You can print out the last item in a list using negative numbers:
 ```python
 print(books[-1]) # Living a Feminist Life
 ```
-
-<!-- Adding some practice with slicing -->
 
 ### Slicing Lists
 
@@ -554,13 +551,6 @@ else:
 ```
 
 # Input
-<!-- 
-
-changing the input to "what do you want to do with your books today?" 
-
-Moving ask repeatedly (while and break) to challenge and adding methods to work with lists: sort(), count(), append(), pop()
-
--->
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
 
@@ -600,6 +590,7 @@ library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 library.sort()
 print(library)
 ```
+
 What happened here? Let's take it line by line. First, we created a list `library` with three items attached to it. Then, we applied the `sort()` method to the library list. Finally, we printed the `library`, which is now sorted in alphabetical order.
 
 You'll see that we have a couple of new things happening with symbols. First, the period (`.`) which we call an *operator* in Python. The period operator is another part of object-oriented programming, and it basically means that we are applying a task to whatever precedes the period. In this case, we are applying the `sort()` method to our `library` list. It's kind of like attaching a function to our `library`. Second, we have the parenthesis `()` after `sort`. When you get more comfortable with programming, you'll see that you can use the parentheses to add what we call *arguments* that allows us to do more complex things to data. Let's see how an argument works with the `append()` method.
@@ -665,13 +656,13 @@ After adding a few more conditions, test out your code! You should have a little
 ```python
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 response = input("What do you want to do with your books today? ")
-if response == "sort books":
+if response == "sort":
     library.sort()
     print(library)
-elif response == "add a book":
+elif response == "add":
     library.append("La Frontera")
     print(library)
-elif response == "remove a book":
+elif response == "remove":
     library.pop()
     print(library)
 else: 
@@ -692,22 +683,22 @@ How could we fix our program to handle cases like this? We could add a bunch of 
 
 ```python
 ...
-elif response == "Sort books":
+elif response == "Sort":
     library.sort()
     print(library)
-elif response == "SORT BOOKS":
+elif response == "SORT":
     library.sort()
     print(library)
 ...
 ```
 
-This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `Sort Books`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
+This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `SorT`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
 
 ## Googling for answers
 
 Even if you're a super rad Python programmer, you're not going to remember every function name or how to do things you might not have touched in awhile. One thing programmers get very good at is googling for answers. In fact, this is arguably the most important skill in modern-day programming. So let's use Google to find out how to convert strings to lower case.
 
-Let's try the search term <a href="http://lmgtfy.com/?q=make+string+lowercase+Python" target="_blank"><code>make string lowercase Python</code></a>:
+Let's try the search term [make string lowercase](http://lmgtfy.com/?q=make+string+lowercase+Python):
 
 ![make string lower case Python Google search](images/google_search.png)
 
@@ -722,24 +713,24 @@ On [this Stack Overflow page](https://stackoverflow.com/questions/6797984/how-do
 According to this answer, we can make a string lowercase by adding `.lower()` to the end of it, like this:
 
 ```pycon
->>> "SORT BOOKS".lower()
-'sort books'
+>>> "SORT".lower()
+'sort'
 ```
 
-OK, that seems to work, even if we don't really know what's going on with that dot. Let's incorporate this transformation into our weather app:
+OK, that seems to work. Let's incorporate this transformation into our library app:
 
 ```python
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 response = input("What do you want to do with your books today? ")
 response = response.lower()
 
-if response == "sort books":
+if response == "sort":
     library.sort()
     print(library)
-elif response == "add a book":
+elif response == "add":
     library.append("La Frontera")
     print(library)
-elif response == "remove a book":
+elif response == "remove":
     library.pop()
     print(library)
 else: 
@@ -776,22 +767,22 @@ library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 while True:
     response = input("What do you want to do with your books today? ")
     response = response.lower()
-    if response == "sort books":
+    if response == "sort":
         library.sort()
         print(library)
-    elif response == "add a book":
+    elif response == "add":
         library.append("La Frontera")
         print(library)
-    elif response == "add another":
+    elif response == "add again":
         library.append("Dawn")
         print(library)
     elif response == "more books":
         library.append("Frankenstein")
         print(library)
-    elif response == "again":
+    elif response == "moar":
         library.append("Nightwood")
         print(library)
-    elif response == "remove a book":
+    elif response == "remove":
         library.pop()
         print(library)
     else: 
@@ -861,7 +852,7 @@ revision notes from filipa:
 
 2. The real point of this section is to learn `import`, which is where Python really starts to get interesting. Python comes with many libraries (importable collections of code), written by others that can be pulled into your program, allowing you to use that functionality. In this challenge, do a little research on Python libraries that might solve a problem for you or address a domain that you're interested in.
 
-Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "\<thing you're interested in> python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
+Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "<thing you are interested in> python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
 
 > working with html python library
   
