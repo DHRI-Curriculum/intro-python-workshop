@@ -53,7 +53,7 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 
 ## Challenge
 
-1. For a few minutes, practice moving in and out of Python's interactive mode (also known as the REPL). You can get out of Python by hitting `Control-d` (or `Control-z` if you're using Git Bash) or by typing `exit()`, and you can get back in by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash when you see the `$`.
+1. For a few minutes, practice moving in and out of Python's interactive mode (also known as the REPL). You can get out of Python by hitting `Control-d` (or `Control-z` or `Control-Z + Enter` if you're on a Windows machine) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash (the regular terminal) when you see the `$`.
 
 2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..."  If you were Guido van Rossum, the creator of Python, how would you define this operator?
 
@@ -118,8 +118,6 @@ These are all valid ways of thinking about functions. We'll be learning more abo
 
 # Variables
 
-<!-- changed the content of the list example to "books" --->
-
 A variable is **a symbol that refers to an object**, such as a string, integer, or list. If you're not already at the Python prompt, open your terminal and type `python` at the `$`. You're in the right place when you see `>>>`.
 
 Try these commands in order:
@@ -175,7 +173,7 @@ Second, you might also notice that variable syntax requires you to write the var
 
 So far, you've interacted with Python one line at a time in the REPL. This is what we call the Interactive Mode, which is like a playground for experimenting and exploring different Python expressions,  like `2 + 2` or `type("some stuff")`. The code that we write in the REPL is not saved after you exit, which means that this space is for running Python expressions and *not* for writing longer programs. 
 
-For the rest of this session, we're going to expand beyond the REPL to write and execute longer programs. To do this, we will begin to work with text editor, where we write out longer Python scripts, and run those scripts from the terminal. 
+For the rest of this session, we're going to expand beyond the REPL to write and execute longer programs. To do this, we will begin to work with a text editor, where we write out longer Python scripts, and run those scripts from the terminal. 
 
 This is a big move, so let's take it slow. The major change is that we will be working across two spaces, the terminal and the text editor, rather than just the terminal alone. We will be writing our scripts into the text editor, and using the terminal to run those scripts. 
 
@@ -210,7 +208,7 @@ There are a couple of important things to note here. First, it bears repeating t
 
 ## A Note on Text
 
-Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you've learned so far—the command line, Git, markdown, grep—are all designed to work well together, and the medium through which they all work is plain text.
+Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you'll be learning in this workshop series---the command line, Git, markdown, grep—--are all designed to work well together, and the medium through which they all work is plain text.
 
 ## Challenge
 
@@ -392,7 +390,7 @@ print(books[-1]) # Living a Feminist Life
 
 There are many things you can do with list indexing. Let's play around with slicing. Slicing consists of taking a section of a list, using the list index to pick out a range of list items. For example, you could take out the first *two* items of a list with a slice that begins with `0` and ends with `2`. 
 
-The slice syntax consists of square brakets, start point and end point, and a colon to indicate the gap in between. This should print out the first two items of your list. 
+The slice syntax consists of square brackets, start point and end point, and a colon to indicate the gap in between. This should print out the first two items of your list. 
 
 ```python
 print(books[0:2])
@@ -575,7 +573,7 @@ When you run this program, Python should ask you for some input with the prompt 
 
 Okay. Let's make our little book application a little more robust. We are going to create a list of books (remember lists?) that we can then manipulate in all sorts of ways.
 
-First, create a list with at least three books that are important to your research right now. Shorten the titles if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brakets with quotations and commas separating the list items.
+First, create a list with at least three books that are important to your research right now. Shorten the titles if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brackets with commas separating the list items. Because the items are strings, they should also be inside quotes. 
 
 ```pycon
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
@@ -744,7 +742,7 @@ There's no shame in googling for answers! Error messages are especially useful t
 
 ## Challenge
 
-1. We are going to use `while` loops to get Python to repeat loops over and over again. This involves adding a `while` statement to your libary app. The code should look like this, and it goes right after the `library` list and before your `input` statement.
+1. We are going to use `while` loops to get Python to repeat loops over and over again. This involves adding a `while` statement to your library app. The code should look like this, and it goes right after the `library` list and before your `input` statement.
 
 ```python
 while True:
@@ -752,7 +750,19 @@ while True:
 
 Make sure that everything under `while True:` is indented (this creates a "code block," or a group of lines that will be executed together).
 
-Once you get it to work, you can add more `elif` statements to include more books on the list. Then, run the program, adding books, sorting them and removing them. 
+To stop the loop, you can press `control-c` in the terminal. This stops the program from being run, what we call "interrupting" the program. You can also add a `break` statement somewhere in your code which will automatically exit the program. For example:
+
+```python
+    if response == "sort":
+        library.sort()
+        print(library)
+        break
+    ... 
+    else: 
+        print("I don't know what you want me to do!")
+```
+
+Once you get the loop to work, you can add more `elif` statements to include more books on the list. Then, run the program, adding books, sorting them and removing them. Read more about `while` loops [here](https://www.w3schools.com/python/python_while_loops.asp).
 
 2. (optional) OK, I told you not to look at the Python documentation. But doesn't that make you really want to go look at the Python documentation? How bad could this "documentation" really be? What terrible secrets might it hold?
 
@@ -782,6 +792,7 @@ while True:
     elif response == "moar":
         library.append("Nightwood")
         print(library)
+        break
     elif response == "remove":
         library.pop()
         print(library)
@@ -848,11 +859,11 @@ revision notes from filipa:
 
 ## Challenge
 
-1. As with our library app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. 
+1. As with our library app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. Remember to include a `break` statement or use `control-c` to get out of the loop! Read more [on while loops here](https://www.w3schools.com/python/python_while_loops.asp).
 
 2. The real point of this section is to learn `import`, which is where Python really starts to get interesting. Python comes with many libraries (importable collections of code), written by others that can be pulled into your program, allowing you to use that functionality. In this challenge, do a little research on Python libraries that might solve a problem for you or address a domain that you're interested in.
 
-Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "<thing you are interested in> python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
+Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "*thing you are interested in* python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
 
 > working with html python library
   
@@ -909,7 +920,7 @@ Let's use the REPL for a moment—open it by typing `python` at the command line
 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-The above output shows all the methods and attributes available to Python strings that can be accessed using the dot (`.`) syntax. When using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language.
+The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. Be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language.
 
 ## Challenge
 
