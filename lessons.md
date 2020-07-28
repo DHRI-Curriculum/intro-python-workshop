@@ -292,6 +292,7 @@ Try to create as many errors as you can in the next few minutes. After getting y
 Some examples of **syntax errors** include... 
 
 Starting the variable name with a special character.
+
 ```pycon
 >>> %greeting = "Hello World"
   File "<stdin>", line 1
@@ -301,6 +302,7 @@ SyntaxError: invalid syntax
 ```
 
 Starting a variable by writing the data values before the variable.
+
 ```pycon
 >>> "hey there!" = greeting
   File "<stdin>", line 1
@@ -308,6 +310,7 @@ SyntaxError: can't assign to literal
 ```
 
 Including spaces in a variable. 
+
 ```pycon
 >>> pleasant greeting = "Hello!"
   File "<stdin>", line 1
@@ -319,6 +322,7 @@ SyntaxError: invalid syntax
 Some examples of **traceback errors** include... 
 
 Concatenating data types, like strings and integers. 
+
 ```pycon
 >>> greeting = "hello" + 1
 Traceback (most recent call last):
@@ -327,6 +331,7 @@ TypeError: can only concatenate str (not "int") to str
 ```
 
 Using Booleans (`True` or `False`) without capitalizing them.
+
 ```pycon
 >>> greeting = false
 Traceback (most recent call last):
@@ -429,7 +434,7 @@ for book in books:
 
 What's happening here? This kind of loop is called a "for" loop, and tells Python: "for each item in the list, do something." Let's break it down:
 
-```console
+```python
 for <variable name> in <list name>:
 	<do something>
 ```
@@ -467,18 +472,20 @@ Write some code to print out the square of each of these numbers. Remember that 
 
 2. First, ignore this challenge because it's too hard. Next, look up a new concept—"f-string" (a formatting technique for strings)—on Google and use it to write a loop that gives the following output:
 
-```console
+```
 The square of 2 is 4.
 The square of 3 is 9.
 The square of 5 is 25.
 The square of 7 is 49.
 The square of 11 is 121.
 ```
+
 Note: the "f-string" is a new string formatting method for Python 3. You can [read more about this new string formatting method](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python).
 
 ## Solution
 
 1. 
+
 ```python
 prime_numbers = [2, 3, 5, 7, 11]
 
@@ -487,6 +494,7 @@ for num in prime_numbers:
 ```
 
 2. 
+
 ```python
 prime_numbers= [2,3,5,7,11]
 for num in prime_numbers:
@@ -673,7 +681,7 @@ else:
 
 Our library app is working pretty well, but you may have noticed that it's case sensitive:
 
-```console
+```
 What do you want to do with your books today? 
 Sort
 I don't know what you want me to do!
