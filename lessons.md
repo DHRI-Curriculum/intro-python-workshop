@@ -340,9 +340,7 @@ NameError: name 'false' is not defined
 False
 ```
 
-# Lists and Loops
-
-## Lists
+# Lists
 
 Remember lists? They look like this:
 
@@ -391,7 +389,7 @@ You can print out the last item in a list using negative numbers:
 print(books[-1]) # Living a Feminist Life
 ```
 
-### Slicing Lists
+## Slicing Lists
 
 There are many things you can do with list indexing. Let's play around with slicing. Slicing consists of taking a section of a list, using the list index to pick out a range of list items. For example, you could take out the first *two* items of a list with a slice that begins with `0` and ends with `2`. 
 
@@ -417,8 +415,20 @@ print(books[1:])
 
 With a list that contains three items total, list slicing might not seem very impressive right now. However, this will become a powerful tool once we get to Text Analysis and start to encounter lists that contain hundreds (or thousands!) of items.
 
+## Challenge
 
-## Loops
+Create a new list of books in the REPL, with at least 5 books in your list. Make sure the total number of books in the list is an **odd** number. How do you get python to print out the book in the middle of the list? What about the three books in the middle? Remember that the first value in a slice is *exclusive*, and the final value is *inclusive*. 
+
+
+## Solution
+
+```console
+$ books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality', 'The Undercommons']
+$ books[2] # ['Living a Feminist Life']
+$ books[0:3] # ['Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality']
+```
+
+# Loops
 
 What if we want to print out each item in the list separately? For that, we'll need something called a loop:
 
@@ -501,83 +511,140 @@ for num in prime_numbers:
 
 # Conditionals
 
-Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs based on the book titles:
+Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs (consisting of book titles) based on the specified field of study:
 
 ```python
-random_book = "The Undercommons"
+field = "Media Studies"
 
-if random_book == "The Undercommons":
-    print("This is the correct book")
+if field == "Media Studies":
+    print("Grammophone, Film, Typewriter")
 else:
-    print("I don't know which book it is! I'm just a little program...")
+    print("I don't know what field you're talking about! I'm just a little program...")
 ```
 
-In our first line, we set a variable `random_book` to the string "The Undercommons," representing a random book on our bookshelf. The `if` statement checks whether the random book is set to the title "The Undercommons." If it is, the code in the block beneath is executed, so the text "This is the corrent book will be printed.
+In our first line, we set a variable `field` to the string `"Media Studies"`, representing our chosen field of study. The `if` statement checks whether the field is set to the field "Media Studies". If it is, the code in the block beneath is executed, so the text "Grammophone, Film, Typewriter" will be printed.
 
-The `else` statement handles any inputs that aren't "The Undercommons"—the program merely prints out that it doesn't know what you should bring. Try this script out both with the variable set to "The Undercommons" and the variable set to some other value. 
+The `else` statement handles any inputs that aren't "Media Studies"—the program merely prints out that it doesn't know what you should bring. Try this script out both with the variable set to "Media studies" and the variable set to some other value, representing a field of study. 
 
-What if we want our program to handle other books, giving different messages for each one? Other cases after the first `if` statement are handled with `elif`:
+What if we want our program to handle other fields of study, giving different messages for each one? Other cases after the first `if` statement are handled with `elif`:
 
 ```python
-random_book = "The Undercommons"
+field = "Media Studies"
 
-if random_book == "The Undercommons":
-    print("This is the correct book, well done!")
-elif random_book == "Gramophone, Film, Typewriter":
-    print("This is not the correct book. Please attempt with another title.")
-elif random_book == "Radiant Textuality":
-    print("Welp. Try again.")
+if field == "Media Studies":
+    print("Grammophone, Film, Typewriter")
+elif field == "Critical University Studies":
+    print("The Undercommons")
+elif field == "Textual Scholarship":
+    print("Radiant Textuality")
 else:
-    print("I don't know which book you're talking about! I'm just a little program...")
+    print("I don't know what field you're talking about! I'm just a little program...")
 ```
 
 You can add as many `elif` statements as you need, meaning that conditionals in Python have one `if` statement, any number of `elif` statements, and one `else` statement that catches any input not covered by `if` or `elif`. Over the next sections, we'll work on improving this little application, making it able to handle user input directly.
 
 ## Challenge
 
-Add two more `elif` statements to this program to make it better able to handle different potential books.
+Add two more `elif` statements to this program to make it better able to handle different potential fields of study.
 
 ## Solution
 
 ```python
-random_book = "The Undercommons"
-
-if random_book == "The Undercommons":
-    print("This is the correct book, well done!")
-elif random_book == "Gramophone, Film, Typewriter":
-    print("This is not the correct book. Please attempt with another title.")
-elif random_book == "Radiant Textuality":
-    print("Welp. Try again.")
-elif random_book == "The New Jim Code":
-    print("Bzzzzzt! Wrong Answer!)
-elif random_book == "Algorithmic Criticism":
-    print("That's just wrong.")
+field = "Media Studies"
+if field == "Media Studies":
+    print("Grammophone, Film, Typewriter")
+elif field == "Critical University Studies":
+    print("The Undercommons")
+elif field == "Textual Scholarship":
+    print("Radiant Textuality")
+elif field == "Critical Race Studies"
+    print("The New Jim Code")
+elif field == "DH Methodologies"
+    print("Algorithmic Criticism")
 else:
-    print("I don't know which book you're talking about! I'm just a little program...")
+    print("I don't know what field you're talking about! I'm just a little program...")
 ```
 
 # Input
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
 
-Python allows you to take input directly from the user using the `input` function. Let's use it to improve our book application by asking for the book before displaying the output.
+Python allows you to take input directly from the user using the `input()` function. 
 
-```python
-random_book = input("Which book do you want to read today? ")
+Let's try it out by setting the function to a variable, which we will call `greeting`.
 
-if random_book == "The Undercommons":
-    print("This is the correct book, well done!")
-elif random_book == "Gramophone, Film, Typewriter":
-    print("This is not the correct book. Please attempt with another name.")
-elif random_book == "Radiant Textuality":
-    print("Welp. Wrong book. Try again.")
-else:
-    print("I don't know which book you're talking about! I'm just a little program...")
+```pycon
+>>> greeting = input()
 ```
 
-When you run this program, Python should ask you for some input with the prompt `"Which book do you want to read today? "` (The space before the second `"` makes the prompt look more tidy in the console.) It will then return some advice based on the input. Try running it now.
+When you press enter, you should see a blank line. Type in your favorite greeting. I'm going to type `hey you!`. Then, press enter.
 
-## Doing Things to Lists
+```pycon
+>>> greeting = input()
+hey you!
+```
+
+Python has saved your input text to the variable `greeting`. When you type in `greeting` one more time, it will print out that input text. Pretty nifty, right?
+
+```pycon
+>>> greeting = input()
+hey you!
+>>> greeting
+'hey you!'
+```
+
+You can play around with `input()` by adding some prompt text within the parenthesis. Whatever you put inside the parenthesis, enclosed by quotes, will prompt the user to type in their text, which is then assigned to the variable set to `input()`. Sounds complicated, so give it a go:
+
+```pycon
+>>> feelings = input('What are you feeling today? ')
+What are you feeling today?
+```
+
+Note that there's a little space after the question mark and before the closing quotation mark, which is to improve spacing and readability.  
+
+We can answer with `all of the feelings!`. Then, when we type in our varialbe `feelings` and press enter, we'll get our input printed back at us.
+
+```pycon
+>>> feelings = input('What are you feeling today? ')
+What are you feeling today? all of the feelings
+>>> feelings
+'all of the feelings'
+```
+
+## Challenge
+
+Remember this loop?
+
+```python
+field = "Media Studies"
+if field == "Media Studies":
+    print("Grammophone, Film, Typewriter")
+elif field == "Critical University Studies":
+    print("The Undercommons")
+elif field == "Textual Scholarship":
+    print("Radiant Textuality")
+else:
+    print("I don't know what field you're talking about! I'm just a little program...")
+```
+
+Now, that we understand a bit about how `input()` works, let's use it to improve our book application. We are going to use `input()` to ask for the field before displaying the output. To do this, add one more line of code that sets the `field` variable to an `input()`. Make sure you include a little prompt that asks the user what book they want to select or read that day.
+
+## Solution
+
+```python
+field = input("Which field of study do you want to read about today? ")
+
+if field == "Media Studies":
+    print("Grammophone, Film, Typewriter")
+elif field == "Critical University Studies":
+    print("The Undercommons")
+elif field == "Textual Scholarship":
+    print("Radiant Textuality")
+else:
+    print("I don't know what field you're talking about! I'm just a little program...")
+```
+
+# Doing Things to Lists
 
 Okay. Let's make our little book application a little more robust. We are going to create a list of books (remember lists?) that we can then manipulate in all sorts of ways.
 
@@ -625,7 +692,7 @@ The last item that you added to your list should be missing from the `library` w
 
 ## Challenge
 
-Remember the `input()` function from the beginning of this lesson? This challenge uses that function to create a little library app. You will play around with the input button, asking the user what kinds of things they want to do with their library, and writing some code that does those things and prints out the results.
+Remember the `input()` function from the last lesson? This challenge uses that function in combination with what you know about list methods to create a little library app. You will play around with the input button, asking the user what kinds of things they want to do with their library, and writing some code that does those things and prints out the results.
 
 First, create a new file called `library.py`. Save it to your current working folder.
 
@@ -852,19 +919,6 @@ print(random.choice(motivational_phrases))
 
 The `random.choice` function chooses a random item from a list and returns it. The `.` syntax indicates that the function is coming from the `random` library.
 
-
-<!-- 
-
-revision notes from filipa: 
-- move these challenges to be part of the lesson proper.
-- replace them with an exercise of easy web scraping. 
-- they will download a ready script, and choose on of a few URLs to scrape (nytimes, reddit, etc)
-- we talk through the role of libraries, and we identify the functions/methods in the short script
-- this will give them hands-on practice achieving something tangible. 
-
--->
-
-
 ## Challenge
 
 1. As with our library app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. Remember to include a `break` statement or use `control-c` to get out of the loop! Read more [on while loops here](https://www.w3schools.com/python/python_while_loops.asp).
@@ -928,10 +982,61 @@ Let's use the REPL for a moment—open it by typing `python` at the command line
 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. Be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language.
+The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. For now, ignore the information within underscores (like `__add__`) and focus on the stuff surrouned by single quotes (like `startswith`). Also, be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language.
+
+You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the random library again and see what you get when you enter `dir(random)`. 
+
+```pycon
+>>> dir(random)
+['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_BuiltinMethodType', '_MethodType', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_inst', '_itertools', '_log', '_os', '_pi', '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+```
+
+Try entering other objects based on Python types we've already learned to the `dir()` function. For example, you might try `dir([1, 2, 3])` to see what methods are available when using lists.
 
 ## Challenge
 
-1. You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the random library again and see what you get when you enter `dir(random)`.
+*Advanced Final Challenge*: 
 
-2. Try entering other objects based on Python types we've already learned to the `dir()` function. For example, you might try `dir([1, 2, 3])` to see what methods are available when using lists.
+Let's try out a module for web scraping, called Requests. Requests allows you to send queries over web browsers, which we call HTTP requests, in order to grab data from websites.  It is a foundational module for web scraping tasks. While Requests is relatively easy to grasp at first, it has a bit of a learning curve. With some practice, though, it can yield sophisticated web scraping results. For this challenge, let's get some hands-on practice with using requests, to scrape the surface of what it can do. Feel free to attempt as much of this challange as you are comfortable with. 
+
+First, import requests into your REPL: 
+
+```pycon
+>>> import requests
+```
+
+Then, let's set up a request *object*. Basically, we will declare a variable `r` to represent the content from a website that we want to scrape. After the equal sign `=`, we call the `requests` module, and within that module, a method called `get`, which includes the parameter of the website URL, enclosed in single quotes. Like so: 
+
+```pycon
+>>> import requests
+>>> r = requests.get('https://www.nytimes.com')
+```
+
+Now, let's examine that request object. Use the `dir` function to see what methods and attributes are available to `r`. Focus on the items within single quotes, rather than the underscores. Look up any of the items that seem interesting but unclear to you. Try to find out what at least one of these methods does, such as `encoding`. Can you try out some of these methods in the REPL?
+
+Even if you don't understand it---that's okay! This is an advanced challenge, meant to expose you to the beginning of your exploration with this module. This is only the first step to running more robust web scraping experiments. 
+
+## Solution
+
+First, checking out what methods are available to the `r` object: 
+
+```pycon
+>>> dir(r)
+['__attrs__', '__bool__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__nonzero__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_content', '_content_consumed', '_next', 'apparent_encoding', 'close', 'connection', 'content', 'cookies', 'elapsed', 'encoding', 'headers', 'history', 'is_permanent_redirect', 'is_redirect', 'iter_content', 'iter_lines', 'json', 'links', 'next', 'ok', 'raise_for_status', 'raw', 'reason', 'request', 'status_code', 'text', 'url']
+```
+
+Then, trying out some of the methods:
+
+```pycon
+>>> r.status_code
+200
+>>> r.encoding
+'utf-8'
+>>> r.cookies
+<RequestsCookieJar[Cookie(version=0, name='nyt-a', value='04u7q0SFZ2OpnpLqevHY65', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=True, expires=1627494229, discard=False, comment=None, comment_url=None, rest={'SameSite': 'none'}, rfc2109=False), Cookie(version=0, name='nyt-gdpr', value='1', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=False, expires=1595979829, discard=False, comment=None, comment_url=None, rest={}, rfc2109=False), Cookie(version=0, name='nyt-geo', value='PT', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=False, expires=1595979829, discard=False, comment=None, comment_url=None, rest={}, rfc2109=False), Cookie(version=0, name='nyt-purr', value='cfhspnahhu', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=True, expires=1627494229, discard=False, comment=None, comment_url=None, rest={'SameSite: Lax': None}, rfc2109=False)]>
+
+```
+
+What do these methods do? For the `r.status_code`, the `200` return value means that the request was successful, because 200 is the HTTP code for a successful request. This is opposed to 400 codes, like 404 error, which indicates a failure to reach the website. 
+
+This is just the tip of the iceberg for using requests. In order to get more information, you'll have to read up on the module. Here is [an excellent tutorial](https://scotch.io/tutorials/getting-started-with-python-requests-get-requests) to get started.
