@@ -32,6 +32,8 @@
 
 ## Discussion Questions
 
-- What kind of data do you use in your research, and how do you acquire that data?
-- What questions do you have about your data? What kind of manipulations would you want to perform on that data?
-- What are the limitations of your data? Does your data suffice to show the full picture of your topic? What does it fail to capture?
+- What kind of data types are available? What is the difference between a string and a list? Why do these differences matter?
+- Describe the process of using both a text editor and a terminal to write and execute Python scripts. 
+- How do you write a program that can "make decisions" based on certain conditions? What are the parts that you would need?
+- In what ways does the internet (using google) help someone to use and learn Python? 
+- What are "libraries" or "modules" and what are they used for?

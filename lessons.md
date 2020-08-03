@@ -25,7 +25,10 @@ Unlike the normal `$` terminal prompt, the Python prompt looks like this:
 >>>
 ```
 
-These carrots are how you know that you have entered an interactive session with Python. Now you are interacting directly with Python, rather than in the regular terminal. Keep an eye on these carrots, as a common early source of confusion is entering terminal commands into the Python prompt or entering Python commands into the terminal.
+These greater-than symbols `>` are how you know that you have entered an
+interactive session with Python. Now you are interacting directly with
+Python, rather than in the regular terminal. Keep an eye on these
+greater-than symbols, as a common early source of confusion is entering terminal commands into the Python prompt or entering Python commands into the terminal.
 
 ## A Little Math
 
@@ -53,7 +56,13 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 
 ## Challenge
 
-1. For a few minutes, practice moving in and out of Python's interactive mode (also known as the REPL). You can get out of Python by hitting `Control-d` (or `Control-z` or `Control-Z + Enter` if you're on a Windows machine) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash (the regular terminal) when you see the `$`.
+1. For a few minutes, practice moving in and out of Python's
+   interactive mode (aka the REPL). You can get out of Python by
+   hitting `Control-d` (or `Control-z` or `Control-Z + Enter` if
+   you're on a Windows machine) or by typing `exit()`. You can get
+   back in the REPL by typing `python` at the `$` prompt. Remember
+   that you're in the REPL when you see `>>>`, and you're in bash (the
+   regular terminal) when you see the `$`.
 
 2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..."  If you were Guido van Rossum, the creator of Python, how would you define this operator?
 

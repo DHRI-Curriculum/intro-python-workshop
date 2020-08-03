@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Python is a general-purpose programming language that is suitable for a wide variety of core tasks in the digital humanities. Learning Python fundamentals is a gateway to analyzing data, creating visualizations, composing interactive websites, scraping the internet, and engaging in distant reading of texts.
+Python is a general-purpose programming language suitable for a wide variety of tasks in the digital humanities. Learning Python fundamentals is a gateway to analyzing data, creating visualizations, composing interactive websites, scraping the internet, and engaging in the distant reading of texts. This workshop first introduces participants to core programming concepts such as data types, variables, and functions. Participants will then learn about basic control flow by writing small programs with loops and conditional statements. They will also learn to problem solve, and practice searching for answers and debugging scripts. The workshop wraps up by exposing participants to intermediate tools for further exploration. 
 
 ## Learning Objectives
 
@@ -17,7 +17,7 @@ In this workshop, you will learn the following skills:
 
 ## Estimated time
 
-10 hours.
+3-4 hours.
 
 ## Prerequisites
 
@@ -27,9 +27,9 @@ In this workshop, you will learn the following skills:
 
 ### Pre-reading suggestions
 
-- "[Five Reasons Why Learning Python Is The Best Decision](https://medium.com/datadriveninvestor/5-reasons-why-i-learned-python-and-why-you-should-learn-it-as-well-917f781aea05)," *Medium*. 
+- Want to learn programming, but not convinced that the Python language is the right language? Check out "[Five Reasons Why Learning Python Is The Best Decision](https://medium.com/datadriveninvestor/5-reasons-why-i-learned-python-and-why-you-should-learn-it-as-well-917f781aea05)," *Medium*. 
 
-- "[What Can I Do With Python?](https://realpython.com/what-can-i-do-with-python/)" *Real Python*.
+- Some concrete ideas for how to use Python: "[What Can I Do With Python?](https://realpython.com/what-can-i-do-with-python/)" *Real Python*.
 
 ### Projects that use these skills
 
@@ -41,7 +41,7 @@ In this workshop, you will learn the following skills:
 
 Python works by reducing data to portable units and presenting them in a way that prioritizes readability. These units are known as "data types" and include strings (words/letters), integers (numbers), booleans (true or false statements), and lists (groups of strings). The python grammar, which dictates how python statements ought to be ordered, values simplicity, efficiency, and concision. You can read more about python values at [the Zen of Python](https://www.python.org/dev/peps/pep-0020/). 
 
-As we learn about the python data types and grammar, keep in mind that working within any digital format requires making seemingly neutral choices that carry ethical consequences. When using python, be aware of the ways that you approach and transform data into computable form. What choices are you making about your data? What is being included, and what is left out? What are reductions and assumptions necessary to encode your data? 
+As we learn about the python data types and grammar, keep in mind that working within any digital format requires making seemingly neutral choices that carry ethical consequences. When using python, be aware of the ways the ways that data is transformed into computable form. What choices are you making about your data? What is being included, and what is left out? What are reductions and assumptions necessary to encode your data? 
 
 ## Resources (optional)
 
@@ -50,6 +50,6 @@ As we learn about the python data types and grammar, keep in mind that working w
 
 ## Acknowledgements
 
-- Patrick Smyth
-- Rafael Davis Portela
-- Filipa Calado
+- Current author: [Filipa Calado](https://github.com/gofilipa)
+- Contributing authors: [Patrick Smyth](https://github.com/smythp) and [Rafael Davis Portela](https://github.com/rafadavis)
+- Reviewers: [Param Ajmera](https://github.com/paramajmera) and [Rafael Davis Portela](https://github.com/rafadavis)
