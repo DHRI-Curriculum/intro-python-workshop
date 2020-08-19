@@ -1,5 +1,7 @@
 # Theory to Practice
 
+### 
+
 ## Suggested Further Readings
 
 - Hannah Aizenman, a former Digital Fellow, wrote up a great blog post introducing python "libraries," or collections of python code, for various project types, from creating a website, to getting, exploring, and visualizing data, and working with images, video, spreadsheets, among other ideas. Check out her suggestions in [How Do I Solve [insert problem here] With Python?](https://digitalfellows.commons.gc.cuny.edu/2018/02/13/python_libraries/) 

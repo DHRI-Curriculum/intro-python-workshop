@@ -70,6 +70,14 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 
 2. The exponent operator is two asteriks, or `**`. For example, the number `3` to the power of `2` would be expressed as `3**2`. 
 
+## Evaluation
+
+What are the characteristics of the REPL? Select all that apply.
+- The REPL has a prompt that begins with `$`.
+- The REPL has a prompt that begins with `>>>`.*
+- The REPL and the terminal are the same thing. 
+- The REPL can be used to evaluate mathematical expressions like `2 + 2`.*
+
 # Types
 
 Types are classifications that let the computer know how a programmer intends to use a piece of data. You can just think of them as, well, types of data.
@@ -125,6 +133,14 @@ Don't worry about trying to actively remember these types. We'll be working with
 
 These are all valid ways of thinking about functions. We'll be learning more about functions in later sections.
 
+## Evaluation
+
+Select all the following that accurately describe the data type categories.
+- Booleans represent only `True` or `False` values.*
+- Integers can be expressed with numbers like `1` or letters `one`.
+- Strings can contain numbers within quotations, like `"1"`.*
+- Lists can contain strings, like `["banana, 'coffee', 'eggs']`.*
+
 # Variables
 
 A variable is **a symbol that refers to an object**, such as a string, integer, or list. If you're not already at the Python prompt, open your terminal and type `python` at the `$`. You're in the right place when you see `>>>`.
@@ -177,6 +193,14 @@ First, you cannot use any numbers or special characters to start a variable name
 You can incorporate numbers after you've started with a letter. So `book_1` or `b1` is acceptable, though you cannot use special characters at any point in the variable name. 
 
 Second, you might also notice that variable syntax requires you to write the variable name first, followed by an equal sign `=`, and then the value, or data. You cannot start the variable statement with the data value, because python always recognizes the first thing written as the thing to be assigned. The thing that comes after the `=` is the data that becomes attached to the preceding variable. 
+
+## Evaluation
+
+Select all the variable expressions that are allowed in Python.
+- 1 = one
+- one = 1*
+- $$$ = "dollar_signs"
+- first_book = "Orlando"*
 
 # Running scripts
 
@@ -244,6 +268,13 @@ Then, making sure you're in the right directory, run `python hello.py` in the te
 $ python hello.py
 Hello world!
 ```
+
+## Evaluation
+
+What are the differences between the terminal, REPL, and text editor? Select the correct statement from the below options.
+- You can run scripts from the **terminal** that were written on the text editor. *
+- The **REPL** allows you to save scripts for later use. 
+- The **text editor** allows you to test code on the fly.
 
 # Errors in Python
 
@@ -351,6 +382,14 @@ NameError: name 'false' is not defined
 False
 ```
 
+## Evaluation
+
+If you get an error, what can you do to debug it? Select all that apply:
+- If it's a Syntax Error, look for the caret as a starting point.* 
+- If it's a Traceback Error, make sure all your variables are defined.* 
+- Copy the error message into a Google search.* 
+- Run spell check on your code. 
+
 # Lists
 
 Remember lists? They look like this:
@@ -432,7 +471,7 @@ With a list that contains three items total, list slicing might not seem very im
 
 ## Challenge
 
-Create a new list of books in the REPL, with at least 5 books in your list. Make sure the total number of books in the list is an **odd** number. How do you get python to print out the book in the middle of the list? What about the three books in the middle? Remember that the first value in a slice is *exclusive*, and the final value is *inclusive*. 
+Create a new list of books in the REPL, with at least 5 books in your list. Make sure the total number of books in the list is an **odd** number. How do you get python to print out the book in the middle of the list? What about the three books in the middle? Remember that the first value in a slice is *inclusive*, and the final value is *exclusive*. 
 
 ## Solution
 
@@ -441,6 +480,14 @@ $ books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life', 'Radia
 $ books[2] # ['Living a Feminist Life']
 $ books[1:4] # ['Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality']
 ```
+
+## Evaluation
+
+How would you get Python to print the length of the last book in the list? Hint: this number reflects the length of the *string* which is the last item in the list. Choose the correct expression from the options below.
+- len(books)
+- print(books[-1])
+- print(len[-1])
+- print(len(books[-1]))*
 
 # Loops
 
@@ -530,6 +577,15 @@ for num in prime_numbers:
     print(f"The square of {num} is {num * num}")
 ```
 
+## Evaluation
+
+What are different ways for describing what a `for loop` can do? Select all that apply. 
+- for each item in a list, multiply it against itself.*
+- print the contents of a list.*
+- add a new item to a list.
+- loop through characters in a string.
+
+
 # Conditionals
 
 Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs (consisting of book titles) based on the specified field of study:
@@ -590,6 +646,14 @@ else:
     print("I don't know what field you're talking about! I'm just a little program...")
 ```
 
+## Evaluation
+
+What is the difference between the double equals `==` and single equals `=`? Select the statements that apply.
+- The double equals checks to see if one value is equivalent to the other, as in `2 == 2`.*
+- The double equals assigns the value on the right to the variable on the left, as in `x == 2`.
+- The single equals checks to see if one value is equivalent to the other, as in `2 = 2`.
+- The single equals assigns the value on the right to the variable on the left, as in `x = 2`.* 
+
 # Input
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
@@ -621,19 +685,19 @@ hey you!
 You can play around with `input()` by adding some prompt text within the parenthesis. Whatever you put inside the parenthesis, enclosed by quotes, will prompt the user to type in their text, which is then assigned to the variable set to `input()`. Sounds complicated, so give it some practice:
 
 ```pycon
->>> feelings = input('What are you feeling today? ')
-What are you feeling today?
+>>> feelings = input('How are you feeling today? ')
+How are you feeling today?
 ```
 
 Note that there's a little space after the question mark and before the closing quotation mark, which is to improve readability.  
 
-We can answer with `all of the feelings!`. Then, when we type in our varialbe `feelings` and press enter, we'll get our input printed back at us.
+We can answer with `like a rollercoaster of emotions`. Then, when we type in our varialbe `feelings` and press enter, we'll get our input printed back at us.
 
 ```pycon
->>> feelings = input('What are you feeling today? ')
-What are you feeling today? all of the feelings
+>>> feelings = input('How are you feeling today? ')
+How are you feeling today? like a rollercoaster of emotions
 >>> feelings
-'all of the feelings'
+'like a rollercoaster of emotions'
 ```
 
 ## Challenge
@@ -669,17 +733,25 @@ else:
     print("I don't know what field you're talking about! I'm just a little program...")
 ```
 
+## Evaluation
+
+If we wanted to calculate the length of an input using `len()`, how would we write that expression?
+- input() = len()
+- response = len().input()
+- len(input()) = length_of_response
+- length_of_response = len(input())*
+
 # Doing Things to Lists
 
 Okay. Let's make our little book application a little more robust. We are going to create a list of books (remember lists?) that we can then manipulate in all sorts of ways.
 
-First, go back to your terminal and enter the REPL, or interactive mode. When you see the `>>>`, create a list with at least three books that are important to your research right now. Shorten the titles if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brackets with commas separating the list items. Because the items are strings, they should also be inside quotes. 
+First, go back to your terminal and enter the REPL, or interactive mode. When you see the `>>>`, create a list with at least three books that are important to your research right now. Shorten the titles to one or two words if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brackets with commas separating the list items. Because the items are strings, they should also be inside quotes. 
 
 ```pycon
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 ```
 
-Next, let's sort our `library` in alphabetical order. There's a handy method called `sort()` for doing just this kind of thing. What's a *method*, you might ask? Well, *methods* are very similar to *functions*, and you'll remember that functions are ways of doing things, like `print()` and `type()`. Methods are also ways of doing things, but these things are attached to what we call *objects* in Python. Objects are part of object-oriented programming, and that's definitely not necessary to learn right now. Suffice it to say that methods are just like functions, that is, they are ways of doing things to your data.
+Next, let's sort our `library` in alphabetical order. There's a handy method called `sort()` for doing just this kind of thing. What's a *method*, you might ask? Well, *methods* are very similar to *functions*, and you'll remember that functions are ways of doing things, like `print()` and `type()`. Methods are also ways of doing things, but these things are attached to what we call *objects* in Python. Objects are part of object-oriented-programming, and that's definitely not necessary to learn right now. Suffice it to say that methods are just like functions, that is, they are ways of doing things to your data.
 
 To sort the list, use the `sort()` method on your list. It should look like this:
 
@@ -692,7 +764,7 @@ print(library)
 What happened here? Let's take it line by line. First, we created a list `library` with three items attached to it. Then, we applied the `sort()` method to the library list. Finally, we printed the `library`, which is now sorted in alphabetical order.
 
 You'll see that we have a couple of new things happening with symbols. 
-- First, the period (`.`) which us an *operator* in Python. The period operator is another part of object-oriented programming, and it basically means that we are applying a task to whatever precedes the period. In this case, we are applying the `sort()` method to our `library` list. It's kind of like attaching a function to our `library`. 
+- First, the period `.` which is an *operator* in Python. The period operator is another part of object-oriented-programming, and it basically means that we are applying a task to whatever precedes the period. In this case, we are applying the `sort()` method to our `library` list. It's kind of like attaching a function to our `library`. 
 - Second, we have the parenthesis `()` after `sort`. When you get more comfortable with programming, you'll often use the parentheses to include what we call *arguments* that allows us to do more complex things to data. Let's see how an argument works with the `append()` method.
 
 What if we want to add items to the list? We can use the `append()` method for that. Try:
@@ -768,6 +840,13 @@ elif response == "remove":
 else: 
     print("I don't know what you want me to do!")
 ```
+## Evaluation
+
+Select the following statements that truly describe `sort()`, `append()`, and `pop()`.
+- methods are like functions which are attached to objects.* 
+- `sort()`, `append()`, and `pop()` are functions. 
+- `append()` always takes an argument.*
+- `pop()` can be applied to a string.
 
 # Finding Answers with Google
 
@@ -902,6 +981,13 @@ while True:
         print("I don't know what you want me to do!")
 ```
 
+## Evaluation
+If we wanted to make a string like `'hello'` uppercase, we would use the method `upper()`, in the following way:
+- upper('hello')
+- upper().'hello'
+- 'hello'.upper()*
+- 'hello'(upper)
+
 # A Little Motivation
 
 Early on, we learned a bit about lists, which look like this:
@@ -978,6 +1064,13 @@ while True:
     # need to hit enter to see a new phrase
     input(random.choice(motivational_phrases))
 ```
+
+## Evaluation
+What is a module? Select all that apply:
+- A module is a file of code.*
+- Applications can incorporate many different modules.*
+- A module needs to be downloaded and installed.
+- A module needs to be imported with an `import` statement.*
 
 # Objects in Python
 
@@ -1069,3 +1162,10 @@ Then, trying out some of the methods:
 What do these methods do? For the `r.status_code`, the `200` return value means that the request was successful, because 200 is the HTTP code for a successful request. This is opposed to 400 codes, like 404 error, which indicates a failure to reach the website. 
 
 This is just the tip of the iceberg for using requests. In order to get more information, you'll have to read up on the module. Here is [an excellent tutorial](https://scotch.io/tutorials/getting-started-with-python-requests-get-requests) to get started.
+
+## Evaluation
+Why would someone use `dir()`? Select all that apply:
+- to examine a function like `print()`.*
+- to see what can be done with an object, like a string or a list.*
+- to see what can be done with a variable that's been assigned to a value.*
+- to examine a particular method, like `sort()`. 
