@@ -1,6 +1,8 @@
 # Theory to Practice
 
-### 
+Congratulations on completing the Intro to Python workshop! So far, you've learned quite a bit about variables, functions, loops, modules, and other foundational concepts to further your Python journey. For next steps, consider our
+suggested introductoin to [Python libraries](https://digitalfellows.commons.gc.cuny.edu/2018/02/13/python_libraries/), or trying some of the tutorials or projects listed below. Maybe you want to learn how to
+clean text with [Regex](https://automatetheboringstuff.com/2e/chapter7/), or want to dig into web scraping with the Python library [`requests`](https://requests.readthedocs.io/en/master/) . Or, if you are interested in strengthening your foundational skills, read one of the most suggested (and free!) beginner Python book,  [How to Think Like a Computer Scientist - Python Edition](https://runestone.academy/runestone/books/published/thinkcspy/index.html). See a full list of our suggestions below. 
 
 ## Suggested Further Readings
 
