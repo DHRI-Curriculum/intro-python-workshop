@@ -40,4 +40,4 @@ clean text with [Regex](https://automatetheboringstuff.com/2e/chapter7/), or wan
 - Describe the process of using both a text editor and a terminal to write and execute Python scripts. 
 - How do you write a program that can "make decisions" based on certain conditions? What are the parts that you would need?
 - In what ways does the internet (using google) help someone to use and learn Python? 
-- What are "libraries" or "modules" and what are they used for?
+- What are "libraries" or "modules", where do they come from, and what are they used for?
