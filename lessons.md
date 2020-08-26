@@ -56,15 +56,9 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 
 ## Challenge
 
-1. For a few minutes, practice moving in and out of Python's
-   interactive mode (aka the REPL). You can get out of Python by
-   hitting `Control-d` (or `Control-z` or `Control-Z + Enter` if
-   you're on a Windows machine) or by typing `exit()`. You can get
-   back in the REPL by typing `python` at the `$` prompt. Remember
-   that you're in the REPL when you see `>>>`, and you're in bash (the
-   regular terminal) when you see the `$`.
+1. For a few minutes, practice moving in and out of Python's interactive mode (aka the REPL). You can get out of Python by hitting `Control-d` (or `Control-z` or `Control-Z + Enter` if you're on a Windows machine) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash (the regular terminal) when you see the `$`.
 
-2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..."  If you were Guido van Rossum, the creator of Python, how would you define this operator?
+2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..." If you were Guido van Rossum, the creator of Python, how would you define this operator?
 
 ## Solution
 
@@ -212,7 +206,7 @@ Select all the variable expressions that are allowed in Python.
 
 # Running scripts
 
-So far, you've interacted with Python one line at a time in the REPL. This is what we call the Interactive Mode, which is like a playground for experimenting and exploring different Python expressions,  like `2 + 2` or `type("some stuff")`. The code that we write in the REPL is not saved after you exit, which means that this space is for running Python expressions and *not* for writing longer programs. 
+So far, you've interacted with Python one line at a time in the REPL. This is what we call the Interactive Mode, which is like a playground for experimenting and exploring different Python expressions, like `2 + 2` or `type("some stuff")`. The code that we write in the REPL is not saved after you exit, which means that this space is for running Python expressions and *not* for writing longer programs. 
 
 For the rest of this session, we're going to expand beyond the REPL to write and execute longer programs. To do this, we will begin to work with a text editor, where we write out Python scripts, and run those scripts from the terminal. 
 
@@ -247,7 +241,7 @@ Congratulations! You've written your first script. That's kind of a big deal.
 
 There are a couple of important things to note here:
 - First, it bears repeating that you are moving between two different spaces, the text editor and the terminal. You wrote your Python script in the text editor, and used the terminal to run the script. 
-- Second, within in the text editor, you included the `print()` function  because, unlike in the REPL, things aren't automatically printed out when writing scripts. When you're in the text editor, you always need to include the `print()` function so that your output will appear in the terminal. 
+- Second, within in the text editor, you included the `print()` function because, unlike in the REPL, things aren't automatically printed out when writing scripts. When you're in the text editor, you always need to include the `print()` function so that your output will appear in the terminal. 
 
 ## A Note on Text
 
@@ -513,7 +507,7 @@ What's happening here? This kind of loop is called a "for" loop, and tells Pytho
 
 ```python
 for <variable name> in <list name>:
-	<do something>
+    <do something>
 ```
 
 Indented code like this is known as a "code block." Python will run the `<do something>` code in the code block once for each item in the list. You can also refer to `<variable name>` in the `<do something>` block.
@@ -522,7 +516,7 @@ You can also loop through items within a string. For example, type the following
 
 ```python
 for letter in "hello":
-	print(letter)
+    print(letter)
 ```
 
 The result should print out each letter of the string `hello`, one by one. 
@@ -697,7 +691,7 @@ You can play around with `input()` by adding some prompt text within the parenth
 How are you feeling today?
 ```
 
-Note that there's a little space after the question mark and before the closing quotation mark, which is to improve readability.  
+Note that there's a little space after the question mark and before the closing quotation mark, which is to improve readability.
 
 We can answer with `like a rollercoaster of emotions`. Then, when we type in our varialbe `feelings` and press enter, we'll get our input printed back at us.
 
@@ -1110,7 +1104,7 @@ Let's use the REPL for a moment—open it by typing `python` at the command line
 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax.  Also, be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language. For now, ignore the information within underscores (like `__add__`) and focus on the stuff surrouned by single quotes (like `startswith`).
+The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. Also, be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language. For now, ignore the information within underscores (like `__add__`) and focus on the stuff surrouned by single quotes (like `startswith`).
 
 You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the random library again and see what you get when you enter `dir(random)`. 
 
@@ -1125,7 +1119,7 @@ Try entering other objects based on Python types we've already learned to the `d
 
 *Advanced Final Challenge*: 
 
-Let's try out a module for web scraping, called Requests. Requests allows you to send queries over web browsers, which we call HTTP requests, in order to grab data from websites.  It is a foundational module for web scraping tasks. While Requests is relatively easy to grasp at first, it has a bit of a learning curve. With some practice, though, it can yield sophisticated web scraping results. 
+Let's try out a module for web scraping, called Requests. Requests allows you to send queries over web browsers, which we call HTTP requests, in order to grab data from websites. It is a foundational module for web scraping tasks. While Requests is relatively easy to grasp at first, it has a bit of a learning curve. With some practice, though, it can yield sophisticated web scraping results. 
 
 For this challenge, let's get some hands-on practice with using requests, to scrape the surface of what it can do. Feel free to attempt as much of this challange as you are comfortable with. 
 
