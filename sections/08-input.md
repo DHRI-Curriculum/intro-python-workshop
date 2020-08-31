@@ -1,5 +1,3 @@
-[<<< Previous](07-conditionals.md) | [Next >>>](09-google.md)
-
 # Input
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
@@ -79,5 +77,3 @@ How much of the code above do you understand? Even if you do kind of understand 
 Open up your REPL (type `python` at the `$` prompt). Play around with `input()` a bit until you understand it's behavior really well. Write a two-line program in the REPL or in a script that takes some input and echoes it back to the user.
 
 Alternatively, mess around with `while`. Try using things other than `True` and see if the code in the loop runs. If you can, write a while loop that prints out the numbers from 1 to 10 and stops.
-
-[<<< Previous](07-conditionals.md) | [Next >>>](09-google.md)

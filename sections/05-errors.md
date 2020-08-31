@@ -1,5 +1,3 @@
-[<<< Previous](04-run.md) | [Next >>>](06-loops.md)
-
 # Errors in Python
 
 Our usual response when seeing an error on a computer screen is a stress response. Our heart rate elevates and, if we cannot do what we were asking the computer to do, our frustration mounts. This is because many errors when interacting with programs are not useful or informative, and because we often have no capability to fix the program in front of us.
@@ -50,5 +48,3 @@ Debugging is a fancy word for fixing problems with a program. Here are some comm
 ## Challenge
 
 Try to create as many errors as you can in the next few minutes. After getting your first two syntax errors, try instead to get traceback errors. Some areas to try include mathematical impossibilities and using math operations on types that do not support them.
-
-[<<< Previous](04-run.md) | [Next >>>](06-loops.md)

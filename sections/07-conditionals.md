@@ -1,5 +1,3 @@
-[<<< Previous](06-loops.md) | [Next >>>](08-input.md)
-
 # Conditionals
 
 Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs based on the weather:

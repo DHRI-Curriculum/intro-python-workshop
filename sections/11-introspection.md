@@ -1,4 +1,12 @@
-[<<< Previous](10-motivate.md) | [Next >>>](12-resources.md)
+<!-- 
+
+revision notes from filipa: 
+- replace the last challenge with an exercise of easy web scraping. 
+- they will download a ready script, and choose on of a few URLs to scrape (nytimes, reddit, etc)
+- we talk through the role of libraries, and we identify the functions/methods in the short script
+- this will give them hands-on practice achieving something tangible. 
+
+-->
 
 # Objects in Python
 
@@ -37,5 +45,3 @@ The above output shows all the methods and attributes available to Python string
 1. You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the random library again and see what you get when you enter `dir(random)`.
 
 2. Try entering other objects based on Python types we've already learned to the `dir()` function. For example, you might try `dir([1, 2, 3])` to see what methods are available when using lists.
-
-[<<< Previous](10-motivate.md) | [Next >>>](12-resources.md)
