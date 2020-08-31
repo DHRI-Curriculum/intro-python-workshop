@@ -51,5 +51,7 @@ As we learn about the python data types and grammar, keep in mind that working w
 ## Acknowledgements
 
 - Current author: [Filipa Calado](https://github.com/gofilipa)
-- Contributing authors: [Patrick Smyth](https://github.com/smythp) and [Rafael Davis Portela](https://github.com/rafadavis)
-- Reviewers: [Param Ajmera](https://github.com/paramajmera) and [Rafael Davis Portela](https://github.com/rafadavis)
+- Contributing author: [Patrick Smyth](https://github.com/smythp)
+- Contributing author: [Rafael Davis Portela](https://github.com/rafadavis)
+- Reviewer: [Param Ajmera](https://github.com/paramajmera)
+- Reviewer: [Rafael Davis Portela](https://github.com/rafadavis)
