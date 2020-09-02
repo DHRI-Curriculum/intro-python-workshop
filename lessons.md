@@ -83,37 +83,31 @@ Enter these lines as you see them below:
 ```pycon
 >>> type(1)
 <class 'int'>
+
 >>> type(1.0)
 <class 'float'>
+
 >>> type("Hello there!")
 <class 'str'>
+
 >>> type(True)
 <class 'bool'>
+
 >>> type([1, 2, 3])
 <class 'list'>
 ```
 
-Each of these represents a different type:
+Each of the responses show how the different types of data registers as different "types" for Python:
 
-**Integer**: `1`
+**Integers** (like `1` above) are whole numbers.
 
-Integers are whole numbers.
+**Floats** (like `1.0` above) are numbers with decimals, and are treated a little differently than integers.
 
-**Float**: `1.0`
+**Strings** (like `"Hello there!"` above) are arbitrary sets of characters, such as letters and numbers. You can think of them as a way to store text.
 
-Floats are numbers with decimals, and are treated a little differently than integers.
+**Booleans**: (like `True` above) is a fancy term for values representing "true" and "false," or "truthiness" and "falsiness." In Python they are always capitalized: `True` and `False`.
 
-**String**: `"Hello there!"`
-
-Strings are arbitrary sets of characters, such as letters and numbers. You can think of them as a way to store text.
-
-**Boolean**: `True` and `False`
-
-Boolean is a fancy term for values representing "true" and "false," or "truthiness" and "falsiness."
-
-**List**: `[1, 2, 3]`
-
-A list is an ordered collection of values. You can put any type in a list: `["hello", "goodbye", "see ya later"]` is also a valid list.
+**Lists**: (like `[1, 2, 3]` above) are ordered collections of values. You can put any of the other types in a list: `["hello", "goodbye", "see ya later"]` is also a valid list.
 
 Don't worry about trying to actively remember these types. We'll be working with each in turn in the following sections.
 
@@ -151,27 +145,33 @@ Try these commands in order:
 
 ```pycon
 >>> x = 5
+
 >>> x
 5
+
 >>> x + 10
 15
+
 >>> y = "hello"
+
 >>> y
 'hello'
+
 >>> y + " and goodbye"
 'hello and goodbye'
 ```
 
-As you can see above, the `=` sign lets you assign symbols like `x` and `y` to data.
+As you can see from the examples above, the `=` sign lets you assign symbols like `x` and `y` to data.
 
 Variables can be longer words as well, and they can be set to lists:
 
 ```pycon
 >>> books = ['Gender Trouble', 'Cruising Utopia','Living a
 >Feminist Life']
+
 >>> books
-['Gender Trouble', 'Cruising Utopia', 'Living a Feminist
->Life']
+['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
+
 >>> type(books)
 <class 'list'>
 ```
@@ -199,10 +199,10 @@ Second, you might also notice that variable syntax requires you to write the var
 ## Evaluation
 
 Select all the variable expressions that are allowed in Python.
-- 1 = one
-- one = 1*
-- $$$ = "dollar_signs"
-- first_book = "Orlando"*
+- `1 = one`
+- `one = 1`*
+- `$$$ = "dollar_signs"`
+- `first_book = "Orlando"`*
 
 # Running scripts
 
@@ -214,7 +214,7 @@ This is a big move, so let's take it slow. To reiterate, the major change is tha
 
 ## Your first script
 
-First, let's begin with the text editor. Open your text editor of choice (such as VS Code) and create a new file with this line:
+First, let's begin with the text editor. Open your text editor of choice (such as Visual Studio Code) and create a new file with this line:
 
 ```python
 print("Hello world!")
@@ -226,7 +226,7 @@ Save it with the name `hello.py` to a known location, such as your desktop. Open
 $ cd Desktop
 ```
 
-Once you're in the folder with your `hello.py` file, move to the terminal. Do *not* enter the Python Interactive Mode (the REPL), which is unecessary to run python scripts. Instead, lookout for the `$` symbol that lets you know you're in the terminal. (If you find yourself in the Interactive mode (`>>>`), then exit it with `control-D`. You should see the `$` symbol, letting you know you're back in the terminal.) 
+Once you're in the folder with your `hello.py` file, move to the terminal. Do *not* enter the Python Interactive Mode (the REPL), which is unecessary to run python scripts. Instead, lookout for the `$` symbol that lets you know you're in the terminal. (If you find yourself in the Interactive mode (`>>>`), then try exiting it with <kbd>control</kbd> + <kbd>D</kbd>. You should see the `$` symbol, letting you know you're back in the terminal. If you still do not see the `$` symbol, type `exit()` followed by <kbd>enter</kbd> after the Python prompt, `>>>`.)
 
 Now that you're in the terminal, type the following, and press enter:
 
@@ -237,7 +237,7 @@ Hello world!
 
 You should see the text `Hello world!` appear as output in the terminal window. 
 
-Congratulations! You've written your first script. That's kind of a big deal.
+Congratulations! You've written your first script. That's a big deal!
 
 There are a couple of important things to note here:
 - First, it bears repeating that you are moving between two different spaces, the text editor and the terminal. You wrote your Python script in the text editor, and used the terminal to run the script. 
@@ -245,31 +245,31 @@ There are a couple of important things to note here:
 
 ## A Note on Text
 
-Fundamentally, Python programs are just text files. You can write them in any text editor, like VS Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you'll be learning in this workshop series---the command line, Git, markdown, grep—--are all designed to work well together, and the medium through which they all work is plain text.
+Fundamentally, Python programs are just text files. You can write them in any text editor, like Visual Studio Code or Notepad on Windows. When you pass the text file to Python, it runs the code in the file one line at a time. There's nothing special about `.py` files—they're just regular text files. This makes them work well with command line tools like Git. The tools you can learn through the DHRI Curriculum—the command line, Git, markdown, grep—are all designed to work well together, and the medium through which they all work is plain text.
 
 ## Challenge
 
 1. Rewrite your program so that you assign the message to a variable, then print the variable. This will make your program two lines instead of one. There's a fancy programmer word for rewriting your code without changing it's behavior—"refactoring."
 
-2. (optional) Are you already getting sick of typing `python hello.py` again and again? Try typing `!!` in the command line (the `$`). This will run your last line of code again. Additionally, you can press the up arrow at the terminal prompt, and keep pressing it to scroll through the most recent commands. 
+2. (optional) Are you already getting sick of typing `python hello.py` again and again? Try typing `!!` in the command line (the `$`). This will run your last line of code again. Additionally, you can press the <kbd>up arrow</kbd> at the terminal prompt, and keep pressing it to scroll through the most recent commands. 
 
-3. (even more optional) If you're on Windows and have a minute, try pressing the Windows button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than git bash.
+3. (even more optional) If you're on Windows and have a minute, try pressing the <kbd>Windows</kbd> button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than Git Bash.
 
 ## Solution
 
 1. You should type the following into `hello.py`:
 
-```python
-greeting = "Hello World!"
-print(greeting)
-```
+    ```python
+    greeting = "Hello World!"
+    print(greeting)
+    ```
 
-Then, making sure you're in the right directory, run `python hello.py` in the terminal `$`. You should see the following output:
+    Then, making sure you're in the right directory, run `python hello.py` in the terminal `$`. You should see the following output:
 
-```console
-$ python hello.py
-Hello world!
-```
+    ```console
+    $ python hello.py
+    Hello world!
+    ```
 
 ## Evaluation
 
@@ -288,7 +288,7 @@ In Python, errors are our friends. This might be hard to accept initially, but t
 
 In Python, there are two kinds of errors you will encounter frequently. One appears before the program runs, and the other appears during the execution of a program.
 
-**syntax errors** - When you ask Python to run a program or execute a line in the REPL, it will first check to see if the program is valid Python code—that is, that it follows the grammatical or syntactical rules of Python. If it doesn't, before the program even runs, you'll see a syntax error printed out to the screen.
+**Syntax errors**: When you ask Python to run a program or execute a line in the REPL, it will first check to see if the program is valid Python code—that is, that it follows the grammatical or syntactical rules of Python. If it doesn't, before the program even runs, you'll see a syntax error printed out to the screen.
 
 In this below example, the syntax error is a common one—mismatched single and double quotes, which is not allowed in Python. You can replicate the below error by opening the REPL (type `python` in the command line) and entering the line after the `>>>` prompt.
 
@@ -302,7 +302,7 @@ SyntaxError: EOL while scanning string literal
 
 Note the caret (`^`) underneath the mismatched quote, helpfully pointing out where the error lies. Similarly, if this error happened when running a script, Python would tell us the filename and the line number for the line on which the error occurs.
 
-**Traceback errors** - These errors occur during the execution of a Python program when the program finds itself in an untenable state and must stop. Traceback errors are often logical inconsistencies in a program that is valid Python code. A common traceback error is referring to a variable that hasn't been defined, as below.
+**Traceback errors**: These errors occur during the execution of a Python program when the program finds itself in an untenable state and must stop. Traceback errors are often logical inconsistencies in a program that is valid Python code. A common traceback error is referring to a variable that hasn't been defined, as below.
 
 ```pycon
 >>> print(not_a_variable)
@@ -317,12 +317,14 @@ Traceback errors try to tell you a little about what happened in the program tha
 
 Debugging is a fancy word for fixing problems with a program. Here are some common strategies for debugging a program when first learning Python:
 
-- If the error is a syntax error, look at where the caret is pointing.
-- If the error is a syntax error, pay attention to grammatical features such as quotes, parentheses, and indentation.
-- If the error is a syntax error, consider reading the program, or the offending line, backward. It's surprising, but this often helps to detect the issue.
-- If the error is a traceback error, first look at the line where the error occured, then consider the general category of error. What could have gone wrong?
-- If the error is a name error (NameError), check your spelling.
-- If the error is a traceback error, try copying the last line of the error and pasting it into Google. You'll often find a quick solution this way.
+- If the error is a syntax error:
+    - Look at where the caret is pointing.
+    - Pay attention to grammatical features such as quotes, parentheses, and indentation.
+    - Consider reading the program, or the offending line, backward. It's surprising, but this often helps to detect the issue.
+- If the error is a traceback error:
+    - First look at the line where the error occured, then consider the general category of error. What could have gone wrong?
+    - If the error is a name error (NameError), check your spelling.
+    - Try copying the last line of the error and pasting it into Google. You'll often find a quick solution this way.
 - If you changed the program and expect a different output, but are getting old output, you may not have saved the file. Go back and make sure the file has been correctly saved.
 
 ## Challenge
@@ -331,64 +333,64 @@ Try to create as many errors as you can in the next few minutes. After getting y
 
 ## Solution
 
-Some examples of **syntax errors** include... 
+Some examples of **syntax errors** include...
 
-Starting the variable name with a special character.
+- Starting the variable name with a special character.
 
-```pycon
->>> %greeting = "Hello World"
-  File "<stdin>", line 1
-    %greeting = "Hello World"
-    ^
-SyntaxError: invalid syntax
-```
+    ```pycon
+    >>> %greeting = "Hello World"
+      File "<stdin>", line 1
+        %greeting = "Hello World"
+        ^
+    SyntaxError: invalid syntax
+    ```
 
-Starting a variable by writing the data values before the variable.
+- Starting a variable by writing the data values before the variable.
 
-```pycon
->>> "hey there!" = greeting
-  File "<stdin>", line 1
-SyntaxError: can't assign to literal
-```
+    ```pycon
+    >>> "hey there!" = greeting
+      File "<stdin>", line 1
+    SyntaxError: can't assign to literal
+    ```
 
-Including spaces in a variable. 
+- Including spaces in a variable. 
 
-```pycon
->>> pleasant greeting = "Hello!"
-  File "<stdin>", line 1
-    pleasant greeting = "Hello!"
-                    ^
-SyntaxError: invalid syntax
-```
+    ```pycon
+    >>> pleasant greeting = "Hello!"
+      File "<stdin>", line 1
+        pleasant greeting = "Hello!"
+                        ^
+    SyntaxError: invalid syntax
+    ```
 
-Some examples of **traceback errors** include... 
+Some examples of **traceback errors** include...
 
-Concatenating data types, like strings and integers. 
+- Concatenating data types, like strings and integers. 
 
-```pycon
->>> greeting = "hello" + 1
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: can only concatenate str (not "int") to str
-```
+    ```pycon
+    >>> greeting = "hello" + 1
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: can only concatenate str (not "int") to str
+    ```
 
-Using Booleans (`True` or `False`) without capitalizing them.
+- Using Booleans (`True` or `False`) without capitalizing them.
 
-```pycon
->>> greeting = false
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'false' is not defined
->>> greeting = False
->>> greeting
-False
-```
+    ```pycon
+    >>> greeting = false
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'false' is not defined
+    >>> greeting = False
+    >>> greeting
+    False
+    ```
 
 ## Evaluation
 
 If you get an error, what can you do to debug it? Select all that apply:
-- If it's a Syntax Error, look for the caret as a starting point.* 
-- If it's a Traceback Error, make sure all your variables are defined.* 
+- If it's a _syntax error_, look for the caret as a starting point.* 
+- If it's a _traceback error_, make sure all your variables are defined.* 
 - Copy the error message into a Google search.* 
 - Run spell check on your code. 
 
@@ -426,7 +428,7 @@ Let's take apart this unfamiliar line of code: `list_length = len(book)`
 
 This might appear a bit complex at first, but if you read the line slowly you should be able to connect the dots. 
 
-Notice that, you run the code above, you won't see the `books` list printed out. That's because that line has become a comment. If you put a `#` (hash or pound) at the beginning of a line, that line will be ignored.
+Notice that when you run the code above, you don't see the `books` list printed out. That's because that line has become a comment. If you put a `#` (hash or pound) at the beginning of a line, that line will be ignored.
 
 ## List Indexing
 
@@ -437,9 +439,9 @@ print(books[0]) # Gender Trouble
 print(books[1]) # Cruising Utopia
 ```
 
-Note that the first item in the list is item [0]. The second item is item [1]. That's because counting in Python, and in almost all programming languages, starts from 0.
+Note that the first item in the list is `item[0]`. The second item is `item[1]`. That's because counting in Python, and in almost all programming languages, starts from `0`.
 
-Additionally, you can print out the last item in a list using negative numbers:
+Additionally, you can print out the last item in a list using negative numbers, where `-1` denotes the last item in the list:
 
 ```python
 print(books[-1]) # Living a Feminist Life
@@ -447,7 +449,7 @@ print(books[-1]) # Living a Feminist Life
 
 ## Slicing Lists
 
-There are many things you can do with list indexing, like slicing. Slicing consists of taking a section of a list, using the list index to pick out a range of list items. For example, you could take out the first *two* items of a list with a slice that begins with `0` and ends with `2`. 
+There are many things you can do with list indexing, like slicing. Slicing consists of taking a section of a list, using the list index to pick out a range of list items. For example, you could take out the first _two_ items of a list with a slice that begins with `0` and ends with `2`. 
 
 The slice syntax consists of square brackets, start point and end point, and a colon to indicate the gap in between. This should print out the first two items of your list. 
 
@@ -455,7 +457,7 @@ The slice syntax consists of square brackets, start point and end point, and a c
 print(books[0:2])
 ```
 
-Note a couple of things. First, the start point is *inclusive*, meaning that Python will include the `[0]` item in your range, and the end point is *exclusive*, so Python won't print the `[2]` item. Instead, it will print everything up until that `[2]` item. 
+Note a couple of things. First, the start point is *inclusive*, meaning that Python will include the `[0]` item in your range, and the end point is _exclusive_, so Python won't print the `[2]` item. Instead, it will print everything up until that `[2]` item. 
 
 For ultimate brevity, you can also write this expression as:
 
@@ -463,7 +465,7 @@ For ultimate brevity, you can also write this expression as:
 print(books[:2])
 ```
 
-The empty value before the colon allows Python to assume the range starts at the first list item, at `[0]`. You can also end the slice with `:`, if you want the list range to include all subseuquent items until the end of the list. The example below will print everything from the second item to the end of the list. 
+The empty value before the colon allows Python to assume the range starts at the first list item, at `[0]`. You can also end the slice with `:`, if you want the list range to include all subsequent items until the end of the list. The example below will print everything from the second item to the end of the list. 
 
 ```python
 print(books[1:])
@@ -473,23 +475,23 @@ With a list that contains three items total, list slicing might not seem very im
 
 ## Challenge
 
-Create a new list of books in the REPL, with at least 5 books in your list. Make sure the total number of books in the list is an **odd** number. How do you get python to print out the book in the middle of the list? What about the three books in the middle? Remember that the first value in a slice is *inclusive*, and the final value is *exclusive*. 
+Create a new list of books in the REPL, with at least 5 books in your list. Make sure the total number of books in the list is an **odd** number. How do you get python to print out the book in the middle of the list? What about the three books in the middle? Remember that the first value in a slice is _inclusive_, and the final value is _exclusive_. 
 
 ## Solution
 
-```console
-$ books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality', 'The Undercommons']
-$ books[2] # ['Living a Feminist Life']
-$ books[1:4] # ['Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality']
+```pycon
+>>> books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality', 'The Undercommons']
+>>> books[2] # ['Living a Feminist Life']
+>>> books[1:4] # ['Cruising Utopia', 'Living a Feminist Life', 'Radiant Textuality']
 ```
 
 ## Evaluation
 
-How would you get Python to print the length of the last book in the list? Hint: this number reflects the length of the *string* which is the last item in the list. Choose the correct expression from the options below.
-- len(books)
-- print(books[-1])
-- print(len[-1])
-- print(len(books[-1]))*
+How would you get Python to print the length of the last book in the list? Hint: this number reflects the length of the _string_ which is the last item in the list. Choose the correct expression from the options below.
+- `len(books)`
+- `print(books[-1])`
+- `print(len[-1])`
+- `print(len(books[-1]))`*
 
 # Loops
 
@@ -503,7 +505,7 @@ for book in books:
     print("My favorite book is " + book)
 ```
 
-What's happening here? This kind of loop is called a "for" loop, and tells Python: "for each item in the list, do something." Let's break it down:
+What's happening here? This kind of loop is called a "for loop", and tells Python: "for each item in the list, do something." Let's break it down:
 
 ```python
 for <variable name> in <list name>:
@@ -512,7 +514,7 @@ for <variable name> in <list name>:
 
 Indented code like this is known as a "code block." Python will run the `<do something>` code in the code block once for each item in the list. You can also refer to `<variable name>` in the `<do something>` block.
 
-You can also loop through items within a string. For example, type the following into your loop.py file:
+You can also loop through items within a string. For example, type the following into your `loop.py` file:
 
 ```python
 for letter in "hello":
@@ -542,46 +544,46 @@ When variable names accurately reflect what they represent, and are therefore me
 
 1. Here's a list of numbers:
 
-```python
-prime_numbers = [2, 3, 5, 7, 11]
-```
+    ```python
+    prime_numbers = [2, 3, 5, 7, 11]
+    ```
 
-Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is below, but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
+    Write some code to print out the square of each of these numbers. Remember that the square of a number is that number times itself. The solution is below, but you're not allowed to look at it until you've tried to solve it yourself for 3.5 minutes. (Seriously! That's 210 seconds.)
 
 2. First, ignore this challenge because it's too hard. Next, look up a new concept—"f-string" (a formatting technique for strings)—on Google and use it to write a loop that gives the following output:
 
-```
-The square of 2 is 4.
-The square of 3 is 9.
-The square of 5 is 25.
-The square of 7 is 49.
-The square of 11 is 121.
-```
+    ```
+    The square of 2 is 4.
+    The square of 3 is 9.
+    The square of 5 is 25.
+    The square of 7 is 49.
+    The square of 11 is 121.
+    ```
 
-Note: the "f-string" is a new string formatting method for Python 3. You can [read more about this new string formatting method](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python).
+    Note: the "f-string" is a new string formatting method for Python 3. You can [read more about this new string formatting method](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python).
 
 ## Solution
 
-1. 
+1. To get the square of the elements in the list `prime_numbers`, you can:
 
-```python
-prime_numbers = [2, 3, 5, 7, 11]
+    ```python
+    prime_numbers = [2, 3, 5, 7, 11]
+    
+    for num in prime_numbers:
+        print(num * num)
+    ```
 
-for num in prime_numbers:
-    print(num * num)
-```
+2. Using "f-strings" to output the list of results in the challenge would look something like this:
 
-2. 
-
-```python
-prime_numbers= [2,3,5,7,11]
-for num in prime_numbers:
-    print(f"The square of {num} is {num * num}")
-```
+    ```python
+    prime_numbers= [2,3,5,7,11]
+    for num in prime_numbers:
+        print(f"The square of {num} is {num * num}")
+    ```
 
 ## Evaluation
 
-What are different ways for describing what a `for loop` can do? Select all that apply. 
+What are different ways for describing what a "for loop" can do?
 - for each item in a list, multiply it against itself.*
 - print the contents of a list.*
 - add a new item to a list.
@@ -601,9 +603,9 @@ else:
     print("I don't know what field you're talking about! I'm just a little program...")
 ```
 
-In our first line, we set a variable `field` to the string `"Media Studies"`, representing our chosen field of study. The `if` statement checks whether the field is set to the field "Media Studies". If it is, the code in the block beneath is executed, so the string `"Grammophone, Film, Typewriter"` will be printed.
+In our first line, we set a variable `field` to the string `"Media Studies"`, representing our chosen field of study. The `if` statement checks whether the field is set to the string "Media Studies". If it is, the code in the block beneath is executed, so the string `"Grammophone, Film, Typewriter"` will be printed.
 
-It's important to note at this point the use of the double equals sign `==` in if statements. The double equals is an *equality* operator, and it checks to see if the two values on either side are equivalent. Contrast this with the single equals that you've already seen, `=`, which is an *assignment* operator, that assigns a value to a variable. In the line `field = "Media Studies"`, you are using the assignment operator `=` to set the field to Media Studies, while in the if statement, you're using the equality operator `==` to check if the field is equivalent to Media Studies. 
+It's important to note at this point the use of the double equals sign `==` in `if` statements. The double equals is an _equality_ operator, and it checks to see if the two values on either side are equivalent. Contrast this with the single equals that you've already seen, `=`, which is an _assignment_ operator, that assigns a value to a variable. In the line `field = "Media Studies"`, you are using the assignment operator `=` to set the variable's value to "Media Studies", (a string) while in the `if` statement, you're using the equality operator `==` to check if the field is equivalent to "Media Studies". 
 
 You'll also notice the inclusion of a new line, the `else` statement. The `else` statement handles any inputs that aren't "Media Studies", and the program merely prints out that it doesn't know what you should bring. 
 
@@ -634,6 +636,7 @@ Add two more `elif` statements to this program to make it better able to handle 
 
 ```python
 field = "Media Studies"
+
 if field == "Media Studies":
     print("Grammophone, Film, Typewriter")
 elif field == "Critical University Studies":
@@ -650,7 +653,7 @@ else:
 
 ## Evaluation
 
-What is the difference between the double equals `==` and single equals `=`? Select the statements that apply.
+What is the difference between the double equals (`==`) and single equals (`=`)?
 - The double equals checks to see if one value is equivalent to the other, as in `2 == 2`.*
 - The double equals assigns the value on the right to the variable on the left, as in `x == 2`.
 - The single equals checks to see if one value is equivalent to the other, as in `2 = 2`.
@@ -662,13 +665,13 @@ What is the difference between the double equals `==` and single equals `=`? Sel
 
 Python allows you to take input directly from the user using the `input()` function. 
 
-Let's try it out by setting the function to a variable, which we will call `greeting`.
+Let's try it out by setting the function to a variable, which we will call `greeting`. Open the Python REPL and type:
 
 ```pycon
 >>> greeting = input()
 ```
 
-When you press enter, you should see a blank line. Type in your favorite greeting. I'm going to type `hey you!`. Then, press enter.
+When you press <kbd>enter</kbd>, you should see a blank line. Type in your favorite greeting. I'm going to type `hey you!`. Then, press <kbd>enter</kbd>.
 
 ```pycon
 >>> greeting = input()
@@ -693,7 +696,7 @@ How are you feeling today?
 
 Note that there's a little space after the question mark and before the closing quotation mark, which is to improve readability.
 
-We can answer with `like a rollercoaster of emotions`. Then, when we type in our varialbe `feelings` and press enter, we'll get our input printed back at us.
+We can answer with `like a rollercoaster of emotions`. Then, when we type in our variable `feelings` and press enter, we'll get our input printed back at us.
 
 ```pycon
 >>> feelings = input('How are you feeling today? ')
@@ -708,6 +711,7 @@ Remember this loop?
 
 ```python
 field = "Media Studies"
+
 if field == "Media Studies":
     print("Grammophone, Film, Typewriter")
 elif field == "Critical University Studies":
@@ -738,22 +742,22 @@ else:
 ## Evaluation
 
 If we wanted to calculate the length of an input using `len()`, how would we write that expression?
-- input() = len()
-- response = len().input()
-- len(input()) = length_of_response
-- length_of_response = len(input())*
+- `input() = len()`
+- `response = len().input()`
+- `len(input()) = length_of_response`
+- `length_of_response = len(input())`*
 
 # Doing Things to Lists
 
 Okay. Let's make our little book application a little more robust. We are going to create a list of books (remember lists?) that we can then manipulate in all sorts of ways.
 
-First, go back to your terminal and enter the REPL, or interactive mode. When you see the `>>>`, create a list with at least three books that are important to your research right now. Shorten the titles to one or two words if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brackets with commas separating the list items. Because the items are strings, they should also be inside quotes. 
+First, go back to your terminal and enter the REPL, or Python's interactive mode. When you see the `>>>`, create a list with at least three books that are important to your research right now. Shorten the titles to one or two words if need be. Let's call this list our `library`. Remember the proper syntax for creating a list includes square brackets with commas separating the list items. Because the items are strings, they should also be inside quotes.
 
 ```pycon
 library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
 ```
 
-Next, let's sort our `library` in alphabetical order. There's a handy method called `sort()` for doing just this kind of thing. What's a *method*, you might ask? Well, *methods* are very similar to *functions*, and you'll remember that functions are ways of doing things, like `print()` and `type()`. Methods are also ways of doing things, but these things are attached to what we call *objects* in Python. Objects are part of object-oriented-programming, and that's definitely not necessary to learn right now. Suffice it to say that methods are just like functions, that is, they are ways of doing things to your data.
+Next, let's sort our `library` in alphabetical order. There's a handy method called `sort()` for doing just this kind of thing. What's a _method_, you might ask? Well, _methods_ are very similar to _functions_, and you'll remember that functions are ways of doing things, like `print()` and `type()`. Methods are also ways of doing things, but these things are attached to what we call _objects_ in Python. Objects are part of object-oriented-programming, and that's definitely not necessary to learn right now. Suffice it to say that methods are just like functions, that is, they are ways of doing things to your data.
 
 To sort the list, use the `sort()` method on your list. It should look like this:
 
@@ -766,8 +770,8 @@ print(library)
 What happened here? Let's take it line by line. First, we created a list `library` with three items attached to it. Then, we applied the `sort()` method to the library list. Finally, we printed the `library`, which is now sorted in alphabetical order.
 
 You'll see that we have a couple of new things happening with symbols. 
-- First, the period `.` which is an *operator* in Python. The period operator is another part of object-oriented-programming, and it basically means that we are applying a task to whatever precedes the period. In this case, we are applying the `sort()` method to our `library` list. It's kind of like attaching a function to our `library`. 
-- Second, we have the parenthesis `()` after `sort`. When you get more comfortable with programming, you'll often use the parentheses to include what we call *arguments* that allows us to do more complex things to data. Let's see how an argument works with the `append()` method.
+- First, the period `.` which is an _operator_ in Python. The period operator is another part of object-oriented-programming, and it basically means that we are applying a task to whatever precedes the period. In this case, we are applying the `sort()` method to our `library` list. It's kind of like attaching a function to our `library`. 
+- Second, we have the parenthesis `()` after `sort`. When you get more comfortable with programming, you'll often use the parentheses to include what we call _arguments_ that allows us to do more complex things to data. Let's see how an argument works with the `append()` method.
 
 What if we want to add items to the list? We can use the `append()` method for that. Try:
 
@@ -789,7 +793,7 @@ library.pop()
 print(library)
 ```
 
-The last item that you added to your list should be missing from the `library` when you print the list. Advanced question--if you `sort()` the library in between adding and popping a book, you'll end up with a different list than if you didn't run sort() in between `append()` and `pop()`. Can you guess why?
+The last item that you added to your list should be missing from the `library` when you print the list.
 
 ## Challenge
 
@@ -850,6 +854,8 @@ Select the following statements that truly describe `sort()`, `append()`, and `p
 - `append()` always takes an argument.*
 - `pop()` can be applied to a string.
 
+Advanced question: If you `sort()` the library in between adding and popping a book, you'll end up with a different list than if you didn't run sort() in between `append()` and `pop()`. Can you guess why?
+
 # Finding Answers with Google
 
 Our library app is working pretty well, but you may have noticed that it's case sensitive:
@@ -887,7 +893,7 @@ While Google searches change over time, some of your results likely come from a 
 
 ![Google search results with stack overflow answer on top](images/google_result.png)
 
-On [this Stack Overflow page](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python), take a quick look at the question to make sure it's relevant to your problem. Then scroll down to the answers to find what we're looking for. You may also notice snarky debates -- another "feature" of Stack Overflow.
+On [this _Stack Overflow_ page](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python), take a quick look at the question to make sure it's relevant to your problem. Then scroll down to the answers to find what we're looking for. You may also notice snarky debates—another "feature" of _Stack Overflow_.
 
 ## Implementing our answer
 
@@ -916,36 +922,36 @@ elif response == "remove":
     print(library)
 else: 
     print("I don't know what you want me to do!")
-
 ```
 
 This new script should handle any combination of upper or lowercase characters. The new second line sets the response variable to a new value, `response.lower()`, which is a lowercase version of the original input.
 
-There's no shame in googling for answers! Error messages are especially useful to google when you run into them. Keep an eye out for Stack Overflow answers, as they tend to have useful examples. The [official Python documentation](https://docs.python.org/3/) will also frequently come up, but I would recommend avoiding it as a resource until you have more programming experience. It's a great resource, but the way information is presented can be confusing until you get the hang of reading documentation.
+There's no shame in googling for answers! Error messages are especially useful to google when you run into them. Keep an eye out for _Stack Overflow_ answers, as they tend to have useful examples. The [official Python documentation](https://docs.python.org/3/) will also frequently come up, but I would recommend avoiding it as a resource until you have more programming experience. It's a great resource, but the way information is presented can be confusing until you get the hang of reading documentation.
 
 ## Challenge
 
 1. We are going to use `while` loops to get Python to repeat loops over and over again. This involves adding a `while` statement to your library app. The code should look like this, and it goes right after the `library` list and before your `input` statement.
 
-```python
-while True:
-```
+    ```python
+    while True:
+        ...
+    ```
 
-Make sure that everything under `while True:` is indented (this creates a "code block," or a group of lines that will be executed together).
+    Make sure that everything under `while True:` is indented (this creates a "code block," or a group of lines that will be executed together).
 
-To stop the loop, you can press `control-c` in the terminal. This stops the program from being run, what we call "interrupting" the program. You can also add a `break` statement somewhere in your code which will automatically exit the program. For example:
+    To stop the loop, you can press <kbd>control</kbd> + <kbd>c</kbd> in the terminal. This stops the program from being run, what we call "interrupting" the program. You can also add a `break` statement somewhere in your code which will automatically exit the program. For example:
 
-```python
-    if response == "sort":
-        library.sort()
-        print(library)
-        break
-    ... 
-    else: 
-        print("I don't know what you want me to do!")
-```
+    ```python
+        if response == "sort":
+            library.sort()
+            print(library)
+            break
+        ... 
+        else: 
+            print("I don't know what you want me to do!")
+    ```
 
-Once you get the loop to work, you can add more `elif` statements to add more books to the list. Then, run the program, adding books, sorting them and removing them. Read more about `while` loops [here](https://www.w3schools.com/python/python_while_loops.asp).
+    Once you get the loop to work, you can add more `elif` statements to add more books to the list. Then, run the program, adding books, sorting them and removing them. Read more about `while` loops [here](https://www.w3schools.com/python/python_while_loops.asp).
 
 2. (optional) OK, I told you not to look at the Python documentation. But doesn't that make you really want to go look at the Python documentation? How bad could this "documentation" really be? What terrible secrets might it hold?
 
@@ -953,42 +959,43 @@ Once you get the loop to work, you can add more `elif` statements to add more bo
 
 ## Solution
 
-1. 
+1. Here's how you would include a `while` statement in our library application:
 
-```python
-library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
-while True:
-    response = input("What do you want to do with your books today? ")
-    response = response.lower()
-    if response == "sort":
-        library.sort()
-        print(library)
-    elif response == "add":
-        library.append("La Frontera")
-        print(library)
-    elif response == "add again":
-        library.append("In the Dreamhouse")
-        print(library)
-    elif response == "more books":
-        library.append("Giovanni's Room")
-        print(library)
-    elif response == "moar":
-        library.append("Nightwood")
-        print(library)
-        break
-    elif response == "remove":
-        library.pop()
-        print(library)
-    else: 
-        print("I don't know what you want me to do!")
-```
+    ```python
+    library = ["Orlando", "Confessions of the Fox", "These Waves of Girls"]
+    while True:
+        response = input("What do you want to do with your books today? ")
+        response = response.lower()
+        if response == "sort":
+            library.sort()
+            print(library)
+        elif response == "add":
+            library.append("La Frontera")
+            print(library)
+        elif response == "add again":
+            library.append("In the Dreamhouse")
+            print(library)
+        elif response == "more books":
+            library.append("Giovanni's Room")
+            print(library)
+        elif response == "moar":
+            library.append("Nightwood")
+            print(library)
+            break
+        elif response == "remove":
+            library.pop()
+            print(library)
+        else: 
+            print("I don't know what you want me to do!")
+    ```
 
 ## Evaluation
+
 If we wanted to make a string like `'hello'` uppercase, we would use the method `upper()`, in the following way:
-- upper('hello')
-- upper().'hello'
-- 'hello'.upper()*
-- 'hello'(upper)
+- `upper('hello')`
+- `upper().'hello'`
+- `'hello'.upper()`*
+- `'hello'(upper)`
 
 # A Little Motivation
 
@@ -998,7 +1005,7 @@ Early on, we learned a bit about lists, which look like this:
 ["Gender Trouble", "Cruising Utopia", "Living a Feminist Life"]
 ```
 
-We're going to create a small application that will print a random motivational saying every time a user presses `Enter`. Our first step will be to create a list of positive sayings:
+We're going to create a small application that will print a random motivational saying every time a user presses <kbd>enter</kbd>. Our first step will be to create a list of positive sayings:
 
 ```python
 motivational_phrases = [
@@ -1036,11 +1043,11 @@ The `random.choice` function chooses a random item from a list and returns it. T
 
 ## Challenge
 
-1. As with our library app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. Remember to include a `break` statement or use `control-c` to get out of the loop! Read more [on while loops here](https://www.w3schools.com/python/python_while_loops.asp).
+1. As with our library app, this positive saying generator could be improved by making it so the program doesn't have to run again every time to get new output. Add a while loop for the final version. Remember to include a `break` statement or use <kbd>control</kbd> + <kbd>c</kbd> to get out of the loop! Read more [about while loops here](https://www.w3schools.com/python/python_while_loops.asp).
 
 2. The real point of this section is to learn `import`, which is where Python really starts to get interesting. Python comes with many libraries (importable collections of code), written by others that can be pulled into your program, allowing you to use that functionality. In this challenge, do a little research on Python libraries that might solve a problem for you or address a domain that you're interested in.
 
-Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "*thing you are interested in* python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
+Think of something you're interested in doing (statistics, text analysis, web scraping, quantitative analysis, processing Excel/PDF/image files) and search google "<_thing you are interested in_> python library". You're almost certain to find some useful results. For example, if you wanted to find Python libraries for dealing with cleaning up HTML files, you might search one of these:
 
 > working with html python library
   
@@ -1050,24 +1057,24 @@ In your research, you may also want to look at the libraries that come with Pyth
 
 ## Solution
 
-1. 
+1. Here's how you could add a `while` loop to our positive saying generator:
 
-```python
-import random
+    ```python
+    import random
 
-while True:
-    motivational_phrases = [
-        "Importing modules is easy!",
-        "Programming! Yay!",
-        "You write lists like a pro!",
-        ]
+    while True:
+        motivational_phrases = [
+            "Importing modules is easy!",
+            "Programming! Yay!",
+            "You write lists like a pro!",
+            ]
 
-    # Because this is input, the user will
-    # need to hit enter to see a new phrase
-    input(random.choice(motivational_phrases))
-```
+        # Because this is input, the user will need to hit enter to see a new phrase
+        input(random.choice(motivational_phrases))
+    ```
 
 ## Evaluation
+
 What is a module? Select all that apply:
 - A module is a file of code.*
 - Applications can incorporate many different modules.*
@@ -1082,6 +1089,7 @@ When we added `sort()`, `append()`, `pop()`, and `lower()` to our library app, w
 
 ```pycon
 >>> loud_greeting = "HELLO!"
+
 >>> loud_greeting.lower()
 'hello!'
 ```
@@ -1098,6 +1106,7 @@ Let's use the REPL for a moment—open it by typing `python` at the command line
 
 ```pycon
 >>> s = 'Hello, world!'
+
 >>> dir(s)
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__',
 ...
@@ -1106,9 +1115,11 @@ Let's use the REPL for a moment—open it by typing `python` at the command line
 
 The above output shows some of the methods and attributes for Python strings that can be accessed using the dot (`.`) syntax. Also, be aware that Python doesn't print all the possible methods and attributes, just what it considers to be most important. Also, when using `dir()`, you'll mostly want to ignore the methods and attributes that have underscores around them. They mainly have to do with the internals of the Python language. For now, ignore the information within underscores (like `__add__`) and focus on the stuff surrouned by single quotes (like `startswith`).
 
-You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the random library again and see what you get when you enter `dir(random)`. 
+You can also use `dir()` to see what functions are available from Python libraries that you import. Try importing the `random` library again and see what you get when you enter `dir(random)`. 
 
 ```pycon
+>>> import random
+
 >>> dir(random)
 ['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_BuiltinMethodType', '_MethodType', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_inst', '_itertools', '_log', '_os', '_pi', '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
 ```
@@ -1119,9 +1130,9 @@ Try entering other objects based on Python types we've already learned to the `d
 
 *Advanced Final Challenge*: 
 
-Let's try out a module for web scraping, called Requests. Requests allows you to send queries over web browsers, which we call HTTP requests, in order to grab data from websites. It is a foundational module for web scraping tasks. While Requests is relatively easy to grasp at first, it has a bit of a learning curve. With some practice, though, it can yield sophisticated web scraping results. 
+Let's try out a library for web scraping, called `requests`. It allows you to send queries over web browsers (which we call HTTP requests) in order to grab data from websites. It is a foundational module for web scraping tasks. While `requests` is relatively easy to grasp at first, it has a bit of a learning curve. With some practice, though, it can yield sophisticated web scraping results. 
 
-For this challenge, let's get some hands-on practice with using requests, to scrape the surface of what it can do. Feel free to attempt as much of this challange as you are comfortable with. 
+For this challenge, let's get some hands-on practice using `requests`, to scrape the surface of what it can do. Feel free to attempt as much of this challenge as you are comfortable with. 
 
 First, import requests into your REPL: 
 
@@ -1129,16 +1140,17 @@ First, import requests into your REPL:
 >>> import requests
 ```
 
-Then, let's set up a request *object*. Basically, we will declare a variable `r` to represent the content from a website that we want to scrape. After the equal sign `=`, we call the `requests` module, and within that module, a method called `get`, which includes the parameter of the website URL, enclosed in single quotes. Like so: 
+Then, let's set up a request _object_. Basically, we will declare a variable `r` to represent the content from a website that we want to scrape. After the equal sign `=`, we call the `requests` module, and within that module, a method called `get`, which includes the parameter of the website URL, enclosed in single quotes. Like so: 
 
 ```pycon
 >>> import requests
+
 >>> r = requests.get('https://www.nytimes.com')
 ```
 
 Now, let's examine that request object. Use the `dir` function to see what methods and attributes are available to `r`. Focus on the items within single quotes, rather than the underscores. Look up any of the items that seem interesting but unclear to you. Try to find out what at least one of these methods does, such as `encoding`. Can you try out some of these methods in the REPL? This would involve adding the dot operator `.` to your variable `r`, followed by the method.
 
-Even if you don't understand the results---that's okay! This is an advanced challenge, meant to expose you to the beginning of your exploration with this module. This is only the first step to running more robust web scraping experiments. 
+Even if you don't understand the results—that's okay! This is an advanced challenge, meant to expose you to the beginning of your exploration with this module. This is only the first step to running more robust web scraping experiments. 
 
 ## Solution
 
@@ -1154,8 +1166,10 @@ Then, trying out some of the methods:
 ```pycon
 >>> r.status_code
 200
+
 >>> r.encoding
 'utf-8'
+
 >>> r.cookies
 <RequestsCookieJar[Cookie(version=0, name='nyt-a', value='04u7q0SFZ2OpnpLqevHY65', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=True, expires=1627494229, discard=False, comment=None, comment_url=None, rest={'SameSite': 'none'}, rfc2109=False), Cookie(version=0, name='nyt-gdpr', value='1', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=False, expires=1595979829, discard=False, comment=None, comment_url=None, rest={}, rfc2109=False), Cookie(version=0, name='nyt-geo', value='PT', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=False, expires=1595979829, discard=False, comment=None, comment_url=None, rest={}, rfc2109=False), Cookie(version=0, name='nyt-purr', value='cfhspnahhu', port=None, port_specified=False, domain='.nytimes.com', domain_specified=True, domain_initial_dot=True, path='/', path_specified=True, secure=True, expires=1627494229, discard=False, comment=None, comment_url=None, rest={'SameSite: Lax': None}, rfc2109=False)]>
 
@@ -1163,7 +1177,16 @@ Then, trying out some of the methods:
 
 What do these methods do? For the `r.status_code`, the `200` return value means that the request was successful, because 200 is the HTTP code for a successful request. This is opposed to 400 codes, like 404 error, which indicates a failure to reach the website. 
 
-This is just the tip of the iceberg for using requests. In order to get more information, you'll have to read up on the module. Here is [an excellent tutorial](https://scotch.io/tutorials/getting-started-with-python-requests-get-requests) to get started.
+The most useful method, however, is likely `text`:
+
+```pycon
+>>> r.text
+...
+```
+
+`text` allows you to access the text content of the site you have requested, which is extremely useful when you want to scrape websites for information, for instance.
+
+This is just the tip of the iceberg for using `requests`. In order to get more information, you'll have to read up on the module. Here is [an excellent tutorial](https://scotch.io/tutorials/getting-started-with-python-requests-get-requests) to get started.
 
 ## Evaluation
 Why would someone use `dir()`? Select all that apply:
