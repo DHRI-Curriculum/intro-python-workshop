@@ -72,6 +72,12 @@ What are the characteristics of the REPL? Select all that apply.
 - The REPL and the terminal are the same thing.
 - The REPL can be used to evaluate mathematical expressions like `2 + 2`.*
 
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [REPL](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/repl.md)
+
 # Types
 
 Types are classifications that let the computer know how a programmer intends to use a piece of data. You can just think of them as, well, types of data.
@@ -136,6 +142,18 @@ Select all the following that accurately describe the data type categories.
 - Integers can be expressed with numbers like `1` or letters `one`.
 - Strings can contain numbers within quotations, like `"1"`.*
 - Lists can contain strings, like `["banana, 'coffee', 'eggs']`.*
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [Function](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/function.md)
+- [Boolean](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/boolean.md)
+- [Float](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/float.md)
+- [Integer](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/integer.md)
+- [String](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/string.md)
+- [List](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/list.md)
+- [Type()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/type.md)
 
 # Variables
 
@@ -203,6 +221,12 @@ Select all the variable expressions that are allowed in Python.
 - `one = 1`*
 - `$$$ = "dollar_signs"`
 - `first_book = "Orlando"`*
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [Variables](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/variables.md)
 
 # Running scripts
 
@@ -277,6 +301,14 @@ What are the differences between the terminal, REPL, and text editor? Select the
 - You can run scripts from the **terminal** that were written on the text editor. *
 - The **REPL** allows you to save scripts for later use.
 - The **text editor** allows you to test code on the fly.
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [REPL](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/repl.md)
+- [Scripts](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/scripts.md)
+- [print()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/print.md)
 
 # Errors in Python
 
@@ -396,6 +428,13 @@ If you get an error, what can you do to debug it? Select all that apply:
 - Copy the error message into a Google search.*
 - Run spell check on your code.
 
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [Syntax Errors](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/syntax_error.md)
+- [Traceback Errors](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/traceback_error.md)
+
 # Lists
 
 Remember lists? They look like this:
@@ -497,6 +536,14 @@ How would you get Python to print the length of the last book in the list? Hint:
 - `print(len[-1])`
 - `print(len(books[-1]))`*
 
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [list](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/list.md)
+- [list indexing](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/list_indexing.md)
+- [len()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/len.md)
+
 # Loops
 
 What if we want to print out each item in the list separately? For that, we'll need something called a loop:
@@ -593,6 +640,13 @@ What are different ways for describing what a "for loop" can do?
 - add a new item to a list.
 - loop through characters in a string.
 
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [for-loop](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/for_loop.md)
+- [f-string](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/f-string.md)
+
 # Conditionals
 
 Conditionals allow programs to change their behavior based on whether some statement is true or false. Let's try this out by writing a script that will give different outputs (consisting of book titles) based on the specified field of study:
@@ -661,6 +715,12 @@ What is the difference between the double equals (`==`) and single equals (`=`)?
 - The double equals assigns the value on the right to the variable on the left, as in `x == 2`.
 - The single equals checks to see if one value is equivalent to the other, as in `2 = 2`.
 - The single equals assigns the value on the right to the variable on the left, as in `x = 2`.*
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [if-Statement](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/if_statement.md)
 
 # Input
 
@@ -751,6 +811,12 @@ If we wanted to calculate the length of an input using `len()`, how would we wri
 - `response = len().input()`
 - `len(input()) = length_of_response`
 - `length_of_response = len(input())`*
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [input()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/input.md)
 
 # Doing Things to Lists
 
@@ -860,6 +926,14 @@ Select the following statements that truly describe `sort()`, `append()`, and `p
 - `pop()` can be applied to a string.
 
 Advanced question: If you `sort()` the library in between adding and popping a book, you'll end up with a different list than if you didn't run sort() in between `append()` and `pop()`. Can you guess why?
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [append](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/append.md)
+- [sort()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/sort.md)
+- [pop()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/pop.md)
 
 # Finding Answers with Google
 
@@ -1002,6 +1076,13 @@ If we wanted to make a string like `'hello'` uppercase, we would use the method 
 - `'hello'.upper()`*
 - `'hello'(upper)`
 
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [Lower](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/lower.md)
+- [Method](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/method.md)
+
 # A Little Motivation
 
 Early on, we learned a bit about lists, which look like this:
@@ -1085,6 +1166,14 @@ What is a module? Select all that apply:
 - Applications can incorporate many different modules.*
 - A module needs to be downloaded and installed.
 - A module needs to be imported with an `import` statement.*
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [Module](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/module.md)
+- [Random](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/random.md)
+- [While Loop](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/while_loop.md)
 
 # Objects in Python
 
@@ -1199,3 +1288,12 @@ Why would someone use `dir()`? Select all that apply:
 - to see what can be done with an object, like a string or a list.*
 - to see what can be done with a variable that's been assigned to a value.*
 - to examine a particular method, like `sort()`.
+
+## Keywords
+
+Do you remember the glossary terms from this section?
+
+- [module](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/module.md)
+- [requests](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/requests.md)
+- [Object](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/object.md)
+- [dir()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/dir.md)
