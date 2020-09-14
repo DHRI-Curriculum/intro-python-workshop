@@ -1080,7 +1080,7 @@ If we wanted to make a string like `'hello'` uppercase, we would use the method 
 
 Do you remember the glossary terms from this section?
 
-- [Lower](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/lower.md)
+- [lower()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/lower.md)
 - [Method](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/method.md)
 
 # A Little Motivation
@@ -1171,9 +1171,9 @@ What is a module? Select all that apply:
 
 Do you remember the glossary terms from this section?
 
-- [Module](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/module.md)
+- [Modules](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/module.md)
 - [Random](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/random.md)
-- [While Loop](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/while_loop.md)
+- [while loops](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/while_loop.md)
 
 # Objects in Python
 
@@ -1293,7 +1293,7 @@ Why would someone use `dir()`? Select all that apply:
 
 Do you remember the glossary terms from this section?
 
-- [module](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/module.md)
+- [Modules](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/module.md)
 - [requests](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/requests.md)
-- [Object](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/object.md)
+- [Objects](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/object.md)
 - [dir()](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/dir.md)
