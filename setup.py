@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     if contexts.get('Ethical Considerations'):
         README += '### Ethical Considerations\n\n'
-        README += f'Before you start the {workshop_title}, we want to remind you of some ethical considerations to take into account when you read through the lessons of this workshop:\n\n'
+        README += f'Before you start the {workshop_title} workshop, we want to remind you of some ethical considerations to take into account when you read through the lessons of this workshop:\n\n'
         README += contexts.get('Ethical Considerations') + '\n\n'
 
     if contexts.get('Pre-reading suggestions'):
