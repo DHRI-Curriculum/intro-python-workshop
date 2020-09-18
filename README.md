@@ -23,7 +23,7 @@ In this workshop, you will:
 1. [Interacting with Python](sections/01-interacting-with-python.md)
 2. [Types](sections/02-types.md)
 3. [Variables](sections/03-variables.md)
-4. [Running scripts](sections/04-running-scripts.md)
+4. [Running Scripts](sections/04-running-scripts.md)
 5. [Errors in Python](sections/05-errors-in-python.md)
 6. [Lists](sections/06-lists.md)
 7. [Loops](sections/07-loops.md)

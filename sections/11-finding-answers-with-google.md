@@ -27,7 +27,7 @@ elif response == "SORT":
 
 This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `SorT`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
 
-## Googling for answers
+## Googling for Answers
 
 Even if you're a super rad Python programmer, you're not going to remember every function name or how to do things you might not have touched in awhile. One thing programmers get very good at is googling for answers. In fact, this is arguably the most important skill in modern-day programming. So let's use Google to find out how to convert strings to lower case.
 
@@ -41,7 +41,7 @@ While Google searches change over time, some of your results likely come from a 
 
 On [this _Stack Overflow_ page](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python), take a quick look at the question to make sure it's relevant to your problem. Then scroll down to the answers to find what we're looking for. You may also notice snarky debates—another "feature" of _Stack Overflow_.
 
-## Implementing our answer
+## Implementing Our Answer
 
 According to this answer, we can make a string lowercase by adding `.lower()` to the end of it, like this:
 

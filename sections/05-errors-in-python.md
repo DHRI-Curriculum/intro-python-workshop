@@ -1,4 +1,4 @@
-← [Running scripts](04-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](06-lists.md) →
+← [Running Scripts](04-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](06-lists.md) →
 
 ---
 
@@ -8,7 +8,7 @@ Our usual response when seeing an error on a computer screen is a stress respons
 
 In Python, errors are our friends. This might be hard to accept initially, but the errors you see when running Python scripts generally do a good job of pointing you to what's going wrong in your program. When you see an error in Python, therefore, try not to fall into the stress response you may be used to when interacting with your computer normally.
 
-## Two kinds of errors
+## Two Kinds of Errors
 
 In Python, there are two kinds of errors you will encounter frequently. One appears before the program runs, and the other appears during the execution of a program.
 
@@ -129,4 +129,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Running scripts](04-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](06-lists.md) →
+← [Running Scripts](04-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](06-lists.md) →

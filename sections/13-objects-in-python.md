@@ -110,6 +110,7 @@ The most useful method, however, is likely `text`:
 This is just the tip of the iceberg for using `requests`. In order to get more information, you'll have to read up on the module. Here is [an excellent tutorial](https://scotch.io/tutorials/getting-started-with-python-requests-get-requests) to get started.
 
 ## Evaluation
+
 Why would someone use `dir()`? Select all that apply:
 - to examine a function like `print()`.*
 - to see what can be done with an object, like a string or a list.*

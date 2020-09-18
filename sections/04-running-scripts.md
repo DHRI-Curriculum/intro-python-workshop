@@ -2,7 +2,7 @@
 
 ---
 
-# 4. Running scripts
+# 4. Running Scripts
 
 So far, you've interacted with Python one line at a time in the REPL. This is what we call the Interactive Mode, which is like a playground for experimenting and exploring different Python expressions, like `2 + 2` or `type("some stuff")`. The code that we write in the REPL is not saved after you exit, which means that this space is for running Python expressions and *not* for writing longer programs.
 
@@ -10,7 +10,7 @@ For the rest of this session, we're going to expand beyond the REPL to write and
 
 This is a big move, so let's take it slow. To reiterate, the major change is that we will be working across two spaces, the terminal and the text editor, rather than just the terminal alone. We will be writing our scripts into the text editor, and using the terminal to run those scripts.
 
-## Your first script
+## Your First Script
 
 First, let's begin with the text editor. Open your text editor of choice (such as Visual Studio Code) and create a new file with this line:
 
@@ -24,7 +24,7 @@ Save it with the name `hello.py` to a known location, such as your desktop. Open
 $ cd Desktop
 ```
 
-Once you're in the folder with your `hello.py` file, move to the terminal. Do *not* enter the Python Interactive Mode (the REPL), which is unecessary to run python scripts. Instead, lookout for the `$` symbol that lets you know you're in the terminal. (If you find yourself in the Interactive mode (`>>>`), then try exiting it with <kbd>control</kbd> + <kbd>D</kbd>. You should see the `$` symbol, letting you know you're back in the terminal. If you still do not see the `$` symbol, type `exit()` followed by <kbd>enter</kbd> after the Python prompt, `>>>`.)
+Once you're in the folder with your `hello.py` file, move to the terminal. Do *not* enter the Python Interactive Mode (the REPL), which is unecessary to run python scripts. Instead, lookout for the `$` symbol that lets you know you're in the terminal. (If you find yourself in the Interactive mode (`>>>`), then try exiting it with <kbd>control</kbd> + <kbd>d</kbd>. You should see the `$` symbol, letting you know you're back in the terminal. If you still do not see the `$` symbol, type `exit()` followed by <kbd>enter</kbd> after the Python prompt, `>>>`.)
 
 Now that you're in the terminal, type the following, and press enter:
 
@@ -51,7 +51,7 @@ Fundamentally, Python programs are just text files. You can write them in any te
 
 2. (optional) Are you already getting sick of typing `python hello.py` again and again? Try typing `!!` in the command line (the `$`). This will run your last line of code again. Additionally, you can press the <kbd>up arrow</kbd> at the terminal prompt, and keep pressing it to scroll through the most recent commands.
 
-3. (even more optional) If you're on Windows and have a minute, try pressing the <kbd>Windows</kbd> button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than Git Bash.
+3. (even more optional) If you're on Windows and have a minute, try pressing the <kbd>windows</kbd> button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than Git Bash.
 
 ## Solution
 

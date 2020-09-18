@@ -60,7 +60,7 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 
 ## Challenge
 
-1. For a few minutes, practice moving in and out of Python's interactive mode (aka the REPL). You can get out of Python by hitting <kbd>Control</kbd> + <kbd>d</kbd> (or <kbd>Control</kbd> + <kbd>z</kbd> or <kbd>Control</kbd> + <kbd>Z</kbd> + <kbd>Enter</kbd> if you're on a computer running Windows) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash or your terminal when you see the `$`.
+1. For a few minutes, practice moving in and out of Python's interactive mode (aka the REPL). You can get out of Python by hitting <kbd>control</kbd> + <kbd>d</kbd> (or <kbd>control</kbd> + <kbd>z</kbd> or <kbd>control</kbd> + <kbd>z</kbd> + <kbd>enter</kbd> if you're on a computer running Windows) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash or your terminal when you see the `$`.
 
 2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..." If you were Guido van Rossum, the creator of Python, how would you define this operator?
 
