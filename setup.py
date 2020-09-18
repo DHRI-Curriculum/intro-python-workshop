@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
     ## Acknowledgements
     README += '## Acknowledgements\n\n'
-    README += 'This workshop is the result of a collaborative effort of a team of people, mostly involved presently or in the past, with the Graduate Center\'s Digital Initiatives:\n\n'
+    README += 'This workshop is the result of a collaborative effort of a team of people, mostly involved presently or in the past, with the Graduate Center\'s Digital Initiatives. If you want to see statistics for contributions to this workshop, you can do so [here](https://github.com/DHRI-Curriculum/python/graphs/contributors). This is a list of all the contributors:\n\n'
     README += frontmatter_sections.get("Acknowledgements") + '\n\n'
 
     ## Licensing information
