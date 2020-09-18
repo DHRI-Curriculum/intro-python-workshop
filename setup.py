@@ -5,13 +5,13 @@ from localdjango.setup import read, check_sections_directory, split_into_section
 
 if __name__ == "__main__":
 
-    workshop_title = 'Python'
+    workshop_title = 'Introduction to the Command Line'
 
     # setup 'sections' directory
     check_sections_directory()
 
     frontmatter_sections = split_frontmatter('frontmatter.md')
-    contexts = split_into_sections(frontmatter_sections.get("Contexts"))
+    contexts = split_into_sections(frontmatter_sections.get("Contexts"), clear_empty_lines=False)
 
     # split-up + write lesson files
     all_content = split_lessons('lessons.md')
