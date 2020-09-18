@@ -17,7 +17,7 @@ In this workshop, you will learn the following skills:
 
 ## Estimated time
 
-3-4 hours.
+3-4 hours
 
 ## Prerequisites
 
