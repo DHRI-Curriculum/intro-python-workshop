@@ -40,7 +40,7 @@ In this workshop, you will:
 
 If you do not have experience or basic knowledge of the following workshops, you may want to look into those before you start with test:
 
-- Introduction to the Command Line
+- [Introduction to the Command Line](https://www.github.com/DHRI-Curriculum/command-line)
 
 ### Ethical Considerations
 
