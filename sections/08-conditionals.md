@@ -1,4 +1,4 @@
-← [Loops](7-loops.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Input](9-input.md) →
+← [Loops](07-loops.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Input](09-input.md) →
 
 ---
 
@@ -79,4 +79,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Loops](7-loops.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Input](9-input.md) →
+← [Loops](07-loops.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Input](09-input.md) →

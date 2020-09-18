@@ -1,4 +1,4 @@
-← [Types](2-types.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Running scripts](4-running-scripts.md) →
+← [Types](02-types.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Running scripts](04-running-scripts.md) →
 
 ---
 
@@ -77,4 +77,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Types](2-types.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Running scripts](4-running-scripts.md) →
+← [Types](02-types.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Running scripts](04-running-scripts.md) →

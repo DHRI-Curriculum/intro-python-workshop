@@ -1,4 +1,4 @@
-← [Lists](6-lists.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Conditionals](8-conditionals.md) →
+← [Lists](06-lists.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Conditionals](08-conditionals.md) →
 
 ---
 
@@ -107,4 +107,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Lists](6-lists.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Conditionals](8-conditionals.md) →
+← [Lists](06-lists.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Conditionals](08-conditionals.md) →

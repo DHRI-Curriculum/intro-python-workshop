@@ -1,4 +1,4 @@
-← [Interacting with Python](1-interacting-with-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Variables](3-variables.md) →
+← [Interacting with Python](01-interacting-with-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Variables](03-variables.md) →
 
 ---
 
@@ -81,4 +81,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Interacting with Python](1-interacting-with-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Variables](3-variables.md) →
+← [Interacting with Python](01-interacting-with-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Variables](03-variables.md) →

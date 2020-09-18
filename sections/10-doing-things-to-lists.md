@@ -1,4 +1,4 @@
-← [Input](9-input.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Finding Answers with Google](11-finding-answers-with-google.md) →
+← [Input](09-input.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Finding Answers with Google](11-finding-answers-with-google.md) →
 
 ---
 
@@ -121,4 +121,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Input](9-input.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Finding Answers with Google](11-finding-answers-with-google.md) →
+← [Input](09-input.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Finding Answers with Google](11-finding-answers-with-google.md) →

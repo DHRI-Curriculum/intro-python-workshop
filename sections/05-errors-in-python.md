@@ -1,4 +1,4 @@
-← [Running scripts](4-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](6-lists.md) →
+← [Running scripts](04-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](06-lists.md) →
 
 ---
 
@@ -129,4 +129,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Running scripts](4-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](6-lists.md) →
+← [Running scripts](04-running-scripts.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Lists](06-lists.md) →

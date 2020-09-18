@@ -1,4 +1,4 @@
-← [Errors in Python](5-errors-in-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Loops](7-loops.md) →
+← [Errors in Python](05-errors-in-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Loops](07-loops.md) →
 
 ---
 
@@ -113,4 +113,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Errors in Python](5-errors-in-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Loops](7-loops.md) →
+← [Errors in Python](05-errors-in-python.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Loops](07-loops.md) →

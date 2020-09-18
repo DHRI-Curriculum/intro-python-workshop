@@ -1,4 +1,4 @@
-← [Conditionals](8-conditionals.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Doing Things to Lists](10-doing-things-to-lists.md) →
+← [Conditionals](08-conditionals.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Doing Things to Lists](10-doing-things-to-lists.md) →
 
 ---
 
@@ -100,4 +100,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Conditionals](8-conditionals.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Doing Things to Lists](10-doing-things-to-lists.md) →
+← [Conditionals](08-conditionals.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Doing Things to Lists](10-doing-things-to-lists.md) →

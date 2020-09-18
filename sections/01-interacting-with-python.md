@@ -1,4 +1,4 @@
-↻ [Start](../README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Types](2-types.md) →
+↻ [Start](../README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Types](02-types.md) →
 
 ---
 
@@ -84,4 +84,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-↻ [Start](../README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Types](2-types.md) →
+↻ [Start](../README.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Types](02-types.md) →

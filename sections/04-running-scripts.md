@@ -1,4 +1,4 @@
-← [Variables](3-variables.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Errors in Python](5-errors-in-python.md) →
+← [Variables](03-variables.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Errors in Python](05-errors-in-python.md) →
 
 ---
 
@@ -86,4 +86,4 @@ Do you remember the glossary terms from this section?
 
 ---
 
-← [Variables](3-variables.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Errors in Python](5-errors-in-python.md) →
+← [Variables](03-variables.md)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Errors in Python](05-errors-in-python.md) →

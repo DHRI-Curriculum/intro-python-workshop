@@ -14,21 +14,21 @@ In this workshop, you will:
 
 ---
 
-<p align="center">This workshop is estimated to take you 3-4 hours to complete.</p><p align="center"><a href="sections/1-interacting-with-python.md">Get Started</a> →</p>
+<p align="center">This workshop is estimated to take you 3-4 hours to complete.</p><p align="center"><a href="sections/01-interacting-with-python.md">Get Started</a> →</p>
 
 ---
 
 ## Lessons
 
-1. [Interacting with Python](sections/1-interacting-with-python.md)
-2. [Types](sections/2-types.md)
-3. [Variables](sections/3-variables.md)
-4. [Running scripts](sections/4-running-scripts.md)
-5. [Errors in Python](sections/5-errors-in-python.md)
-6. [Lists](sections/6-lists.md)
-7. [Loops](sections/7-loops.md)
-8. [Conditionals](sections/8-conditionals.md)
-9. [Input](sections/9-input.md)
+1. [Interacting with Python](sections/01-interacting-with-python.md)
+2. [Types](sections/02-types.md)
+3. [Variables](sections/03-variables.md)
+4. [Running scripts](sections/04-running-scripts.md)
+5. [Errors in Python](sections/05-errors-in-python.md)
+6. [Lists](sections/06-lists.md)
+7. [Loops](sections/07-loops.md)
+8. [Conditionals](sections/08-conditionals.md)
+9. [Input](sections/09-input.md)
 10. [Doing Things to Lists](sections/10-doing-things-to-lists.md)
 11. [Finding Answers with Google](sections/11-finding-answers-with-google.md)
 12. [A Little Motivation](sections/12-a-little-motivation.md)
@@ -66,7 +66,7 @@ You may also want to check out a couple of projects that use the skills discusse
 
 ---
 
-<p align="center"><a href="sections/1-interacting-with-python.md">Get Started</a> →</p>
+<p align="center"><a href="sections/01-interacting-with-python.md">Get Started</a> →</p>
 
 ---
 
