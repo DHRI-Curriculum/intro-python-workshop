@@ -44,7 +44,7 @@ As we learn about the python data types and grammar, keep in mind that working w
 ## Resources (optional)
 
 - [Installing Anaconda](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/python.md) for Mac and Windows
-- [Python cheat sheet](./python_cheat.pdf)
+- [Python cheat sheet](https://github.com/DHRI-Curriculum/python/raw/v2.0/files/python_cheat.pdf)
 
 ## Acknowledgements
 
