@@ -56,7 +56,7 @@ The REPL is useful for quick tests and, later, can be used for exploring and deb
 
 ## Challenge
 
-1. For a few minutes, practice moving in and out of Python's interactive mode (aka the REPL). You can get out of Python by hitting <kbd>Control</kbd> + <kbd>d</kbd> (or <kbd>Control</kbd> + <kbd>z</kbd> or <kbd>Control</kbd> + <kbd>Z</kbd> + <kbd>Enter</kbd> if you're on a computer running Windows) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash or your terminal when you see the `$`.
+1. For a few minutes, practice moving in and out of Python's interactive mode (aka the REPL). You can get out of Python by hitting <kbd>control</kbd> + <kbd>d</kbd> (or <kbd>control</kbd> + <kbd>z</kbd> or <kbd>control</kbd> + <kbd>z</kbd> + <kbd>enter</kbd> if you're on a computer running Windows) or by typing `exit()`. You can get back in the REPL by typing `python` at the `$` prompt. Remember that you're in the REPL when you see `>>>`, and you're in bash or your terminal when you see the `$`.
 
 2. One "operator" (math symbol) we didn't learn is the exponent—you know, "x raised to the power of..." If you were Guido van Rossum, the creator of Python, how would you define this operator?
 
@@ -228,7 +228,7 @@ Do you remember the glossary terms from this section?
 
 - [Variables](https://github.com/DHRI-Curriculum/glossary/blob/v2.0/terms/variables.md)
 
-# Running scripts
+# Running Scripts
 
 So far, you've interacted with Python one line at a time in the REPL. This is what we call the Interactive Mode, which is like a playground for experimenting and exploring different Python expressions, like `2 + 2` or `type("some stuff")`. The code that we write in the REPL is not saved after you exit, which means that this space is for running Python expressions and *not* for writing longer programs.
 
@@ -236,7 +236,7 @@ For the rest of this session, we're going to expand beyond the REPL to write and
 
 This is a big move, so let's take it slow. To reiterate, the major change is that we will be working across two spaces, the terminal and the text editor, rather than just the terminal alone. We will be writing our scripts into the text editor, and using the terminal to run those scripts.
 
-## Your first script
+## Your First Script
 
 First, let's begin with the text editor. Open your text editor of choice (such as Visual Studio Code) and create a new file with this line:
 
@@ -250,7 +250,7 @@ Save it with the name `hello.py` to a known location, such as your desktop. Open
 $ cd Desktop
 ```
 
-Once you're in the folder with your `hello.py` file, move to the terminal. Do *not* enter the Python Interactive Mode (the REPL), which is unecessary to run python scripts. Instead, lookout for the `$` symbol that lets you know you're in the terminal. (If you find yourself in the Interactive mode (`>>>`), then try exiting it with <kbd>control</kbd> + <kbd>D</kbd>. You should see the `$` symbol, letting you know you're back in the terminal. If you still do not see the `$` symbol, type `exit()` followed by <kbd>enter</kbd> after the Python prompt, `>>>`.)
+Once you're in the folder with your `hello.py` file, move to the terminal. Do *not* enter the Python Interactive Mode (the REPL), which is unecessary to run python scripts. Instead, lookout for the `$` symbol that lets you know you're in the terminal. (If you find yourself in the Interactive mode (`>>>`), then try exiting it with <kbd>control</kbd> + <kbd>d</kbd>. You should see the `$` symbol, letting you know you're back in the terminal. If you still do not see the `$` symbol, type `exit()` followed by <kbd>enter</kbd> after the Python prompt, `>>>`.)
 
 Now that you're in the terminal, type the following, and press enter:
 
@@ -277,7 +277,7 @@ Fundamentally, Python programs are just text files. You can write them in any te
 
 2. (optional) Are you already getting sick of typing `python hello.py` again and again? Try typing `!!` in the command line (the `$`). This will run your last line of code again. Additionally, you can press the <kbd>up arrow</kbd> at the terminal prompt, and keep pressing it to scroll through the most recent commands.
 
-3. (even more optional) If you're on Windows and have a minute, try pressing the <kbd>Windows</kbd> button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than Git Bash.
+3. (even more optional) If you're on Windows and have a minute, try pressing the <kbd>windows</kbd> button on your keyboard and searching for a program called `IDLE` that comes with Python. It's a special editor (or IDE) that lets you run Python code from inside it. You might like it more than Git Bash.
 
 ## Solution
 
@@ -316,7 +316,7 @@ Our usual response when seeing an error on a computer screen is a stress respons
 
 In Python, errors are our friends. This might be hard to accept initially, but the errors you see when running Python scripts generally do a good job of pointing you to what's going wrong in your program. When you see an error in Python, therefore, try not to fall into the stress response you may be used to when interacting with your computer normally.
 
-## Two kinds of errors
+## Two Kinds of Errors
 
 In Python, there are two kinds of errors you will encounter frequently. One appears before the program runs, and the other appears during the execution of a program.
 
@@ -960,7 +960,7 @@ elif response == "SORT":
 
 This is a lot of work, and it's a pretty ugly solution. If we wanted to add more cases to our program, we would have to write them in twice every time, and it still wouldn't fix inputs like `SorT`. The best way to improve our program would be to convert the input to lower case before we send it to our `if/else` block.
 
-## Googling for answers
+## Googling for Answers
 
 Even if you're a super rad Python programmer, you're not going to remember every function name or how to do things you might not have touched in awhile. One thing programmers get very good at is googling for answers. In fact, this is arguably the most important skill in modern-day programming. So let's use Google to find out how to convert strings to lower case.
 
@@ -974,7 +974,7 @@ While Google searches change over time, some of your results likely come from a 
 
 On [this _Stack Overflow_ page](https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python), take a quick look at the question to make sure it's relevant to your problem. Then scroll down to the answers to find what we're looking for. You may also notice snarky debates—another "feature" of _Stack Overflow_.
 
-## Implementing our answer
+## Implementing Our Answer
 
 According to this answer, we can make a string lowercase by adding `.lower()` to the end of it, like this:
 
@@ -1283,6 +1283,7 @@ The most useful method, however, is likely `text`:
 This is just the tip of the iceberg for using `requests`. In order to get more information, you'll have to read up on the module. Here is [an excellent tutorial](https://scotch.io/tutorials/getting-started-with-python-requests-get-requests) to get started.
 
 ## Evaluation
+
 Why would someone use `dir()`? Select all that apply:
 - to examine a function like `print()`.*
 - to see what can be done with an object, like a string or a list.*
