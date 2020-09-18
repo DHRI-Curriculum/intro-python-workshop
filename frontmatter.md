@@ -26,7 +26,6 @@ Python is a general-purpose programming language suitable for a wide variety of 
 ### Pre-reading suggestions
 
 - Want to learn programming, but not convinced that the Python language is the right language? Check out "[Five Reasons Why Learning Python Is The Best Decision](https://medium.com/datadriveninvestor/5-reasons-why-i-learned-python-and-why-you-should-learn-it-as-well-917f781aea05)," *Medium*.
-
 - Some concrete ideas for how to use Python: "[What Can I Do With Python?](https://realpython.com/what-can-i-do-with-python/)" *Real Python*.
 
 ### Projects that use these skills
