@@ -19,7 +19,7 @@ Python is a general-purpose programming language suitable for a wide variety of 
 
 ## Prerequisites
 
-- [Introduction to the Command Line](https://www.github.com/DHRI-Curriculum/command-line)
+- [Introduction to the Command Line](https://www.github.com/DHRI-Curriculum/command-line) (required)
 
 ## Contexts
 
