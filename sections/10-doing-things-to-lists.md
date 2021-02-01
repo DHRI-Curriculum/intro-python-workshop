@@ -36,7 +36,7 @@ library.append("La Frontera")
 print(library)
 ```
 
-Here, we added `"La Frontera"` as an argument to the `append()` method, but putting it between the parenthesis. It basically means that we will be appending this specific title to the library list.
+Here, we added `"La Frontera"` as an argument to the `append()` method by putting the string between the parenthesis. It basically means that we will be appending this specific title to the library list.
 
 When you print `library`, you should see your new book appear at the end of the list. Pretty cool, right? Go ahead and add a couple more books to your list.
 

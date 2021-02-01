@@ -56,7 +56,7 @@ elif field == "Critical University Studies":
 elif field == "Textual Scholarship":
     print("Radiant Textuality")
 elif field == "Critical Race Studies"
-    print("The New Jim Code")
+    print("The New Jim Crow")
 elif field == "DH Methodologies"
     print("Algorithmic Criticism")
 else:
