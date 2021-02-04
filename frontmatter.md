@@ -19,7 +19,7 @@ Python is a general-purpose programming language suitable for a wide variety of 
 
 ## Prerequisites
 
-- [Introduction to the Command Line](https://www.github.com/DHRI-Curriculum/command-line) (required)
+- [Introduction to the Command Line](https://www.github.com/DHRI-Curriculum/command-line) (required) This workshop makes reference to concepts from the Command Line workshop, and having basic knowledge about how to use the command line will be central for anyone who wants to learn about programming with Python.
 - [Installing Anaconda](https://github.com/DHRI-Curriculum/install/blob/v2.0/guides/python.md) (recommended) You can use any installation of Python (but make sure it is of version 3) but for our purposes, Anaconda will provide everything necessary for all the workshops that are part of the DHRI curriculum.
 
 ## Contexts
