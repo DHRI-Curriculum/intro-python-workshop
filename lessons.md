@@ -19,7 +19,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Unlike the normal `$` terminal prompt, the Python prompt looks like this:
+Unlike the normal `$` terminal prompt (or `%` if you are on MacOS, the Python prompt looks like this:
 
 ```pycon
 >>>
@@ -141,7 +141,7 @@ Select all the following that accurately describe the data type categories.
 - Booleans represent only `True` or `False` values.*
 - Integers can be expressed with numbers like `1` or letters `one`.
 - Strings can contain numbers within quotations, like `"1"`.*
-- Lists can contain strings, like `["banana, 'coffee', 'eggs']`.*
+- Lists can contain strings, like `['banana, 'coffee', 'eggs']`.*
 
 ## Keywords
 
@@ -452,7 +452,9 @@ print(books)
 
 Save this to a new file called `loop.py` and run it with `python loop.py`. You should see the list printed out in the terminal.
 
-So far, we've only learned one function: `type()`. Let's try out another, called `len()`, which returns the number of items in a list or the number of characters in a string. Type out the following lines in your loop.py file:
+So far, we've only learned one function: `type()`. Let's try out another, called `len()`, which returns the number of items in a list or the number of characters in a string. 
+
+First, let's "comment out" the `print(books)` statement with the hastag `#`, which tells python to ignore that line of code. Then, type out the following lines in your loop.py file:
 
 ```python
 books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
@@ -464,8 +466,9 @@ print(list_length)
 ```
 
 Let's take apart this unfamiliar line of code: `list_length = len(book)`
-- First, look to the end of this statement. `list_length = len(book)` takes the `book ` variable as an argument for the `len()` function. That's why `book` is within the parenthesis. This format basically means that it will run the `len()` function on the items in `book`.
-- Then, it sets the result of that process to a new variable, called `list_length`.
+- First, we have saved a list of books to the variable, `books`.
+- Second, look to the next line this statement. `list_length = len(book)` takes the `books` variable from the previous line as an *argument* (or input data) for the `len()` function. That's why `books` is within the parenthesis. This syntax means that python will run the `len()` function on the items in `books`. Then, it sets the result of that process to a new variable, called `list_length`.
+- Finally, we print the `list_length` value.
 
 This might appear a bit complex at first, but if you read the line slowly you should be able to connect the dots.
 
@@ -666,6 +669,7 @@ It's important to note at this point the use of the double equals sign `==` in `
 
 You'll also notice the inclusion of a new line, the `else` statement. The `else` statement handles any inputs that aren't "Media Studies", and the program merely prints out that it doesn't know what you should bring.
 
+
 Try this script out both with the variable set to "Media studies" and the variable set to some other value, representing another field of study.
 
 What if we want our program to handle more fields of study, giving different messages for each one? Other cases after the first `if` statement are handled with `elif`, which is a shortened version of `else if`:
@@ -725,6 +729,7 @@ Do you remember the glossary terms from this section?
 # Input
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
+
 
 Python allows you to take input directly from the user using the `input()` function.
 
@@ -1007,7 +1012,11 @@ This new script should handle any combination of upper or lowercase characters. 
 
 There's no shame in googling for answers! Error messages are especially useful to google when you run into them. Keep an eye out for _Stack Overflow_ answers, as they tend to have useful examples. The [official Python documentation](https://docs.python.org/3/) will also frequently come up, but I would recommend avoiding it as a resource until you have more programming experience. It's a great resource, but the way information is presented can be confusing until you get the hang of reading documentation.
 
+Before moving on to the next section, complete the first challenge below. This challenge will teach the skills necessary to complete write more advanced scripts in this workshop.
+
 ## Challenge
+
+*Note: the first challenge is **required** in order to complete further sections.
 
 1. We are going to use `while` loops to get Python to repeat loops over and over again. This involves adding a `while` statement to your library app. The code should look like this, and it goes right after the `library` list and before your `input` statement.
 
