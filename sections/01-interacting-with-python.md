@@ -23,7 +23,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Unlike the normal `$` terminal prompt, the Python prompt looks like this:
+Unlike the normal `$` terminal prompt (or `%` if you are on MacOS), the Python prompt looks like this:
 
 ```pycon
 >>>

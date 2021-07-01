@@ -6,6 +6,7 @@
 
 **Note:** If you're using Python 2.7, replace all `input()` functions in the code below with `raw_input()`. You can check your version by running `python --version` in the command line.
 
+
 Python allows you to take input directly from the user using the `input()` function.
 
 Let's try it out by setting the function to a variable, which we will call `greeting`. Open the Python REPL and type:

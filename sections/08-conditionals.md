@@ -21,6 +21,7 @@ It's important to note at this point the use of the double equals sign `==` in `
 
 You'll also notice the inclusion of a new line, the `else` statement. The `else` statement handles any inputs that aren't "Media Studies", and the program merely prints out that it doesn't know what you should bring.
 
+
 Try this script out both with the variable set to "Media studies" and the variable set to some other value, representing another field of study.
 
 What if we want our program to handle more fields of study, giving different messages for each one? Other cases after the first `if` statement are handled with `elif`, which is a shortened version of `else if`:

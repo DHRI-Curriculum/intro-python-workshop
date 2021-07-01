@@ -19,7 +19,9 @@ print(books)
 
 Save this to a new file called `loop.py` and run it with `python loop.py`. You should see the list printed out in the terminal.
 
-So far, we've only learned one function: `type()`. Let's try out another, called `len()`, which returns the number of items in a list or the number of characters in a string. Type out the following lines in your loop.py file:
+So far, we've only learned one function: `type()`. Let's try out another, called `len()`, which returns the number of items in a list or the number of characters in a string. 
+
+First, let's "comment out" the `print(books)` statement with the hastag `#`, which tells python to ignore that line of code. Then, type out the following lines in your loop.py file:
 
 ```python
 books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
@@ -31,8 +33,9 @@ print(list_length)
 ```
 
 Let's take apart this unfamiliar line of code: `list_length = len(book)`
-- First, look to the end of this statement. `list_length = len(book)` takes the `book ` variable as an argument for the `len()` function. That's why `book` is within the parenthesis. This format basically means that it will run the `len()` function on the items in `book`.
-- Then, it sets the result of that process to a new variable, called `list_length`.
+- First, we have saved a list of books to the variable, `books`.
+- Second, look to the next line this statement. `list_length = len(book)` takes the `books` variable from the previous line as an *argument* (or input data) for the `len()` function. That's why `books` is within the parenthesis. This syntax means that python will run the `len()` function on the items in `books`. Then, it sets the result of that process to a new variable, called `list_length`.
+- Finally, we print the `list_length` value.
 
 This might appear a bit complex at first, but if you read the line slowly you should be able to connect the dots.
 

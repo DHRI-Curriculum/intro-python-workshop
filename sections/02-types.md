@@ -65,7 +65,7 @@ Select all the following that accurately describe the data type categories.
 - Booleans represent only `True` or `False` values.*
 - Integers can be expressed with numbers like `1` or letters `one`.
 - Strings can contain numbers within quotations, like `"1"`.*
-- Lists can contain strings, like `["banana, 'coffee', 'eggs']`.*
+- Lists can contain strings, like `['banana, 'coffee', 'eggs']`.*
 
 ## Keywords
 
