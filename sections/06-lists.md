@@ -27,7 +27,7 @@ First, let's "comment out" the `print(books)` statement with the hastag `#`, whi
 books = ['Gender Trouble', 'Cruising Utopia', 'Living a Feminist Life']
 # print(books)
 
-list_length = len(book)
+list_length = len(books)
 
 print(list_length)
 ```
