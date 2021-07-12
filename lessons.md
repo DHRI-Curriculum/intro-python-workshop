@@ -704,9 +704,9 @@ elif field == "Critical University Studies":
     print("The Undercommons")
 elif field == "Textual Scholarship":
     print("Radiant Textuality")
-elif field == "Critical Race Studies"
+elif field == "Critical Race Studies":
     print("The New Jim Crow")
-elif field == "DH Methodologies"
+elif field == "DH Methodologies":
     print("Algorithmic Criticism")
 else:
     print("I don't know what field you're talking about! I'm just a little program...")
